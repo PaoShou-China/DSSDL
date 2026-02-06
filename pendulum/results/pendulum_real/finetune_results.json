@@ -1,0 +1,24 @@
+{
+    "system_name": "pendulum_real",
+    "timestamp": "2026-01-17 15:27:38",
+    "optimizer": "lbfgs",
+    "max_epochs": 200,
+    "converged_epoch": 200,
+    "total_epochs": 200,
+    "training_time_seconds": 7.288472890853882,
+    "training_time_formatted": "7.29s (0.12min)",
+    "final_loss": 0.05084068002720103,
+    "convergence_threshold": 1e-05,
+    "patience": 5,
+    "specific_param_dim": 6,
+    "config": {
+        "learning_rate": 0.1,
+        "batch_size": -1,
+        "reg_rate": 0.0,
+        "weight_decay": 0.0001,
+        "hidden_widths": [
+            64,
+            64
+        ]
+    }
+}
