@@ -319,18 +319,6 @@ Dataset loading and processing functionality is located in the `datasets/` direc
    - Adjust `convergence_threshold` and `patience` parameters
    - Extend fast adaptation epochs `epochs`
 
-## Future Work
-
-1. **Extension to More System Types**: Apply the method to a wider range of dynamical systems.
-
-2. **Improved Mask Learning**: Develop more effective sparse mask learning methods.
-
-3. **Physical Constraint Integration**: Integrate physical laws as constraints into the model.
-
-4. **Uncertainty Estimation**: Add uncertainty estimation functionality to improve model reliability.
-
-5. **Real-time Applications**: Optimize the model to support real-time system identification and control.
-
 ## Contact
 
 If you have any questions or suggestions, please feel free to contact the project maintainers.
