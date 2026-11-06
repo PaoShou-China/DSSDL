@@ -1,0 +1,36 @@
+{
+  "method": "CAVIA",
+  "system": "lorenz",
+  "seed": 5,
+  "config": {
+    "seed": 5,
+    "device": "cuda:0",
+    "use_raw_data": false,
+    "num_context_params": 3,
+    "hidden_sizes": [
+      64,
+      64
+    ],
+    "meta_lr": 0.001,
+    "inner_lr": 0.0001,
+    "num_inner_updates": 5,
+    "tasks_per_metaupdate": 4,
+    "k_support": 10,
+    "k_query": 10,
+    "max_iters": 1000,
+    "log_interval": 50,
+    "first_order": true,
+    "grad_clip": 10.0,
+    "model_path": "workspace/codex_runs/2026-07-07_review_response_experiments/62_original_protocol_no_early_stop/checkpoints/lorenz/CAVIA/seed_5/pretrain.pt",
+    "finetune_max_epochs": 1000,
+    "finetune_patience": 50,
+    "finetune_convergence_threshold": 1e-10,
+    "finetune_use_query": true
+  },
+  "device": "cuda:0",
+  "torch_version": "2.8.0+cu129",
+  "source_training_seconds": 21.56949809996877,
+  "checkpoint_sha256": "d1a41c48f8f394856a682814557c03e8a11adb6bde503ac18029e1b34ad63a86",
+  "original_modules_read_only": true,
+  "source_data_sha256": "2a2f76e9f6a4dc7525d30541956cbfc7743de502bcd844a43a7f9f42f2fc2f0d"
+}

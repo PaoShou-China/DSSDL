@@ -1,4 +1,28 @@
-# Disentangeld Shared-Specific Dynamics Learning for Cross-System Identification
+# Disentangled Shared-Specific Dynamics Learning for Cross-System Identification
+
+## Current reproducibility materials
+
+The [November 2026 experiment package](revision_2026_11/README.md) contains the
+source code, configurations, required data/checkpoints and saved numerical
+results for the added component controls, symbolic discovery and feedback,
+matched adaptation budgets, Wasserstein distances, and selected time-varying
+experiments. See its [experiment-to-evidence map](revision_2026_11/EXPERIMENTS.md)
+for commands and result provenance.
+
+The original files below are retained. The new package documents the original
+prescribed-structure predictions, recorded PySR searches with author-confirmed
+LLM-assisted consolidation, and feedback-trained deployment separately, with
+the checkpoints and evaluation protocols identified for each experiment.
+
+Quick numerical verification (no training or symbolic search):
+
+```bash
+cd revision_2026_11
+python -m pip install -r code/requirements.txt
+python -B verify.py --checksums
+```
+
+The remaining sections describe the original pendulum implementation.
 
 ## Additional Files
 

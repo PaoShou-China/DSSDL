@@ -1,0 +1,23 @@
+{
+  "status": "complete",
+  "args": {
+    "system": "lorenz",
+    "device": "cuda:0",
+    "rounds": 2,
+    "epochs": 60,
+    "timeout": 45
+  },
+  "source_checkpoint": "workspace/codex_runs/2026-07-07_review_response_experiments/01_reproduction/lorenz/dssdl_scratch/pretrain_200/seed_000/model/pretrain.pt",
+  "protected_hashes": {
+    "workspace/codex_runs/2026-07-07_review_response_experiments/01_reproduction/lorenz/dssdl_scratch/pretrain_200/seed_000/model/pretrain.pt": "6c13eeeba561090d8c878ab511ab136d0ef12054adb4ed68c41931a0f20ba672",
+    "workspace/compare2/DSSDL/DSSDL_.py": "32dbbc502aea4d3fa3e673d42786a8ed1f4528ace26254cafad1f589ec23edea",
+    "workspace/codex_runs/2026-07-07_review_response_experiments/42_pysr_label_free_latent_closure/scripts/run_closure.py": "7eec49b4d5dc7a757deb8cc7a299cd29774621741dc5f1722e9a0988aa457562"
+  },
+  "source_task_count": 18,
+  "physical_parameter_labels_used": false,
+  "decoder_used": false,
+  "historical_equations_used": false,
+  "protocol_sha256": "6eeed93e182e7f4ddeb9bedca6bb03e23747ea68b3d6743f408bde1b6d37be6e",
+  "selected_method": "pysr_round2",
+  "packaged_source_checkpoint": "review/experiments/teachers/lorenz.pt"
+}

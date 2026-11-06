@@ -1,0 +1,5 @@
+{
+  "numpy_torch_match": true,
+  "gradient_finite": true,
+  "max_absolute_difference": 5.689893001203927e-16
+}

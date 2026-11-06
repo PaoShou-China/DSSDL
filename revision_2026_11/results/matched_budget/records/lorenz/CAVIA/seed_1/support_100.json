@@ -1,0 +1,163 @@
+{
+  "method": "CAVIA",
+  "system": "lorenz",
+  "seed": 1,
+  "support": 100,
+  "budget": 100000,
+  "fixed_budget_final": {
+    "step": 100000,
+    "support_mse": 0.6729839444160461,
+    "support_objective": 0.6729839444160461,
+    "query_rmse": 1.2292884588241577,
+    "raw_query_rmse": 28.72425651550293,
+    "compute_seconds": 34.883940499741584,
+    "gradient_evaluations": 100000
+  },
+  "milestones": [
+    {
+      "step": 0,
+      "support_mse": 0.7115564942359924,
+      "support_objective": 0.7115564942359924,
+      "query_rmse": 1.258114218711853,
+      "raw_query_rmse": 29.704177856445312,
+      "compute_seconds": 0.0,
+      "gradient_evaluations": 0
+    },
+    {
+      "step": 5,
+      "support_mse": 0.7115070223808289,
+      "support_objective": 0.7115070223808289,
+      "query_rmse": 1.2580841779708862,
+      "raw_query_rmse": 29.703262329101562,
+      "compute_seconds": 0.001744000008329749,
+      "gradient_evaluations": 5
+    },
+    {
+      "step": 20,
+      "support_mse": 0.711358904838562,
+      "support_objective": 0.711358904838562,
+      "query_rmse": 1.2579941749572754,
+      "raw_query_rmse": 29.70052719116211,
+      "compute_seconds": 0.005624800105579197,
+      "gradient_evaluations": 20
+    },
+    {
+      "step": 100,
+      "support_mse": 0.7105809450149536,
+      "support_objective": 0.7105809450149536,
+      "query_rmse": 1.2575196027755737,
+      "raw_query_rmse": 29.686077117919922,
+      "compute_seconds": 0.02797949977684766,
+      "gradient_evaluations": 100
+    },
+    {
+      "step": 200,
+      "support_mse": 0.7096368670463562,
+      "support_objective": 0.7096368670463562,
+      "query_rmse": 1.2569395303726196,
+      "raw_query_rmse": 29.668373107910156,
+      "compute_seconds": 0.060500500025227666,
+      "gradient_evaluations": 200
+    },
+    {
+      "step": 1000,
+      "support_mse": 0.7030153870582581,
+      "support_objective": 0.7030153870582581,
+      "query_rmse": 1.252743124961853,
+      "raw_query_rmse": 29.538747787475586,
+      "compute_seconds": 0.2795983009855263,
+      "gradient_evaluations": 1000
+    },
+    {
+      "step": 2000,
+      "support_mse": 0.6967176795005798,
+      "support_objective": 0.6967176795005798,
+      "query_rmse": 1.248464584350586,
+      "raw_query_rmse": 29.403383255004883,
+      "compute_seconds": 0.5655364009435289,
+      "gradient_evaluations": 2000
+    },
+    {
+      "step": 5000,
+      "support_mse": 0.6858163475990295,
+      "support_objective": 0.6858163475990295,
+      "query_rmse": 1.2399606704711914,
+      "raw_query_rmse": 29.121137619018555,
+      "compute_seconds": 1.3449084011954255,
+      "gradient_evaluations": 5000
+    },
+    {
+      "step": 10000,
+      "support_mse": 0.6798462867736816,
+      "support_objective": 0.6798462867736816,
+      "query_rmse": 1.23357355594635,
+      "raw_query_rmse": 28.890291213989258,
+      "compute_seconds": 2.6422177032218315,
+      "gradient_evaluations": 10000
+    },
+    {
+      "step": 20000,
+      "support_mse": 0.6778333187103271,
+      "support_objective": 0.6778333187103271,
+      "query_rmse": 1.230225920677185,
+      "raw_query_rmse": 28.75748634338379,
+      "compute_seconds": 6.373553905286826,
+      "gradient_evaluations": 20000
+    },
+    {
+      "step": 50000,
+      "support_mse": 0.6758537292480469,
+      "support_objective": 0.6758537292480469,
+      "query_rmse": 1.2293872833251953,
+      "raw_query_rmse": 28.72458267211914,
+      "compute_seconds": 17.182979300792795,
+      "gradient_evaluations": 50000
+    },
+    {
+      "step": 100000,
+      "support_mse": 0.6729839444160461,
+      "support_objective": 0.6729839444160461,
+      "query_rmse": 1.2292884588241577,
+      "raw_query_rmse": 28.72425651550293,
+      "compute_seconds": 34.883940499741584,
+      "gradient_evaluations": 100000
+    }
+  ],
+  "original_rule_counterfactual": {
+    "step": 2000,
+    "support_mse": 0.6967176795005798,
+    "support_objective": 0.6967176795005798,
+    "query_rmse": 1.248464584350586,
+    "raw_query_rmse": 29.403383255004883,
+    "compute_seconds": 0.5655364009435289,
+    "gradient_evaluations": 2000,
+    "rule": "original_query_mse_stop",
+    "stopped_early": false,
+    "stop_step": 2000,
+    "selected_step": 2000,
+    "restores_best": true
+  },
+  "historical": {
+    "method": "CAVIA",
+    "system": "lorenz",
+    "seed": 1,
+    "support": 100,
+    "historical_rmse": 1.248465,
+    "historical_initial_rmse": 1.258114,
+    "log": "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed1_support100.log"
+  },
+  "support_stability": {
+    "stable": true,
+    "relative_range": 0.0016423102695340872,
+    "absolute_range": 0.0011061429977416992,
+    "tail_fraction": 0.2
+  },
+  "checkpoint_sha256": "7bb85d971e1ae1b3d473b6ad481b46e1fa6e4f223ee48515ca6656bac067b6e4",
+  "dataset_sha256": "2a2f76e9f6a4dc7525d30541956cbfc7743de502bcd844a43a7f9f42f2fc2f0d",
+  "device": "cpu",
+  "flush_denormal": true,
+  "torch_version": "2.8.0+cu129",
+  "query_selected_final": false,
+  "early_stopping": false,
+  "extension_wall_seconds": 19.608461799973156
+}

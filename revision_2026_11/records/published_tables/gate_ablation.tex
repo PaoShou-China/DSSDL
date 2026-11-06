@@ -1,0 +1,16 @@
+\begin{table}[!ht]
+\centering\small
+\caption{Paired Stage I gate controls. Values are mean $\pm$ sample standard deviation over five training seeds. Dimensions are active slots; each listed dimension was selected in all five runs. Both arms have $f_s=0$. Errors are source-standardized derivative RMSE, not trajectory RMSE.}
+\label{tab:paired_gate}
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{llccc}
+\toprule
+System & Gate & Dimensions & Source validation & Target query \\
+\midrule
+Measured pendulum & Learned & 1 & $0.044494 \pm 0.008997$ & $0.036055 \pm 0.000670$ \\
+Measured pendulum & All active & 8 & $0.044522 \pm 0.010303$ & $0.044825 \pm 0.003704$ \\
+Quadrotor & Learned & 3 & $0.003711 \pm 0.000786$ & $0.003195 \pm 0.000778$ \\
+Quadrotor & All active & 8 & $0.003169 \pm 0.000390$ & $0.002777 \pm 0.000622$ \\
+\bottomrule
+\end{tabular}
+\end{table}

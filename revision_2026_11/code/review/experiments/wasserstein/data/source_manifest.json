@@ -1,0 +1,89 @@
+{
+  "sources": [
+    {
+      "system": "fhn",
+      "method": "dssdl",
+      "source": "workspace/draw25/final_data_symbol/trajectories_data/FHN/[0.85, 1.05, 0.85].csv",
+      "snapshot": "data/fhn/dssdl.csv",
+      "sha256": "cb44ca49ac9223858abb05e9962aee2a8909f7db899ae01f51b79912d7dbc8cb"
+    },
+    {
+      "system": "fhn",
+      "method": "no_symbol",
+      "source": "workspace/draw25/final_data/trajectories_data/FHN/[0.85, 1.05, 0.85].csv",
+      "snapshot": "data/fhn/no_symbol.csv",
+      "sha256": "4ee293af68d078a6aae8c526dcf55fcbac34c24affbd20037a502aaeee6da42e"
+    },
+    {
+      "system": "fhn",
+      "method": "sindy",
+      "source": "workspace/draw25/final_data_SINDy/trajectories_data/FHN/[0.85, 1.05, 0.85].csv",
+      "snapshot": "data/fhn/sindy.csv",
+      "sha256": "c06c794211ab3b21c46f9d2c0b82c1f15f39c1c3dca453c2591ff912418a710c"
+    },
+    {
+      "system": "fhn",
+      "method": "gplearn",
+      "source": "workspace/draw25/final_data_GPlearn/trajectories_data/FHN/[0.85, 1.05, 0.85].csv",
+      "snapshot": "data/fhn/gplearn.csv",
+      "sha256": "9d24a4901f5a0eca255baaecf328639524f8149a22b1d821831e355674efb989"
+    },
+    {
+      "system": "fhn",
+      "method": "reptile",
+      "source": "workspace/draw25/final_data_Reptile/trajectories_data/FHN/[0.85, 1.05, 0.85].csv",
+      "snapshot": "data/fhn/reptile.csv",
+      "sha256": "cf43c96b9f13c54a7e9cf7fac08bec4ea8b03f80806a50f6bda363dbe30ad70e"
+    },
+    {
+      "system": "fhn",
+      "method": "cavia",
+      "source": "workspace/draw25/final_data_CAVIA/trajectories_data/FHN/[0.85, 1.05, 0.85].csv",
+      "snapshot": "data/fhn/cavia.csv",
+      "sha256": "a2b4850729b00c8415ac7ecbc0257dd7e4a5029aa899df1d5bfdfec32221a293"
+    },
+    {
+      "system": "lorenz",
+      "method": "dssdl",
+      "source": "workspace/draw25/final_data_symbol/trajectories_data/lorenz/[9.9, 29.5, 2.9].csv",
+      "snapshot": "data/lorenz/dssdl.csv",
+      "sha256": "8ef3b7e7edc630cdebcb8e66277b40933363a3c6a08fb04c6974a6f041ca84d4"
+    },
+    {
+      "system": "lorenz",
+      "method": "no_symbol",
+      "source": "workspace/draw25/final_data/trajectories_data/lorenz/[9.9, 29.5, 2.9].csv",
+      "snapshot": "data/lorenz/no_symbol.csv",
+      "sha256": "9c7f96b9e91243df1cff2261b942b09ebcaf7faf7259e01e1c62deb82a9eff0c"
+    },
+    {
+      "system": "lorenz",
+      "method": "sindy",
+      "source": "workspace/draw25/final_data_SINDy/trajectories_data/lorenz/[9.9, 29.5, 2.9].csv",
+      "snapshot": "data/lorenz/sindy.csv",
+      "sha256": "e17e7bd458a2ead9a58365f01ce885d35f6983679bfa87f6e642d91811b92c9c"
+    },
+    {
+      "system": "lorenz",
+      "method": "gplearn",
+      "source": "workspace/draw25/final_data_GPlearn/trajectories_data/lorenz/[9.9, 29.5, 2.9].csv",
+      "snapshot": "data/lorenz/gplearn.csv",
+      "sha256": "edf02319d9a1801a57a109a65043af7ac025901d021832a54083d765c3ded630"
+    },
+    {
+      "system": "lorenz",
+      "method": "reptile",
+      "source": "workspace/draw25/final_data_Reptile/trajectories_data/lorenz/[9.9, 29.5, 2.9].csv",
+      "snapshot": "data/lorenz/reptile.csv",
+      "sha256": "0806be14be60125e15e5b2724b6ef95b3a13165a7f1f0e8463fe25ddd6e2539f"
+    },
+    {
+      "system": "lorenz",
+      "method": "cavia",
+      "source": "workspace/draw25/final_data_CAVIA/trajectories_data/lorenz/[9.9, 29.5, 2.9].csv",
+      "snapshot": "data/lorenz/cavia.csv",
+      "sha256": "0b50ac1bc3890c02c876be68e56adbbc41b21cc32f42e27fd495b9cb80cfe7ea"
+    }
+  ],
+  "scope": "Original trajectory exports, not new training or simulation."
+}

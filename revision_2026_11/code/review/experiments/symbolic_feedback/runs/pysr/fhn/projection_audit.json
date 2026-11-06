@@ -1,0 +1,16 @@
+{
+  "original_symbol_source_time_val_nrmse": [
+    0.031123764786577135,
+    0.024286828703939785
+  ],
+  "compact_symbol_source_time_val_nrmse": [
+    0.06255978864954748,
+    0.022915265559270027
+  ],
+  "projection_change_source_nrmse": [
+    0.07375109802590475,
+    0.04849366724234745
+  ],
+  "is_exact_algebraic_simplification": false,
+  "added_state_monomials": false
+}

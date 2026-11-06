@@ -1,0 +1,2 @@
+# Retain exact bytes for the scientific archive and its checksum manifest.
+revision_2026_11/** -text

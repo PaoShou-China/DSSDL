@@ -1,0 +1,66 @@
+{
+  "mode": "source_log_reg_hypothesis",
+  "archived_source": "workspace/compare2/DSSDL-symbol/pendulum-0117.zip!pretrain.py",
+  "candidate_adam_lr": 0.01,
+  "candidate_reg_rate": 10.0,
+  "checks": [
+    {
+      "seed": 1,
+      "epoch": 0,
+      "historical_source_logged_rmse": 14.408141,
+      "reconstructed_source_rmse": 14.408141410739278,
+      "abs_difference": 4.107392772567664e-07
+    },
+    {
+      "seed": 1,
+      "epoch": 1,
+      "historical_source_logged_rmse": 13.012089,
+      "reconstructed_source_rmse": 13.012089010982804,
+      "abs_difference": 1.0982803999581847e-08
+    },
+    {
+      "seed": 2,
+      "epoch": 0,
+      "historical_source_logged_rmse": 14.413318,
+      "reconstructed_source_rmse": 14.413318456505365,
+      "abs_difference": 4.565053650651407e-07
+    },
+    {
+      "seed": 2,
+      "epoch": 1,
+      "historical_source_logged_rmse": 13.027026,
+      "reconstructed_source_rmse": 13.027025716136931,
+      "abs_difference": 2.8386306816230444e-07
+    },
+    {
+      "seed": 3,
+      "epoch": 0,
+      "historical_source_logged_rmse": 14.396061,
+      "reconstructed_source_rmse": 14.396060660887228,
+      "abs_difference": 3.3911277164122566e-07
+    },
+    {
+      "seed": 3,
+      "epoch": 1,
+      "historical_source_logged_rmse": 12.995071,
+      "reconstructed_source_rmse": 12.995070663881725,
+      "abs_difference": 3.36118274546493e-07
+    },
+    {
+      "seed": 4,
+      "epoch": 0,
+      "historical_source_logged_rmse": 14.399357,
+      "reconstructed_source_rmse": 14.399357437785705,
+      "abs_difference": 4.3778570457675414e-07
+    },
+    {
+      "seed": 4,
+      "epoch": 1,
+      "historical_source_logged_rmse": 13.014906,
+      "reconstructed_source_rmse": 13.01490643310489,
+      "abs_difference": 4.3310489061809676e-07
+    }
+  ],
+  "all_close": true,
+  "target_query_used": false
+}

@@ -1,0 +1,38 @@
+{
+  "active_slot": 4,
+  "templates": [
+    "(c0*q+c1)*sin(theta)+(c2*q+c3)*u",
+    "c4*u"
+  ],
+  "constant_names": [
+    "c0",
+    "c1",
+    "c2",
+    "c3",
+    "c4"
+  ],
+  "initial_constants": [
+    0.08828139038169293,
+    -0.3823732634441879,
+    0.08828139038169293,
+    -0.24815777712186096,
+    1.00262405531832
+  ],
+  "human_assisted": true,
+  "physical_parameter_labels": false,
+  "decoder": false,
+  "provenance": "round_01/intermediate_observed_candidate_PROVENANCE.md",
+  "emitted_normalized_expression": "-u**2 + u + (0.6577586*q - 2.8489504)*(u + sin(theta))",
+  "collected_stored_expression": "0.0882813903816929*q*u + 0.0882813903816929*q*sin(theta) - 0.134215486322327*u**2 - 0.248157777121861*u - 0.382373263444188*sin(theta) - 6.23060227371127e-5",
+  "removed_terms": [
+    "-0.134215486322327*u**2",
+    "-6.23060227371127e-5",
+    "-8.19166350819764e-5"
+  ],
+  "missing_state_factors_added": false,
+  "coordinate_change": false,
+  "number_of_latent_slots": 6,
+  "initial_active_dimensions": 1,
+  "coefficient_tie_relaxed": "A(q) and B(q) originally share a slope; existing numeric coefficients train independently after collection.",
+  "warning": "Human interpretability selection is not the minimum-error automatic winner; pruning is approximate."
+}

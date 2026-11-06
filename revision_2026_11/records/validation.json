@@ -1,0 +1,69 @@
+{
+  "date": "2026-11-06",
+  "scope": "Packaging checks, saved-result recomputation and short entry-point tests; no full retraining or new symbolic search.",
+  "saved_evidence": {
+    "paired_controls": 20,
+    "control_variants": 40,
+    "fixed_budget_records": 320,
+    "fixed_budget_aggregate_rows": 64,
+    "trajectory_exports": 12,
+    "complete_trajectories": 11,
+    "online_forecast_windows": 810
+  },
+  "preflight": "66 Python files parsed; packaged datasets and three feedback models loaded; symbolic gradients finite.",
+  "isolation": "code/run.py check and verify.py passed with access to original-workspace files denied, except for the audit harness itself.",
+  "entrypoint_smoke_tests": [
+    {
+      "case": "test_wasserstein_v2",
+      "exit_code": 0
+    },
+    {
+      "case": "test_fhn_pysr44_v2",
+      "exit_code": 0,
+      "maximum_state_difference": 0.0
+    },
+    {
+      "case": "test_fhn_paper_no_symbol_v2",
+      "exit_code": 0,
+      "maximum_state_difference": 1.1920928955078125e-07
+    },
+    {
+      "case": "test_fhn_sindy_source_v2",
+      "exit_code": 0,
+      "maximum_state_difference": 0.0
+    },
+    {
+      "case": "test_lorenz_pysr44_v2",
+      "exit_code": 0,
+      "maximum_state_difference": 2.86102294921875e-06
+    },
+    {
+      "case": "test_lorenz_paper_no_symbol_v2",
+      "exit_code": 0,
+      "maximum_state_difference": 5.7220458984375e-06
+    },
+    {
+      "case": "test_lorenz_sindy_source_v2",
+      "exit_code": 0,
+      "maximum_state_difference": 0.0
+    },
+    {
+      "case": "test_budget_fhn_CAVIA_v2",
+      "exit_code": 0
+    },
+    {
+      "case": "test_budget_lorenz_DSSDL-symbol_v2",
+      "exit_code": 0
+    },
+    {
+      "case": "test_budget_fhn_DSSDL_v2",
+      "exit_code": 0
+    },
+    {
+      "case": "test_budget_lorenz_Reptile_v2",
+      "exit_code": 0
+    }
+  ],
+  "smoke_scope": "Two online windows per system/method and two adaptation updates per neural baseline; these are installation checks, not new paper results.",
+  "security_scan": "No credential-pattern matches, forbidden correspondence files or files over 100 MB in the proposed publication set."
+}

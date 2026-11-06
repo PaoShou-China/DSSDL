@@ -1,0 +1,74 @@
+[
+  {
+    "variant": "automatic_final_pareto",
+    "stored_equations": [
+      "0.0902597132285354*q*sin(theta + 0.70708853*u) - 0.134215486322327*u**2 - 0.38226215986461*sin(theta + 0.70708853*u) - 6.23060227371127e-5",
+      "-8.04766088374342e-6*q*theta + 0.000721525806930139*q - 0.0111828693285621*theta*u + 1.0026178951432*u - 8.19166350819764e-5"
+    ],
+    "val_data_nrmse": 0.04427054175071703,
+    "val_data_per_output_nrmse": [
+      0.06228094133618625,
+      0.006391093809551306
+    ],
+    "val_teacher_nrmse": 0.027188996072264122,
+    "val_teacher_per_output_nrmse": [
+      0.03833202419121046,
+      0.003023067356120776
+    ],
+    "search_train_teacher_mse_output0": 0.0016040642151539809
+  },
+  {
+    "variant": "intermediate_separated_unpruned",
+    "stored_equations": [
+      "0.0882813903816929*q*u + 0.0882813903816929*q*sin(theta) - 0.134215486322327*u**2 - 0.248157777121861*u - 0.382373263444188*sin(theta) - 6.23060227371127e-5",
+      "1.00262405531832*u - 8.19166350819764e-5"
+    ],
+    "val_data_nrmse": 0.047170808361028216,
+    "val_data_per_output_nrmse": [
+      0.06665473786774063,
+      0.002704855384024473
+    ],
+    "val_teacher_nrmse": 0.030803128182896662,
+    "val_teacher_per_output_nrmse": [
+      0.043096737674216574,
+      0.0063511112054254444
+    ],
+    "search_train_teacher_mse_output0": 0.0018175566313107302
+  },
+  {
+    "variant": "drop_quadratic",
+    "stored_equations": [
+      "0.0882813903816929*q*u + 0.0882813903816929*q*sin(theta) - 0.248157777121861*u - 0.382373263444188*sin(theta) - 6.23060227371127e-5",
+      "1.00262405531832*u - 8.19166350819764e-5"
+    ],
+    "val_data_nrmse": 0.050461432019959174,
+    "val_data_per_output_nrmse": [
+      0.07131196253337464,
+      0.002704855384024473
+    ],
+    "val_teacher_nrmse": 0.03354499030579608,
+    "val_teacher_per_output_nrmse": [
+      0.047012723125641566,
+      0.0063511112054254444
+    ],
+    "search_train_teacher_mse_output0": 0.002061171935269008
+  },
+  {
+    "variant": "drop_quadratic_and_tiny_offsets",
+    "stored_equations": [
+      "0.0882813903816929*q*u + 0.0882813903816929*q*sin(theta) - 0.248157777121861*u - 0.382373263444188*sin(theta)",
+      "1.00262405531832*u"
+    ],
+    "val_data_nrmse": 0.05053719698331698,
+    "val_data_per_output_nrmse": [
+      0.07142221136241787,
+      0.002623791524355442
+    ],
+    "val_teacher_nrmse": 0.033610251802644105,
+    "val_teacher_per_output_nrmse": [
+      0.047097487666509535,
+      0.006412854900686944
+    ],
+    "search_train_teacher_mse_output0": 0.0020683589212472527
+  }
+]

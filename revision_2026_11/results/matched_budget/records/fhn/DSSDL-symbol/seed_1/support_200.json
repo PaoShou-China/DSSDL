@@ -1,0 +1,135 @@
+{
+  "method": "DSSDL-symbol",
+  "system": "fhn",
+  "seed": 1,
+  "support": 200,
+  "budget": 10000,
+  "fixed_budget_final": {
+    "step": 10000,
+    "support_mse": 8.192573659471236e-06,
+    "support_objective": 0.0002640159712958848,
+    "query_rmse": 0.004876467399299145,
+    "raw_query_rmse": 0.002159377560019493,
+    "compute_seconds": 23.48047849885188,
+    "gradient_evaluations": 10105
+  },
+  "milestones": [
+    {
+      "step": 0,
+      "support_mse": 0.4916459023952484,
+      "support_objective": 0.49170546039342883,
+      "query_rmse": 1.1369383335113525,
+      "raw_query_rmse": 0.3829381763935089,
+      "compute_seconds": 0.0,
+      "gradient_evaluations": 0
+    },
+    {
+      "step": 5,
+      "support_mse": 8.23862683319021e-06,
+      "support_objective": 0.00026401922833465505,
+      "query_rmse": 0.004928569309413433,
+      "raw_query_rmse": 0.0021687212865799665,
+      "compute_seconds": 0.16201119998004287,
+      "gradient_evaluations": 100
+    },
+    {
+      "step": 20,
+      "support_mse": 8.192573659471236e-06,
+      "support_objective": 0.0002640159712958848,
+      "query_rmse": 0.004876467399299145,
+      "raw_query_rmse": 0.002159377560019493,
+      "compute_seconds": 0.20234289998188615,
+      "gradient_evaluations": 125
+    },
+    {
+      "step": 100,
+      "support_mse": 8.192573659471236e-06,
+      "support_objective": 0.0002640159712958848,
+      "query_rmse": 0.004876467399299145,
+      "raw_query_rmse": 0.002159377560019493,
+      "compute_seconds": 0.3922177997883409,
+      "gradient_evaluations": 205
+    },
+    {
+      "step": 200,
+      "support_mse": 8.192573659471236e-06,
+      "support_objective": 0.0002640159712958848,
+      "query_rmse": 0.004876467399299145,
+      "raw_query_rmse": 0.002159377560019493,
+      "compute_seconds": 0.6182248002733104,
+      "gradient_evaluations": 305
+    },
+    {
+      "step": 1000,
+      "support_mse": 8.192573659471236e-06,
+      "support_objective": 0.0002640159712958848,
+      "query_rmse": 0.004876467399299145,
+      "raw_query_rmse": 0.002159377560019493,
+      "compute_seconds": 2.45558579970384,
+      "gradient_evaluations": 1105
+    },
+    {
+      "step": 2000,
+      "support_mse": 8.192573659471236e-06,
+      "support_objective": 0.0002640159712958848,
+      "query_rmse": 0.004876467399299145,
+      "raw_query_rmse": 0.002159377560019493,
+      "compute_seconds": 4.928583198168781,
+      "gradient_evaluations": 2105
+    },
+    {
+      "step": 5000,
+      "support_mse": 8.192573659471236e-06,
+      "support_objective": 0.0002640159712958848,
+      "query_rmse": 0.004876467399299145,
+      "raw_query_rmse": 0.002159377560019493,
+      "compute_seconds": 11.938990697148256,
+      "gradient_evaluations": 5105
+    },
+    {
+      "step": 10000,
+      "support_mse": 8.192573659471236e-06,
+      "support_objective": 0.0002640159712958848,
+      "query_rmse": 0.004876467399299145,
+      "raw_query_rmse": 0.002159377560019493,
+      "compute_seconds": 23.48047849885188,
+      "gradient_evaluations": 10105
+    }
+  ],
+  "original_rule_counterfactual": {
+    "step": 10,
+    "support_mse": 8.209328370867297e-06,
+    "support_objective": 0.0002640167996461969,
+    "query_rmse": 0.004895668476819992,
+    "raw_query_rmse": 0.0021628120448440313,
+    "compute_seconds": 0.17703629995230585,
+    "gradient_evaluations": 110,
+    "rule": "original_query_rmse_stop",
+    "selected_step": 10,
+    "stopped_early": true,
+    "note": "Original logger evaluates before the update; final cap log is step199."
+  },
+  "historical": {
+    "method": "DSSDL-symbol",
+    "system": "fhn",
+    "seed": 1,
+    "support": 200,
+    "historical_rmse": 0.004895737,
+    "historical_initial_rmse": 1.051951,
+    "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed1_support200.log"
+  },
+  "support_stability": {
+    "stable": true,
+    "relative_range": 0.0,
+    "absolute_range": 0.0,
+    "tail_fraction": 0.2
+  },
+  "checkpoint_sha256": "fcc53c68ee2a44c27ea822da6bad92ec4641d69d0a563ff9d5c1624b4aca9367",
+  "dataset_sha256": "91e4b4a6bd245b18229ff11dea0535ce5cbb19b9de8708a01aee3825fcd502b7",
+  "device": "cpu",
+  "flush_denormal": true,
+  "torch_version": "2.8.0+cu129",
+  "query_selected_final": false,
+  "early_stopping": false,
+  "extension_wall_seconds": 23.88867489999393
+}

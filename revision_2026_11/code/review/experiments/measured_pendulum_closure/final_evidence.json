@@ -1,0 +1,85 @@
+{
+  "original_checkpoint_reused": true,
+  "source_only": true,
+  "target_accessed": false,
+  "physical_parameter_labels": false,
+  "decoder": false,
+  "source_preprocessing_unchanged": true,
+  "human_assisted": true,
+  "intermediate_candidate_provenance": "round_01/intermediate_observed_candidate_PROVENANCE.md",
+  "stored_equations": [
+    "u*(0.0851303786039352*q - 0.245524883270264) + (0.129870682954788*q - 0.366288900375366)*sin(theta)",
+    "1.0001003742218*u"
+  ],
+  "update_unit_equations": [
+    "0.425651893019676*omega*q - 1.22762441635132*omega + 12.9870682954788*q*sin(theta) - 36.6288900375366*sin(theta)",
+    "1.0001003742218*omega"
+  ],
+  "coefficient_functions": {
+    "A": "0.129870682954788*q - 0.366288900375366",
+    "B": "0.0851303786039352*q - 0.245524883270264",
+    "mu1_update": "12.9870682954788*q - 36.6288900375366",
+    "mu2_update": "0.425651893019676*q - 1.22762441635132"
+  },
+  "active_slots": [
+    4
+  ],
+  "all_source_velocity_coefficients_negative": true,
+  "continuous_physical_damping_validated": false,
+  "coefficient_functions_share_one_learned_q": true,
+  "second_search": [
+    "0.134215486322327*q*sin(theta + u*sin(cos(0.5554603 - u)) + 0.004869237) - 0.368124182387938*sin(theta + u*sin(cos(0.5554603 - u)) + 0.004869237) - 6.23060227371127e-5",
+    "1.00004305602322*u - 8.19166350819764e-5"
+  ],
+  "metrics": [
+    {
+      "stage": "original_neural",
+      "full_nrmse": 0.035882748663425446,
+      "symbol_nrmse": null
+    },
+    {
+      "stage": "round1_automatic",
+      "full_nrmse": null,
+      "symbol_nrmse": 0.04427054175071703
+    },
+    {
+      "stage": "human_separated_unpruned",
+      "full_nrmse": null,
+      "symbol_nrmse": 0.047170808361028216
+    },
+    {
+      "stage": "human_simplified",
+      "full_nrmse": null,
+      "symbol_nrmse": 0.05053719698331698
+    },
+    {
+      "stage": "feedback_final",
+      "full_nrmse": 0.03434784710407257,
+      "symbol_nrmse": 0.04849454015493393
+    },
+    {
+      "stage": "round2_automatic",
+      "full_nrmse": null,
+      "symbol_nrmse": 0.044029542581394354
+    }
+  ],
+  "protected_hashes": {
+    "workspace/NC实验/pendulum/DSSDL_mask.py": "aa11f643d0f7d4df9be2844571fd91575abf6406c58e5672aa12d03f8312b2f6",
+    "workspace/NC实验/pendulum/datasets/pendulum_real/train/features/1.00.txt": "1e13ca45b432418777676b810e9ea23255ed31e574d1084835ea7be0cd6da29b",
+    "workspace/NC实验/pendulum/datasets/pendulum_real/train/labels/1.00.txt": "75986ad699414a5e26cc95ab77a8ac673566dc19221ae5630ce469fa67b8600f",
+    "workspace/NC实验/pendulum/datasets/pendulum_real/train/features/2.00.txt": "f59957b1b9ddebc315840f1dec03ad0ec9d1bc7b83aaed4683e4e333f9600901",
+    "workspace/NC实验/pendulum/datasets/pendulum_real/train/labels/2.00.txt": "ad111aa4656455e5aca1d79be2def22d0c1e1f11af72c86590ebeb255fd4dbec",
+    "workspace/NC实验/pendulum/datasets/pendulum_real/train/features/3.00.txt": "7ec708dca643097de5f13a89108b1eaad9698aef40460f01a7153ebd9104f11e",
+    "workspace/NC实验/pendulum/datasets/pendulum_real/train/labels/3.00.txt": "9f4144a21d351fc5a5c75699b2e7378e124947ff880e33b3fda6efacb23de564",
+    "workspace/NC实验/pendulum/datasets/pendulum_real/train/features/4.00.txt": "b1c117b39459afecfaad0a1afd61c5ff13458e5d509ee4baf57c60915f3bef96",
+    "workspace/NC实验/pendulum/datasets/pendulum_real/train/labels/4.00.txt": "a72280e31ef4ce3f7c3a0f65aeba384e4d84b5a633e228b5fea363c3c6f56311",
+    "workspace/NC实验/pendulum/datasets/pendulum_real/train/features/5.00.txt": "9180022e54751c8cd2cc2e50821e42a9949f843eba0b9059800fb48656ababc3",
+    "workspace/NC实验/pendulum/datasets/pendulum_real/train/labels/5.00.txt": "eab5bafb06479deef0c5c865f876872237d2a8513fc9403a0c0a2c3c2ee9d16f",
+    "workspace/NC实验/pendulum/datasets/pendulum_real/train/features/6.00.txt": "35949a95eb36f6a14a5bc4692187af8a1d62ce10644fac19fd98687de45289d0",
+    "workspace/NC实验/pendulum/datasets/pendulum_real/train/labels/6.00.txt": "e023c0fd627ec86c15b1fe73fcf39091fc6af9709e3e3880b75f3cac74fc3f03",
+    "workspace/NC实验/pendulum/datasets/pendulum_real/train/features/7.00.txt": "a1ba39752ba0b928fe95e4a1270f094e1bbf212cf131c37f5455278c6c14f27c",
+    "workspace/NC实验/pendulum/datasets/pendulum_real/train/labels/7.00.txt": "691ab3c3ea91c148e4e8ebe0767d4512d282f5248da35abcdbdf246e27d9759e",
+    "workspace/NC实验/pendulum/model/meta_train.pt": "fe0438c88f8af02742ecae7b658699c8e6b265b34bdc9bc93074808f7ff61b96",
+    "workspace/codex_runs/2026-07-07_review_response_experiments/58_original_pendulum_pysr_closure/feedback/model.pt": "a789a60c2f0aca92f971fbcf61ae5eb494bbbb545aa37e5540f6f55f3f2e3968"
+  }
+}

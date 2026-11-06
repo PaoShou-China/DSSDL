@@ -1,0 +1,29 @@
+{
+  "round": 2,
+  "active_slot": 4,
+  "equations": [
+    {
+      "index": 14,
+      "complexity": 16,
+      "normalized_expression": "(q - 1*2.7427847)*sin(theta + u*sin(cos(0.5554603 - u)) + 0.004869237)",
+      "stored_expression": "0.134215486322327*q*sin(theta + u*sin(cos(0.5554603 - u)) + 0.004869237) - 0.368124182387938*sin(theta + u*sin(cos(0.5554603 - u)) + 0.004869237) - 6.23060227371127e-5",
+      "val_teacher_nrmse": 0.038323166938913404,
+      "val_data_nrmse": 0.06226303172772241
+    },
+    {
+      "index": 1,
+      "complexity": 3,
+      "normalized_expression": "u*8.766362",
+      "stored_expression": "1.00004305602322*u - 8.19166350819764e-5",
+      "val_teacher_nrmse": 0.0007383522683182246,
+      "val_data_nrmse": 0.0007184148705794398
+    }
+  ],
+  "physical_labels": false,
+  "decoder": false,
+  "observed_pairs_only": true,
+  "units": [
+    "alpha/100",
+    "omega/20"
+  ]
+}

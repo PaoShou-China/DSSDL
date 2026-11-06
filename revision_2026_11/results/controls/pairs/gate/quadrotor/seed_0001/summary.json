@@ -1,0 +1,385 @@
+{
+  "status": "completed",
+  "evidence_level": "replicate",
+  "manifest": {
+    "experiment": "stage_I_gate_ablation",
+    "system": "quadrotor",
+    "seed": 1,
+    "settings": {
+      "kind": "gated",
+      "system": "quadrotor",
+      "seed": 1,
+      "pmax": 8,
+      "fixed_dim": 3,
+      "l0_lambda": 0.0001,
+      "hidden_widths": [
+        128,
+        128
+      ],
+      "gate_init_logit": 0.5,
+      "model_lr": 0.005,
+      "gate_lr": 0.005,
+      "stabilize_lr": 0.001,
+      "weight_decay": 0.0001,
+      "temperature_start": 1.0,
+      "temperature_end": 1.0,
+      "warmup_epochs": 0,
+      "prune_epochs": 100,
+      "stabilize_epochs": 70,
+      "samples_per_task": 512,
+      "batch_size": 128,
+      "eval_every": 5,
+      "val_fraction": 0.2,
+      "one_se_multiplier": 1.0,
+      "grad_clip": 10.0,
+      "adapt_steps": 500,
+      "adapt_lr": 0.03,
+      "adapt_patience": 100,
+      "adapt_tolerance": 1e-10,
+      "thresholds": [
+        0.4,
+        0.45,
+        0.5,
+        0.55,
+        0.6
+      ],
+      "device": "cuda:0",
+      "output_root": "workspace/NCP_第二轮修改/work_2026-10-27/experiments/gate/quadrotor/seed_0001",
+      "aggregate": false,
+      "suite": null,
+      "systems": "pendulum,quadrotor,lorenz,fhn",
+      "seeds": "0-4",
+      "lambda_grid": "0,1e-5,3e-5,1e-4,3e-4,1e-3",
+      "pmax_grid": "6,8,12",
+      "fixed_dims": "1-8",
+      "device_obj": "cuda:0"
+    },
+    "source_tasks": 27,
+    "source_rows": [
+      2500,
+      2500,
+      2500,
+      2500,
+      2500,
+      2500,
+      2500,
+      2500,
+      2500,
+      2500,
+      2500,
+      2500,
+      2500,
+      2500,
+      2500,
+      2500,
+      2500,
+      2500,
+      2500,
+      2500,
+      2500,
+      2500,
+      2500,
+      2500,
+      2500,
+      2500,
+      2500
+    ],
+    "support_rows": 500,
+    "query_rows_original": 2500,
+    "query_rows_disjoint": 2500,
+    "removed_support_duplicates": 0,
+    "data_hash": "834b8b92f53bdc38301f7399c7a283d28ec4dd03a6dac8c0148134672d6bf8fc",
+    "physical_labels_used": false,
+    "decoder": false,
+    "symbolic_prior": false,
+    "source_code": "workspace/codex_runs/2026-07-07_review_response_experiments/scripts/dimension_discovery_claim_runner.py",
+    "protected_hashes": {
+      "workspace/compare2/DSSDL/datasets/quadrotor/query/features/0_019_0_024_0_029.txt": "f62eb110b2bcc8b49ea1bfd25db7be4ed6e17223306fb494f2f9bd0b81bfa804",
+      "workspace/compare2/DSSDL/datasets/quadrotor/query/labels/0_019_0_024_0_029.txt": "51e6c164e58386b1deb37120c24c9c78a0b9e06de3fe3b7a4c054335d2613912",
+      "workspace/compare2/DSSDL/datasets/quadrotor/support/features/0_019_0_024_0_029.txt": "e8d8f7cb40956ff7ef5dfe839b0038177277bf1ab20839e2672d45faca5b992c",
+      "workspace/compare2/DSSDL/datasets/quadrotor/support/labels/0_019_0_024_0_029.txt": "05d592aac27630bec38131679cdb40fad475b299e2418907e3eafbb68e30c876",
+      "workspace/compare2/DSSDL/datasets/quadrotor/train/features/0_018_0_023_0_028.txt": "52cd712274dd2d0567e511cf32d60375048dcff4ea03217723a2d62c09c4de0c",
+      "workspace/compare2/DSSDL/datasets/quadrotor/train/features/0_018_0_023_0_030.txt": "99b78f589af34ba26971d5a52e3bcb164470a35d6f3555970a2b0e08b8b99e1b",
+      "workspace/compare2/DSSDL/datasets/quadrotor/train/features/0_018_0_023_0_032.txt": "1cf5fd4348da1a453585deb3cb75b96eb8db0ba77c9528b53b3108c955dc026d",
+      "workspace/compare2/DSSDL/datasets/quadrotor/train/features/0_018_0_025_0_028.txt": "90e56fe7e51f21e78d6fa102ca6e32776f753342121cf8623c72977a308bc1aa",
+      "workspace/compare2/DSSDL/datasets/quadrotor/train/features/0_018_0_025_0_030.txt": "34d22c12daf54c7d7a305980291d4b3300b5979a9300913e78d5d008d0d4445b",
+      "workspace/compare2/DSSDL/datasets/quadrotor/train/features/0_018_0_025_0_032.txt": "3716e13b588060547be11d8abe23cf9afc9044db14c4679bec0d29e7dea6e940",
+      "workspace/compare2/DSSDL/datasets/quadrotor/train/features/0_018_0_027_0_028.txt": "b2e0f6b5e428d431596a70b09065784c490f07dfa11775f7cf17ade53debc4b0",
+      "workspace/compare2/DSSDL/datasets/quadrotor/train/features/0_018_0_027_0_030.txt": "bf6088ec00194b48c3f58b59c3608556c8a54bb717355790cf6042d56709a73f",
+      "workspace/compare2/DSSDL/datasets/quadrotor/train/features/0_018_0_027_0_032.txt": "c49c2b060d7ae0349167b957c961bdc2f00f7bf30bdb267c850edac9453063c7",
+      "workspace/compare2/DSSDL/datasets/quadrotor/train/features/0_020_0_023_0_028.txt": "2b43000e33faf3f703ed1f4fa150ef70131d813ba15afef1abf3c7ad0745e597",
+      "workspace/compare2/DSSDL/datasets/quadrotor/train/features/0_020_0_023_0_030.txt": "fc3bb59659f3c917d315693993ae8bf683a99305727460611c7732f8ff941091",
+      "workspace/compare2/DSSDL/datasets/quadrotor/train/features/0_020_0_023_0_032.txt": "03f7fd3e40a68b76baefd21534bbd99acf9435d654ab6f9e84273482be10ef35",
+      "workspace/compare2/DSSDL/datasets/quadrotor/train/features/0_020_0_025_0_028.txt": "774830313c170aed44f22b12f5415dca340ad2a787414410109a247c9d152a05",
+      "workspace/compare2/DSSDL/datasets/quadrotor/train/features/0_020_0_025_0_030.txt": "3d1ba09cdca4c55866cfb1c7ce5d5fd245631afc89e6457aaab443efaa51103b",
+      "workspace/compare2/DSSDL/datasets/quadrotor/train/features/0_020_0_025_0_032.txt": "21a0cfe7ddf59ef846f291766f462355d46672da7a227d52448b5dae17ef94db",
+      "workspace/compare2/DSSDL/datasets/quadrotor/train/features/0_020_0_027_0_028.txt": "85b7721c0cae5e4d890ae91a955aa9493c9613aa7c111adad4fb9fd3d03624eb",
+      "workspace/compare2/DSSDL/datasets/quadrotor/train/features/0_020_0_027_0_030.txt": "630c54876a30cac869ba509635606b10ebd0d4c6148a7778c25b352ac37d2386",
+      "workspace/compare2/DSSDL/datasets/quadrotor/train/features/0_020_0_027_0_032.txt": "84ac4cde38ec18a7e7e54c6f96c1dbbc0be55b4d82b9754742e994a67a2169e1",
+      "workspace/compare2/DSSDL/datasets/quadrotor/train/features/0_022_0_023_0_028.txt": "988cd1d44d3ff5c11ef24e07bb72f0212fa5bad9049a0df0db6c96cfb17f81d5",
+      "workspace/compare2/DSSDL/datasets/quadrotor/train/features/0_022_0_023_0_030.txt": "4f8b39f2e13f0b7afdfe7ba8c677be2280a35e91185f7e6f0fbe838c15612e89",
+      "workspace/compare2/DSSDL/datasets/quadrotor/train/features/0_022_0_023_0_032.txt": "21dc44fa04fe38fbe7400b9b0ac135fb5c2b1d214052d050fc9989ac794e79b5",
+      "workspace/compare2/DSSDL/datasets/quadrotor/train/features/0_022_0_025_0_028.txt": "60d4a6322fc1de3050614981f8ff4c020c84503c49a1867cff817c37b72629e0",
+      "workspace/compare2/DSSDL/datasets/quadrotor/train/features/0_022_0_025_0_030.txt": "be4c84250c28b872e318a072d5431cb8fa2ef320aa07da869cc98b0e4006f79a",
+      "workspace/compare2/DSSDL/datasets/quadrotor/train/features/0_022_0_025_0_032.txt": "bb66333d9386020235bb882cc03cd107cdfc268b0f12b6953378823639335597",
+      "workspace/compare2/DSSDL/datasets/quadrotor/train/features/0_022_0_027_0_028.txt": "40bea23a138ce03b287da9fee003a51f6b3d7fa79604e938eb57f95f327fc86a",
+      "workspace/compare2/DSSDL/datasets/quadrotor/train/features/0_022_0_027_0_030.txt": "a9a9090a8b8a73b67f84ffe3f7512ce8a56c0259f9b08fcc8c35f31748d7788d",
+      "workspace/compare2/DSSDL/datasets/quadrotor/train/features/0_022_0_027_0_032.txt": "137153e6818baf39ddcf0de91d7ec417de556417c965c73ba6f391e99063f5f7",
+      "workspace/compare2/DSSDL/datasets/quadrotor/train/labels/0_018_0_023_0_028.txt": "f42ec3399d0b4c550002a92ae558ee5b1a9464988d5480145515bb7092489549",
+      "workspace/compare2/DSSDL/datasets/quadrotor/train/labels/0_018_0_023_0_030.txt": "11c9efa99e8a37751cd56cd81b2a020ad3611c7ad8d08fdf6e92696879aa0efd",
+      "workspace/compare2/DSSDL/datasets/quadrotor/train/labels/0_018_0_023_0_032.txt": "babc1e9d9dbfc87c0587736d7af9d2a5630825dd453e75a0c6679dc9a70414a6",
+      "workspace/compare2/DSSDL/datasets/quadrotor/train/labels/0_018_0_025_0_028.txt": "74ca646a298f45013a0854b9975c2f6f5f0f34370af087c9b8b848ce93de4178",
+      "workspace/compare2/DSSDL/datasets/quadrotor/train/labels/0_018_0_025_0_030.txt": "1fb7ade4496001a6c41aa28b49c3f9be3984e357aea0a07eda4fa49c0013893b",
+      "workspace/compare2/DSSDL/datasets/quadrotor/train/labels/0_018_0_025_0_032.txt": "75fbbb35e9249f474352d29f602c02efeb305c806ca50563e6929133222bb77f",
+      "workspace/compare2/DSSDL/datasets/quadrotor/train/labels/0_018_0_027_0_028.txt": "230a1c4d2b331a9bfd18c06e7906633321a318546128416a37a23b217b26d4b0",
+      "workspace/compare2/DSSDL/datasets/quadrotor/train/labels/0_018_0_027_0_030.txt": "9e34112ed73d6d60c301e417f741c59c1ba5e80315da924d2da629181bd6d860",
+      "workspace/compare2/DSSDL/datasets/quadrotor/train/labels/0_018_0_027_0_032.txt": "0b6f43e1cff591204c05ed851e66c448c24edd6f4f0cbb24a0fbce4cf2aa5d0f",
+      "workspace/compare2/DSSDL/datasets/quadrotor/train/labels/0_020_0_023_0_028.txt": "883bb6fdc70edcee5e92e1bf97629db562994cb94bdf468a5efe28ca01a17320",
+      "workspace/compare2/DSSDL/datasets/quadrotor/train/labels/0_020_0_023_0_030.txt": "857e127c27fce16a0a10fe12bb8fc56d3195a312d7a612ece06ae42c8228054f",
+      "workspace/compare2/DSSDL/datasets/quadrotor/train/labels/0_020_0_023_0_032.txt": "8a3d837b999b0c6bf4a79e578c1801d0a30b4a08122e8a8ead90387a24252330",
+      "workspace/compare2/DSSDL/datasets/quadrotor/train/labels/0_020_0_025_0_028.txt": "1d69885d75790ffed1fa9396b3fcf0d96e4f5e5541b8e01a8a5850e1731534f6",
+      "workspace/compare2/DSSDL/datasets/quadrotor/train/labels/0_020_0_025_0_030.txt": "806ef696f4fdf4ed21176dcabeb339f6cc775a7442da34235f1b1cb97153ca9a",
+      "workspace/compare2/DSSDL/datasets/quadrotor/train/labels/0_020_0_025_0_032.txt": "f745688a466159ab578842771e82ecc57c4dea8adc20e5bb34694dac9d2044af",
+      "workspace/compare2/DSSDL/datasets/quadrotor/train/labels/0_020_0_027_0_028.txt": "68225e3149f5b6a728e42cd021e04ab1bc8a64c51417537aaa4de509b5a24605",
+      "workspace/compare2/DSSDL/datasets/quadrotor/train/labels/0_020_0_027_0_030.txt": "f1c0dc04b7f7a76bee550b5b39d51d0e3623489a690e3f0e567213d12362f445",
+      "workspace/compare2/DSSDL/datasets/quadrotor/train/labels/0_020_0_027_0_032.txt": "ea197aac289351353532e4efbec355c670f79f0d61bb94f49ff2ab569e0c1f00",
+      "workspace/compare2/DSSDL/datasets/quadrotor/train/labels/0_022_0_023_0_028.txt": "85f49e0bd025bf4c49ebffb5fd3aaf3fd7b99ee3cb4cfe288a35ac5d06dbe58e",
+      "workspace/compare2/DSSDL/datasets/quadrotor/train/labels/0_022_0_023_0_030.txt": "1bd26744931706f8b6959ef16a5e4e558c0165416bb008958a33c2e589cf057e",
+      "workspace/compare2/DSSDL/datasets/quadrotor/train/labels/0_022_0_023_0_032.txt": "0dcab84bb52f8a6a1d57aca5815dacf031b380ba5058ecb3f88c27d12719e44f",
+      "workspace/compare2/DSSDL/datasets/quadrotor/train/labels/0_022_0_025_0_028.txt": "8e6bce488767ddc94e4e627862bffed503fa48d61c8098cbdc24fc58c50fdda8",
+      "workspace/compare2/DSSDL/datasets/quadrotor/train/labels/0_022_0_025_0_030.txt": "da28099299f00ce49e92bad34dd92f441cfcfdb3c9a1972bbd303c8e90b07614",
+      "workspace/compare2/DSSDL/datasets/quadrotor/train/labels/0_022_0_025_0_032.txt": "4b0436ca1c9fe40ae3fa54174cc2c941d8c1c69d480f6f8e03920d6a74af3162",
+      "workspace/compare2/DSSDL/datasets/quadrotor/train/labels/0_022_0_027_0_028.txt": "34c333d464d3463fad2d34eb469403c1ce4a6a6b749937db27323196df4319d3",
+      "workspace/compare2/DSSDL/datasets/quadrotor/train/labels/0_022_0_027_0_030.txt": "747af80414e04ffe6264e05c3600f35e3349744d9f5ceb94fefef35b309ce14b",
+      "workspace/compare2/DSSDL/datasets/quadrotor/train/labels/0_022_0_027_0_032.txt": "3ba1ab3e245553150105715da10431ac4c415654b8bcaa5b9f78a330b259f42c",
+      "workspace/codex_runs/2026-07-07_review_response_experiments/scripts/dimension_discovery_claim_runner.py": "f6853a934794235b8893dff53d924550fc3076c21445d23932a6469873e5ad46"
+    },
+    "torch_version": "2.8.0+cu129",
+    "device": "cuda:0"
+  },
+  "results": {
+    "gate_on": {
+      "variant": "gate_on",
+      "initialization_hash": "66181446af10c0d498222e7e471cf4394eeb1b52f3a8cf72271310d55c30547d",
+      "active_dim": 3,
+      "pmax": 8,
+      "source_val_nrmse": 0.0028416511292258897,
+      "participation_ratio": 2.55368116381933,
+      "wall_seconds": 34.61033509997651,
+      "query_nrmse_before": 0.04063257575035095,
+      "query_nrmse_after": 0.002294879173859954,
+      "support_nrmse_after": 0.002718732226639986,
+      "steps": 500,
+      "selected_iteration": "final",
+      "query_used_for_stopping": false,
+      "latent": [
+        0.03480172157287598,
+        0.20335270464420319,
+        -0.27097392082214355,
+        0.007902966812252998,
+        0.04428444057703018,
+        -0.07847357541322708,
+        -0.09034870564937592,
+        -0.010730231180787086
+      ],
+      "trace": [
+        {
+          "step": 1,
+          "support_mse_pre_update": 0.0016513016307726502
+        },
+        {
+          "step": 26,
+          "support_mse_pre_update": 5.2303799748187885e-05
+        },
+        {
+          "step": 51,
+          "support_mse_pre_update": 7.712607839494012e-06
+        },
+        {
+          "step": 76,
+          "support_mse_pre_update": 7.76716842665337e-06
+        },
+        {
+          "step": 101,
+          "support_mse_pre_update": 7.415455456794007e-06
+        },
+        {
+          "step": 126,
+          "support_mse_pre_update": 7.392246061499463e-06
+        },
+        {
+          "step": 151,
+          "support_mse_pre_update": 7.391527105937712e-06
+        },
+        {
+          "step": 176,
+          "support_mse_pre_update": 7.391506187559571e-06
+        },
+        {
+          "step": 201,
+          "support_mse_pre_update": 7.391535291390028e-06
+        },
+        {
+          "step": 226,
+          "support_mse_pre_update": 7.39152619644301e-06
+        },
+        {
+          "step": 251,
+          "support_mse_pre_update": 7.391518465738045e-06
+        },
+        {
+          "step": 276,
+          "support_mse_pre_update": 7.391544386337046e-06
+        },
+        {
+          "step": 301,
+          "support_mse_pre_update": 7.391507551801624e-06
+        },
+        {
+          "step": 326,
+          "support_mse_pre_update": 7.391535746137379e-06
+        },
+        {
+          "step": 351,
+          "support_mse_pre_update": 7.391518920485396e-06
+        },
+        {
+          "step": 376,
+          "support_mse_pre_update": 7.3915048233175185e-06
+        },
+        {
+          "step": 401,
+          "support_mse_pre_update": 7.391522103716852e-06
+        },
+        {
+          "step": 426,
+          "support_mse_pre_update": 7.391522103716852e-06
+        },
+        {
+          "step": 451,
+          "support_mse_pre_update": 7.391523467958905e-06
+        },
+        {
+          "step": 476,
+          "support_mse_pre_update": 7.391519829980098e-06
+        },
+        {
+          "step": 500,
+          "support_mse_pre_update": 7.391520284727449e-06
+        }
+      ]
+    },
+    "gate_off": {
+      "variant": "gate_off",
+      "initialization_hash": "66181446af10c0d498222e7e471cf4394eeb1b52f3a8cf72271310d55c30547d",
+      "active_dim": 8,
+      "pmax": 8,
+      "source_val_nrmse": 0.0030481445051177784,
+      "participation_ratio": 5.057871328265562,
+      "wall_seconds": 31.208714300068095,
+      "query_nrmse_before": 0.038618337363004684,
+      "query_nrmse_after": 0.0024533607065677643,
+      "support_nrmse_after": 0.002306272741407156,
+      "steps": 500,
+      "selected_iteration": "final",
+      "query_used_for_stopping": false,
+      "latent": [
+        -0.09943181276321411,
+        0.029914675280451775,
+        -0.07360751181840897,
+        -0.13728775084018707,
+        -0.006271784659475088,
+        -0.13517674803733826,
+        -0.10911975800991058,
+        -0.09899744391441345
+      ],
+      "trace": [
+        {
+          "step": 1,
+          "support_mse_pre_update": 0.0014935636427253485
+        },
+        {
+          "step": 26,
+          "support_mse_pre_update": 3.780037513934076e-05
+        },
+        {
+          "step": 51,
+          "support_mse_pre_update": 6.236829904082697e-06
+        },
+        {
+          "step": 76,
+          "support_mse_pre_update": 5.8852929214481264e-06
+        },
+        {
+          "step": 101,
+          "support_mse_pre_update": 5.7049492170335725e-06
+        },
+        {
+          "step": 126,
+          "support_mse_pre_update": 5.586201950791292e-06
+        },
+        {
+          "step": 151,
+          "support_mse_pre_update": 5.515112206921913e-06
+        },
+        {
+          "step": 176,
+          "support_mse_pre_update": 5.461106866277987e-06
+        },
+        {
+          "step": 201,
+          "support_mse_pre_update": 5.421499281510478e-06
+        },
+        {
+          "step": 226,
+          "support_mse_pre_update": 5.393025730882073e-06
+        },
+        {
+          "step": 251,
+          "support_mse_pre_update": 5.3728640523331705e-06
+        },
+        {
+          "step": 276,
+          "support_mse_pre_update": 5.358578619052423e-06
+        },
+        {
+          "step": 301,
+          "support_mse_pre_update": 5.348388185666408e-06
+        },
+        {
+          "step": 326,
+          "support_mse_pre_update": 5.340948519005906e-06
+        },
+        {
+          "step": 351,
+          "support_mse_pre_update": 5.3354065130406525e-06
+        },
+        {
+          "step": 376,
+          "support_mse_pre_update": 5.331120064511197e-06
+        },
+        {
+          "step": 401,
+          "support_mse_pre_update": 5.327690359990811e-06
+        },
+        {
+          "step": 426,
+          "support_mse_pre_update": 5.324900030245772e-06
+        },
+        {
+          "step": 451,
+          "support_mse_pre_update": 5.322553079167847e-06
+        },
+        {
+          "step": 476,
+          "support_mse_pre_update": 5.320593572832877e-06
+        },
+        {
+          "step": 500,
+          "support_mse_pre_update": 5.3189646678220015e-06
+        }
+      ]
+    }
+  },
+  "protected_inputs_unchanged": true
+}

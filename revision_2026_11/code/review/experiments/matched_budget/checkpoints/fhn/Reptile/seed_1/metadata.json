@@ -1,0 +1,26 @@
+{
+  "method": "Reptile",
+  "system": "fhn",
+  "seed": 1,
+  "config": {
+    "split_ratio": 0.8,
+    "batch_size": 4,
+    "hidden_size": 256,
+    "activation": "ReLU",
+    "num_layers": 3,
+    "n_inner": 5,
+    "inner_lr": 0.01,
+    "outer_lr": 0.01,
+    "result_path": "./results",
+    "save_path": "reptile_model.pth",
+    "convergence_threshold": 1e-10,
+    "patience": 50,
+    "max_epochs": 2000
+  },
+  "device": "cuda:0",
+  "torch_version": "2.8.0+cu129",
+  "source_training_seconds": 85.35318320000079,
+  "checkpoint_sha256": "6ca6f0b309d0270fedfa77a04aab65ae6e4b47e1e6ffe6b1f9b133bac24cc168",
+  "original_modules_read_only": true,
+  "source_data_sha256": "7f3c3f26f2fb6d9363c1b65b7dacd67a33f8c06f46bbc93f6a34975f578ad4d1"
+}

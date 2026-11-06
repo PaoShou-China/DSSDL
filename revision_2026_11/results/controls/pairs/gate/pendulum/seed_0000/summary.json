@@ -1,0 +1,325 @@
+{
+  "status": "completed",
+  "evidence_level": "pilot",
+  "manifest": {
+    "experiment": "stage_I_gate_ablation",
+    "system": "pendulum",
+    "seed": 0,
+    "settings": {
+      "kind": "gated",
+      "system": "pendulum",
+      "seed": 0,
+      "pmax": 8,
+      "fixed_dim": 3,
+      "l0_lambda": 0.0001,
+      "hidden_widths": [
+        128,
+        128
+      ],
+      "gate_init_logit": 0.5,
+      "model_lr": 0.005,
+      "gate_lr": 0.005,
+      "stabilize_lr": 0.001,
+      "weight_decay": 0.0001,
+      "temperature_start": 1.0,
+      "temperature_end": 1.0,
+      "warmup_epochs": 0,
+      "prune_epochs": 100,
+      "stabilize_epochs": 70,
+      "samples_per_task": 512,
+      "batch_size": 128,
+      "eval_every": 5,
+      "val_fraction": 0.2,
+      "one_se_multiplier": 1.0,
+      "grad_clip": 10.0,
+      "adapt_steps": 500,
+      "adapt_lr": 0.03,
+      "adapt_patience": 100,
+      "adapt_tolerance": 1e-10,
+      "thresholds": [
+        0.4,
+        0.45,
+        0.5,
+        0.55,
+        0.6
+      ],
+      "device": "cuda:0",
+      "output_root": "workspace/NCP_第二轮修改/work_2026-10-27/experiments/gate/pendulum/seed_0000",
+      "aggregate": false,
+      "suite": null,
+      "systems": "pendulum,quadrotor,lorenz,fhn",
+      "seeds": "0-4",
+      "lambda_grid": "0,1e-5,3e-5,1e-4,3e-4,1e-3",
+      "pmax_grid": "6,8,12",
+      "fixed_dims": "1-8",
+      "device_obj": "cuda:0"
+    },
+    "source_tasks": 7,
+    "source_rows": [
+      6230,
+      5545,
+      4849,
+      4313,
+      3714,
+      3390,
+      2731
+    ],
+    "support_rows": 50,
+    "query_rows_original": 2168,
+    "query_rows_disjoint": 2118,
+    "removed_support_duplicates": 50,
+    "data_hash": "0f8026d8cc68eb5fb594785f3b53cfaf43509ad4ea6165df346e7b6d28a070d1",
+    "physical_labels_used": false,
+    "decoder": false,
+    "symbolic_prior": false,
+    "source_code": "workspace/codex_runs/2026-07-07_review_response_experiments/scripts/dimension_discovery_claim_runner.py",
+    "protected_hashes": {
+      "workspace/compare2/DSSDL/datasets/pendulum_real/query/features/8.00.txt": "3575e54e710080c01d4add69cfa44d7356c11814a10d3bd6124c3b34a39b64c2",
+      "workspace/compare2/DSSDL/datasets/pendulum_real/query/labels/8.00.txt": "2059ff5051f51ac5886c5386112485884a92aee5f05fb14ca68779ea661af70a",
+      "workspace/compare2/DSSDL/datasets/pendulum_real/support/features/8.00.txt": "e0eb1bb14b1faf4d4560fd85872e7e0af21b88697f17608a0e907fe7aaf352f0",
+      "workspace/compare2/DSSDL/datasets/pendulum_real/support/labels/8.00.txt": "36b09dd7aaae77c9d481f5e7108990c80cd12ce76d93932deaea568736e02988",
+      "workspace/compare2/DSSDL/datasets/pendulum_real/train/features/1.00.txt": "1e13ca45b432418777676b810e9ea23255ed31e574d1084835ea7be0cd6da29b",
+      "workspace/compare2/DSSDL/datasets/pendulum_real/train/features/2.00.txt": "f59957b1b9ddebc315840f1dec03ad0ec9d1bc7b83aaed4683e4e333f9600901",
+      "workspace/compare2/DSSDL/datasets/pendulum_real/train/features/3.00.txt": "7ec708dca643097de5f13a89108b1eaad9698aef40460f01a7153ebd9104f11e",
+      "workspace/compare2/DSSDL/datasets/pendulum_real/train/features/4.00.txt": "b1c117b39459afecfaad0a1afd61c5ff13458e5d509ee4baf57c60915f3bef96",
+      "workspace/compare2/DSSDL/datasets/pendulum_real/train/features/5.00.txt": "9180022e54751c8cd2cc2e50821e42a9949f843eba0b9059800fb48656ababc3",
+      "workspace/compare2/DSSDL/datasets/pendulum_real/train/features/6.00.txt": "35949a95eb36f6a14a5bc4692187af8a1d62ce10644fac19fd98687de45289d0",
+      "workspace/compare2/DSSDL/datasets/pendulum_real/train/features/7.00.txt": "a1ba39752ba0b928fe95e4a1270f094e1bbf212cf131c37f5455278c6c14f27c",
+      "workspace/compare2/DSSDL/datasets/pendulum_real/train/labels/1.00.txt": "75986ad699414a5e26cc95ab77a8ac673566dc19221ae5630ce469fa67b8600f",
+      "workspace/compare2/DSSDL/datasets/pendulum_real/train/labels/2.00.txt": "ad111aa4656455e5aca1d79be2def22d0c1e1f11af72c86590ebeb255fd4dbec",
+      "workspace/compare2/DSSDL/datasets/pendulum_real/train/labels/3.00.txt": "9f4144a21d351fc5a5c75699b2e7378e124947ff880e33b3fda6efacb23de564",
+      "workspace/compare2/DSSDL/datasets/pendulum_real/train/labels/4.00.txt": "a72280e31ef4ce3f7c3a0f65aeba384e4d84b5a633e228b5fea363c3c6f56311",
+      "workspace/compare2/DSSDL/datasets/pendulum_real/train/labels/5.00.txt": "eab5bafb06479deef0c5c865f876872237d2a8513fc9403a0c0a2c3c2ee9d16f",
+      "workspace/compare2/DSSDL/datasets/pendulum_real/train/labels/6.00.txt": "e023c0fd627ec86c15b1fe73fcf39091fc6af9709e3e3880b75f3cac74fc3f03",
+      "workspace/compare2/DSSDL/datasets/pendulum_real/train/labels/7.00.txt": "691ab3c3ea91c148e4e8ebe0767d4512d282f5248da35abcdbdf246e27d9759e",
+      "workspace/codex_runs/2026-07-07_review_response_experiments/scripts/dimension_discovery_claim_runner.py": "f6853a934794235b8893dff53d924550fc3076c21445d23932a6469873e5ad46"
+    },
+    "torch_version": "2.8.0+cu129",
+    "device": "cuda:0"
+  },
+  "results": {
+    "gate_on": {
+      "variant": "gate_on",
+      "initialization_hash": "85881a97451f73dc669ededd0e74f99e047fe7a9b6d74789ea7239a6fe074574",
+      "active_dim": 1,
+      "pmax": 8,
+      "source_val_nrmse": 0.034856038966349194,
+      "participation_ratio": 0.999999953168875,
+      "wall_seconds": 16.98987490008585,
+      "query_nrmse_before": 0.17034053802490234,
+      "query_nrmse_after": 0.035884253680706024,
+      "support_nrmse_after": 0.23505418002605438,
+      "steps": 500,
+      "selected_iteration": "final",
+      "query_used_for_stopping": false,
+      "latent": [
+        -0.43391862511634827,
+        0.5553323030471802,
+        -0.020420482382178307,
+        0.05207912623882294,
+        0.29677051305770874,
+        0.3800766170024872,
+        0.3252788484096527,
+        -0.015092458575963974
+      ],
+      "trace": [
+        {
+          "step": 1,
+          "support_mse_pre_update": 0.13229286670684814
+        },
+        {
+          "step": 26,
+          "support_mse_pre_update": 0.06698710471391678
+        },
+        {
+          "step": 51,
+          "support_mse_pre_update": 0.055257804691791534
+        },
+        {
+          "step": 76,
+          "support_mse_pre_update": 0.05531911179423332
+        },
+        {
+          "step": 101,
+          "support_mse_pre_update": 0.05525107681751251
+        },
+        {
+          "step": 126,
+          "support_mse_pre_update": 0.0552506297826767
+        },
+        {
+          "step": 151,
+          "support_mse_pre_update": 0.05525049567222595
+        },
+        {
+          "step": 176,
+          "support_mse_pre_update": 0.05525045096874237
+        },
+        {
+          "step": 201,
+          "support_mse_pre_update": 0.05525047332048416
+        },
+        {
+          "step": 226,
+          "support_mse_pre_update": 0.05525044724345207
+        },
+        {
+          "step": 251,
+          "support_mse_pre_update": 0.05525045841932297
+        },
+        {
+          "step": 276,
+          "support_mse_pre_update": 0.055250462144613266
+        },
+        {
+          "step": 301,
+          "support_mse_pre_update": 0.055250462144613266
+        },
+        {
+          "step": 326,
+          "support_mse_pre_update": 0.055250465869903564
+        },
+        {
+          "step": 351,
+          "support_mse_pre_update": 0.055250465869903564
+        },
+        {
+          "step": 376,
+          "support_mse_pre_update": 0.055250465869903564
+        },
+        {
+          "step": 401,
+          "support_mse_pre_update": 0.055250465869903564
+        },
+        {
+          "step": 426,
+          "support_mse_pre_update": 0.055250465869903564
+        },
+        {
+          "step": 451,
+          "support_mse_pre_update": 0.055250465869903564
+        },
+        {
+          "step": 476,
+          "support_mse_pre_update": 0.055250465869903564
+        },
+        {
+          "step": 500,
+          "support_mse_pre_update": 0.055250465869903564
+        }
+      ]
+    },
+    "gate_off": {
+      "variant": "gate_off",
+      "initialization_hash": "85881a97451f73dc669ededd0e74f99e047fe7a9b6d74789ea7239a6fe074574",
+      "active_dim": 8,
+      "pmax": 8,
+      "source_val_nrmse": 0.03152627657566752,
+      "participation_ratio": 2.362606104848014,
+      "wall_seconds": 9.072753899963573,
+      "query_nrmse_before": 0.16524553298950195,
+      "query_nrmse_after": 0.04302455857396126,
+      "support_nrmse_after": 0.2300439327955246,
+      "steps": 500,
+      "selected_iteration": "final",
+      "query_used_for_stopping": false,
+      "latent": [
+        0.7125273942947388,
+        -0.42984339594841003,
+        -0.13177329301834106,
+        -1.115464448928833,
+        0.1100676953792572,
+        1.007733702659607,
+        0.2883511781692505,
+        0.9719392657279968
+      ],
+      "trace": [
+        {
+          "step": 1,
+          "support_mse_pre_update": 0.12763738632202148
+        },
+        {
+          "step": 26,
+          "support_mse_pre_update": 0.05429026111960411
+        },
+        {
+          "step": 51,
+          "support_mse_pre_update": 0.05401968955993652
+        },
+        {
+          "step": 76,
+          "support_mse_pre_update": 0.05366305634379387
+        },
+        {
+          "step": 101,
+          "support_mse_pre_update": 0.053477007895708084
+        },
+        {
+          "step": 126,
+          "support_mse_pre_update": 0.05335712432861328
+        },
+        {
+          "step": 151,
+          "support_mse_pre_update": 0.05327170342206955
+        },
+        {
+          "step": 176,
+          "support_mse_pre_update": 0.053208667784929276
+        },
+        {
+          "step": 201,
+          "support_mse_pre_update": 0.053160566836595535
+        },
+        {
+          "step": 226,
+          "support_mse_pre_update": 0.053122494369745255
+        },
+        {
+          "step": 251,
+          "support_mse_pre_update": 0.053091272711753845
+        },
+        {
+          "step": 276,
+          "support_mse_pre_update": 0.05306468531489372
+        },
+        {
+          "step": 301,
+          "support_mse_pre_update": 0.05304155871272087
+        },
+        {
+          "step": 326,
+          "support_mse_pre_update": 0.0530209057033062
+        },
+        {
+          "step": 351,
+          "support_mse_pre_update": 0.053002309054136276
+        },
+        {
+          "step": 376,
+          "support_mse_pre_update": 0.05298536643385887
+        },
+        {
+          "step": 401,
+          "support_mse_pre_update": 0.05296989157795906
+        },
+        {
+          "step": 426,
+          "support_mse_pre_update": 0.052955739200115204
+        },
+        {
+          "step": 451,
+          "support_mse_pre_update": 0.05294280871748924
+        },
+        {
+          "step": 476,
+          "support_mse_pre_update": 0.052930984646081924
+        },
+        {
+          "step": 500,
+          "support_mse_pre_update": 0.05292060598731041
+        }
+      ]
+    }
+  },
+  "protected_inputs_unchanged": true
+}

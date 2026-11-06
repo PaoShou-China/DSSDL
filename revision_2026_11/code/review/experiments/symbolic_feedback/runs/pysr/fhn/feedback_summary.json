@@ -1,0 +1,46 @@
+{
+  "initial": {
+    "stage": "compact_before_feedback",
+    "source_train_rmse_norm": 1.1893625259399414,
+    "source_train_rmse_raw": 0.4812520214784465,
+    "source_train_prior_rmse_norm": 0.07733024656772614,
+    "source_val_rmse_norm": 0.9400295615196228,
+    "source_val_rmse_raw": 0.43818583543144246,
+    "source_val_prior_rmse_norm": 0.047110721468925476,
+    "symbol_train_per_output_nrmse": [
+      0.09510288565641892,
+      0.05399444351143915
+    ],
+    "symbol_time_val_per_output_nrmse": [
+      0.06255978900398955,
+      0.022915265916961948
+    ]
+  },
+  "final": {
+    "stage": "compact_after_feedback",
+    "source_train_rmse_norm": 0.011571732349693775,
+    "source_train_rmse_raw": 0.004135523508718676,
+    "source_train_prior_rmse_norm": 0.023485489189624786,
+    "source_val_rmse_norm": 0.014916562475264072,
+    "source_val_rmse_raw": 0.004996728605539172,
+    "source_val_prior_rmse_norm": 0.02120196260511875,
+    "symbol_train_per_output_nrmse": [
+      0.013527054595508695,
+      0.03033412484378701
+    ],
+    "symbol_time_val_per_output_nrmse": [
+      0.01335125811571901,
+      0.026847557627554263
+    ]
+  },
+  "epochs": 100,
+  "compact_Q_equations": [
+    "q1 - 0.330872386693954*v**3 + 0.987842082977295*v - 0.994207978248596*w",
+    "q2 + q3*w + 0.198738470673561*v"
+  ],
+  "original_task_dim": 3,
+  "new_task_dim": 3,
+  "shared_scalar_count": 4,
+  "prior_is_used_in_original_loss": true,
+  "symbol_reg_rate": 1
+}

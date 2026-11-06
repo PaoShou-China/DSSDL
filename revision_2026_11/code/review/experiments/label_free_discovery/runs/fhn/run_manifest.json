@@ -1,0 +1,23 @@
+{
+  "status": "complete",
+  "args": {
+    "system": "fhn",
+    "device": "cuda:0",
+    "rounds": 2,
+    "epochs": 60,
+    "timeout": 45
+  },
+  "source_checkpoint": "workspace/compare2/DSSDL/model/pretrain.pt",
+  "protected_hashes": {
+    "workspace/compare2/DSSDL/model/pretrain.pt": "e5282731e48afba21248f83f7eae4634bbf42ece26b8d3ca7ed138ae6735855e",
+    "workspace/compare2/DSSDL/DSSDL_.py": "32dbbc502aea4d3fa3e673d42786a8ed1f4528ace26254cafad1f589ec23edea",
+    "workspace/codex_runs/2026-07-07_review_response_experiments/42_pysr_label_free_latent_closure/scripts/run_closure.py": "7eec49b4d5dc7a757deb8cc7a299cd29774621741dc5f1722e9a0988aa457562"
+  },
+  "source_task_count": 27,
+  "physical_parameter_labels_used": false,
+  "decoder_used": false,
+  "historical_equations_used": false,
+  "protocol_sha256": "6eeed93e182e7f4ddeb9bedca6bb03e23747ea68b3d6743f408bde1b6d37be6e",
+  "selected_method": "pysr_round2",
+  "packaged_source_checkpoint": "compare2/DSSDL/model/pretrain.pt"
+}

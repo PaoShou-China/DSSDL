@@ -1,0 +1,35 @@
+\subsection*{First-round search settings and expression records}
+\label{supp:search_records}
+
+The settings below belong to the first-round searches that supplied the consolidated templates above. They are separate from the five fixed-template feedback repetitions in Supplementary Note 5. Searches run serially with deterministic mode enabled; a wall-time limit can nevertheless affect where a run stops.
+
+\begin{table}[!ht]
+\centering\small
+\caption{Recorded first-round PySR search settings. Budgets are per output and, for FHN and Lorenz, per mean/deviation search.}
+\label{tab:search_settings}
+\begin{tabularx}{\textwidth}{@{}lXX@{}}
+\toprule
+Setting & FHN and Lorenz & Measured pendulum\\
+\midrule
+Binary operators & $+,-,\times$ & $+,-,\times$\\
+Unary operators & None & $\sin,\cos$\\
+Iterations (maximum) & 100 & 200\\
+Populations / size & 8 / 32 & 16 / 40\\
+Maximum tree size & 25 & 25\\
+Parsimony weight & 0.001 & 0.001\\
+Time limit & 45 s & 120 s\\
+First-round seeds & $42100+2j$ (mean), $42101+2j$ (deviation) & $5810+j$\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+Here $j$ is the zero-based output index. FHN and Lorenz use 384 sampled source states shared across tasks. A seeded 80/20 task split separates the deviation fitting and validation sets; the mean-response fit instead uses an 80/20 split of the state points. At most 5,000 deviation-fitting pairs are sampled. Input and response standardization is estimated on the respective fitting subset and inverted before consolidation. The state and task splits use seed 420; the deviation subsampling uses seed 421.
+
+Sparse refitting uses thresholds $\{0,10^{-4},3\times10^{-4},10^{-3},3\times10^{-3},10^{-2},3\times10^{-2}\}$. Columns are divided by their fitting-subset RMS and the response by its fitting-subset standard deviation. Each threshold permits at most 15 active-set least-squares passes, with numerical cutoff \texttt{rcond}$=10^{-8}$; at most 128 distinct additive factors are collected. For each candidate and their union, validation NRMSE is evaluated. Eligibility is $E\leq1.05E_{\min}+10^{-8}$; ties are resolved by the number of nonzero terms, then error, then candidate order.
+
+For the pendulum, search inputs are $(u,\theta,q)$, where $u=\dot\theta/20$, with angles unstandardized. Each of the seven source sequences contributes up to 350 fitting observations, sampled with seed 5801 from the saved training split; the saved source-validation observations score the standardized teacher response. The automatic selector minimizes tree size among candidates satisfying $E\leq1.05E_{\min}+0.002$, breaking ties by error. This selector is distinct from the subsequent author-confirmed choice of the earlier, separately factored candidate described above. No thresholded polynomial refit is used for this pendulum search.
+
+Tables~\ref{tab:raw_fhn} and \ref{tab:raw_lorenz} specify the complete first-round sparse-refit expressions before consolidation. Each output is the sum of the listed state factors multiplied by their coefficient functions. Coefficients are displayed to six significant digits; $q$ denotes the learned, pre-consolidation coordinate, not a physical parameter. These are post-search sparse refits, not unprocessed PySR expression trees. The coordinate maps and initial shared coefficients below specify the next template; discarded factors and coefficient sharing are approximations, not algebraic identities.
+
+\input{tables/first_round_expressions.tex}
+\label{supp:search_records_end}

@@ -1,0 +1,2 @@
+-r requirements.txt
+# Online replay uses saved STLSQ support; it does not import PySINDy.

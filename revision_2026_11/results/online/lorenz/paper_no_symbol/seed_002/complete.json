@@ -1,0 +1,7 @@
+{
+  "protocol_sha256": "187e17d982363e0f850bfbd99253faf3095460103798693f5d1f923d676163a1",
+  "data_sha256": "d54b2f1eba90a5df51cba0c2f75652e0db4bb2dcc3452325ad9609866c9f8e3c",
+  "forecast_batch_s": 0.20192290004342794,
+  "windows": 45,
+  "metrics": 360
+}

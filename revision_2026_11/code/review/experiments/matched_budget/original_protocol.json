@@ -1,0 +1,3961 @@
+{
+  "rows": [
+    {
+      "method": "DSSDL-symbol",
+      "system": "fhn",
+      "seed": 1,
+      "support": 1,
+      "historical_rmse": 0.6228003,
+      "historical_initial_rmse": 1.051951,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed1_support1.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "fhn",
+      "seed": 1,
+      "support": 10,
+      "historical_rmse": 0.0052425,
+      "historical_initial_rmse": 1.051951,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed1_support10.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "fhn",
+      "seed": 1,
+      "support": 100,
+      "historical_rmse": 0.004864176,
+      "historical_initial_rmse": 1.051951,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed1_support100.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "fhn",
+      "seed": 1,
+      "support": 20,
+      "historical_rmse": 0.004977888,
+      "historical_initial_rmse": 1.051951,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed1_support20.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "fhn",
+      "seed": 1,
+      "support": 200,
+      "historical_rmse": 0.004895737,
+      "historical_initial_rmse": 1.051951,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed1_support200.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "fhn",
+      "seed": 1,
+      "support": 5,
+      "historical_rmse": 0.006199761,
+      "historical_initial_rmse": 1.051951,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed1_support5.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "fhn",
+      "seed": 1,
+      "support": 50,
+      "historical_rmse": 0.004839455,
+      "historical_initial_rmse": 1.051951,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed1_support50.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "fhn",
+      "seed": 1,
+      "support": 500,
+      "historical_rmse": 0.004888966,
+      "historical_initial_rmse": 1.051951,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed1_support500.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "fhn",
+      "seed": 2,
+      "support": 1,
+      "historical_rmse": 0.6232834,
+      "historical_initial_rmse": 1.048064,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed2_support1.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "fhn",
+      "seed": 2,
+      "support": 10,
+      "historical_rmse": 0.005246147,
+      "historical_initial_rmse": 1.048064,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed2_support10.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "fhn",
+      "seed": 2,
+      "support": 100,
+      "historical_rmse": 0.004868562,
+      "historical_initial_rmse": 1.048064,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed2_support100.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "fhn",
+      "seed": 2,
+      "support": 20,
+      "historical_rmse": 0.00498659,
+      "historical_initial_rmse": 1.048064,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed2_support20.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "fhn",
+      "seed": 2,
+      "support": 200,
+      "historical_rmse": 0.00489795,
+      "historical_initial_rmse": 1.048064,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed2_support200.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "fhn",
+      "seed": 2,
+      "support": 5,
+      "historical_rmse": 0.006200823,
+      "historical_initial_rmse": 1.048064,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed2_support5.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "fhn",
+      "seed": 2,
+      "support": 50,
+      "historical_rmse": 0.004843986,
+      "historical_initial_rmse": 1.048064,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed2_support50.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "fhn",
+      "seed": 2,
+      "support": 500,
+      "historical_rmse": 0.004891879,
+      "historical_initial_rmse": 1.048064,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed2_support500.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "fhn",
+      "seed": 3,
+      "support": 1,
+      "historical_rmse": 0.6231695,
+      "historical_initial_rmse": 1.050036,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed3_support1.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "fhn",
+      "seed": 3,
+      "support": 10,
+      "historical_rmse": 0.005251495,
+      "historical_initial_rmse": 1.050036,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed3_support10.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "fhn",
+      "seed": 3,
+      "support": 100,
+      "historical_rmse": 0.00486582,
+      "historical_initial_rmse": 1.050036,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed3_support100.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "fhn",
+      "seed": 3,
+      "support": 20,
+      "historical_rmse": 0.004987968,
+      "historical_initial_rmse": 1.050036,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed3_support20.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "fhn",
+      "seed": 3,
+      "support": 200,
+      "historical_rmse": 0.004896573,
+      "historical_initial_rmse": 1.050036,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed3_support200.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "fhn",
+      "seed": 3,
+      "support": 5,
+      "historical_rmse": 0.006199598,
+      "historical_initial_rmse": 1.050036,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed3_support5.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "fhn",
+      "seed": 3,
+      "support": 50,
+      "historical_rmse": 0.004844059,
+      "historical_initial_rmse": 1.050036,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed3_support50.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "fhn",
+      "seed": 3,
+      "support": 500,
+      "historical_rmse": 0.004889836,
+      "historical_initial_rmse": 1.050036,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed3_support500.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "fhn",
+      "seed": 4,
+      "support": 1,
+      "historical_rmse": 0.5678087,
+      "historical_initial_rmse": 1.050331,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed4_support1.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "fhn",
+      "seed": 4,
+      "support": 10,
+      "historical_rmse": 0.005238288,
+      "historical_initial_rmse": 1.050331,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed4_support10.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "fhn",
+      "seed": 4,
+      "support": 100,
+      "historical_rmse": 0.004864702,
+      "historical_initial_rmse": 1.050331,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed4_support100.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "fhn",
+      "seed": 4,
+      "support": 20,
+      "historical_rmse": 0.004979116,
+      "historical_initial_rmse": 1.050331,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed4_support20.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "fhn",
+      "seed": 4,
+      "support": 200,
+      "historical_rmse": 0.004896153,
+      "historical_initial_rmse": 1.050331,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed4_support200.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "fhn",
+      "seed": 4,
+      "support": 5,
+      "historical_rmse": 0.006193477,
+      "historical_initial_rmse": 1.050331,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed4_support5.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "fhn",
+      "seed": 4,
+      "support": 50,
+      "historical_rmse": 0.004840935,
+      "historical_initial_rmse": 1.050331,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed4_support50.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "fhn",
+      "seed": 4,
+      "support": 500,
+      "historical_rmse": 0.004889201,
+      "historical_initial_rmse": 1.050331,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed4_support500.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "fhn",
+      "seed": 5,
+      "support": 1,
+      "historical_rmse": 0.6235795,
+      "historical_initial_rmse": 1.050605,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed5_support1.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "fhn",
+      "seed": 5,
+      "support": 10,
+      "historical_rmse": 0.005246876,
+      "historical_initial_rmse": 1.050605,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed5_support10.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "fhn",
+      "seed": 5,
+      "support": 100,
+      "historical_rmse": 0.004865265,
+      "historical_initial_rmse": 1.050605,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed5_support100.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "fhn",
+      "seed": 5,
+      "support": 20,
+      "historical_rmse": 0.004986969,
+      "historical_initial_rmse": 1.050605,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed5_support20.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "fhn",
+      "seed": 5,
+      "support": 200,
+      "historical_rmse": 0.004899663,
+      "historical_initial_rmse": 1.050605,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed5_support200.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "fhn",
+      "seed": 5,
+      "support": 5,
+      "historical_rmse": 0.006197781,
+      "historical_initial_rmse": 1.050605,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed5_support5.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "fhn",
+      "seed": 5,
+      "support": 50,
+      "historical_rmse": 0.004847116,
+      "historical_initial_rmse": 1.050605,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed5_support50.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "fhn",
+      "seed": 5,
+      "support": 500,
+      "historical_rmse": 0.004894049,
+      "historical_initial_rmse": 1.050605,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed5_support500.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "lorenz",
+      "seed": 1,
+      "support": 1,
+      "historical_rmse": 0.0456964,
+      "historical_initial_rmse": 0.721365,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed1_support1.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "lorenz",
+      "seed": 1,
+      "support": 10,
+      "historical_rmse": 0.1248825,
+      "historical_initial_rmse": 0.673534,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed1_support10.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "lorenz",
+      "seed": 1,
+      "support": 100,
+      "historical_rmse": 0.03225929,
+      "historical_initial_rmse": 0.673534,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed1_support100.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "lorenz",
+      "seed": 1,
+      "support": 20,
+      "historical_rmse": 0.1365352,
+      "historical_initial_rmse": 0.673534,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed1_support20.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "lorenz",
+      "seed": 1,
+      "support": 200,
+      "historical_rmse": 0.02965308,
+      "historical_initial_rmse": 0.673534,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed1_support200.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "lorenz",
+      "seed": 1,
+      "support": 5,
+      "historical_rmse": 0.06878697,
+      "historical_initial_rmse": 0.673534,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed1_support5.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "lorenz",
+      "seed": 1,
+      "support": 50,
+      "historical_rmse": 0.02949746,
+      "historical_initial_rmse": 0.673534,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed1_support50.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "lorenz",
+      "seed": 1,
+      "support": 500,
+      "historical_rmse": 0.02912302,
+      "historical_initial_rmse": 0.673534,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed1_support500.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "lorenz",
+      "seed": 2,
+      "support": 1,
+      "historical_rmse": 0.02425925,
+      "historical_initial_rmse": 0.667335,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed2_support1.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "lorenz",
+      "seed": 2,
+      "support": 10,
+      "historical_rmse": 0.1304281,
+      "historical_initial_rmse": 0.667335,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed2_support10.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "lorenz",
+      "seed": 2,
+      "support": 100,
+      "historical_rmse": 0.03020453,
+      "historical_initial_rmse": 0.667335,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed2_support100.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "lorenz",
+      "seed": 2,
+      "support": 20,
+      "historical_rmse": 0.1381951,
+      "historical_initial_rmse": 0.667335,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed2_support20.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "lorenz",
+      "seed": 2,
+      "support": 200,
+      "historical_rmse": 0.02841449,
+      "historical_initial_rmse": 0.667335,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed2_support200.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "lorenz",
+      "seed": 2,
+      "support": 5,
+      "historical_rmse": 0.07089381,
+      "historical_initial_rmse": 0.667335,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed2_support5.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "lorenz",
+      "seed": 2,
+      "support": 50,
+      "historical_rmse": 0.02749956,
+      "historical_initial_rmse": 0.667335,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed2_support50.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "lorenz",
+      "seed": 2,
+      "support": 500,
+      "historical_rmse": 0.0280843,
+      "historical_initial_rmse": 0.667335,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed2_support500.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "lorenz",
+      "seed": 3,
+      "support": 1,
+      "historical_rmse": 0.01948627,
+      "historical_initial_rmse": 0.674361,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed3_support1.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "lorenz",
+      "seed": 3,
+      "support": 10,
+      "historical_rmse": 0.1276322,
+      "historical_initial_rmse": 0.674361,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed3_support10.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "lorenz",
+      "seed": 3,
+      "support": 100,
+      "historical_rmse": 0.02498204,
+      "historical_initial_rmse": 0.674361,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed3_support100.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "lorenz",
+      "seed": 3,
+      "support": 20,
+      "historical_rmse": 0.1352028,
+      "historical_initial_rmse": 0.674361,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed3_support20.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "lorenz",
+      "seed": 3,
+      "support": 200,
+      "historical_rmse": 0.0237727,
+      "historical_initial_rmse": 0.674361,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed3_support200.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "lorenz",
+      "seed": 3,
+      "support": 5,
+      "historical_rmse": 0.07074521,
+      "historical_initial_rmse": 0.674361,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed3_support5.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "lorenz",
+      "seed": 3,
+      "support": 50,
+      "historical_rmse": 0.02226631,
+      "historical_initial_rmse": 0.674361,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed3_support50.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "lorenz",
+      "seed": 3,
+      "support": 500,
+      "historical_rmse": 0.02293639,
+      "historical_initial_rmse": 0.674361,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed3_support500.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "lorenz",
+      "seed": 4,
+      "support": 1,
+      "historical_rmse": 0.03639667,
+      "historical_initial_rmse": 0.673312,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed4_support1.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "lorenz",
+      "seed": 4,
+      "support": 10,
+      "historical_rmse": 0.1411994,
+      "historical_initial_rmse": 0.673312,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed4_support10.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "lorenz",
+      "seed": 4,
+      "support": 100,
+      "historical_rmse": 0.03457239,
+      "historical_initial_rmse": 0.673312,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed4_support100.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "lorenz",
+      "seed": 4,
+      "support": 20,
+      "historical_rmse": 0.1416391,
+      "historical_initial_rmse": 0.673312,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed4_support20.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "lorenz",
+      "seed": 4,
+      "support": 200,
+      "historical_rmse": 0.03297628,
+      "historical_initial_rmse": 0.673312,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed4_support200.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "lorenz",
+      "seed": 4,
+      "support": 5,
+      "historical_rmse": 0.08531122,
+      "historical_initial_rmse": 0.673312,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed4_support5.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "lorenz",
+      "seed": 4,
+      "support": 50,
+      "historical_rmse": 0.03319281,
+      "historical_initial_rmse": 0.673312,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed4_support50.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "lorenz",
+      "seed": 4,
+      "support": 500,
+      "historical_rmse": 0.03313317,
+      "historical_initial_rmse": 0.673312,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed4_support500.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "lorenz",
+      "seed": 5,
+      "support": 1,
+      "historical_rmse": 0.0690303,
+      "historical_initial_rmse": 0.728888,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed5_support1.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "lorenz",
+      "seed": 5,
+      "support": 10,
+      "historical_rmse": 0.07894736,
+      "historical_initial_rmse": 0.728888,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed5_support10.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "lorenz",
+      "seed": 5,
+      "support": 100,
+      "historical_rmse": 0.05112972,
+      "historical_initial_rmse": 0.728888,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed5_support100.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "lorenz",
+      "seed": 5,
+      "support": 20,
+      "historical_rmse": 0.0690303,
+      "historical_initial_rmse": 0.728888,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed5_support20.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "lorenz",
+      "seed": 5,
+      "support": 200,
+      "historical_rmse": 0.04936326,
+      "historical_initial_rmse": 0.728888,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed5_support200.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "lorenz",
+      "seed": 5,
+      "support": 5,
+      "historical_rmse": 0.04820077,
+      "historical_initial_rmse": 0.728888,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed5_support5.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "lorenz",
+      "seed": 5,
+      "support": 50,
+      "historical_rmse": 0.05209973,
+      "historical_initial_rmse": 0.728888,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed5_support50.log"
+    },
+    {
+      "method": "DSSDL-symbol",
+      "system": "lorenz",
+      "seed": 5,
+      "support": 500,
+      "historical_rmse": 0.04839787,
+      "historical_initial_rmse": 0.728888,
+      "log": "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed5_support500.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "fhn",
+      "seed": 1,
+      "support": 1,
+      "historical_rmse": 0.2482311,
+      "historical_initial_rmse": 0.998971,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_fhn/seed1_support1.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "fhn",
+      "seed": 1,
+      "support": 10,
+      "historical_rmse": 0.2998538,
+      "historical_initial_rmse": 0.998971,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_fhn/seed1_support10.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "fhn",
+      "seed": 1,
+      "support": 100,
+      "historical_rmse": 0.3201169,
+      "historical_initial_rmse": 0.998971,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_fhn/seed1_support100.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "fhn",
+      "seed": 1,
+      "support": 20,
+      "historical_rmse": 0.3136931,
+      "historical_initial_rmse": 0.998971,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_fhn/seed1_support20.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "fhn",
+      "seed": 1,
+      "support": 200,
+      "historical_rmse": 0.3147793,
+      "historical_initial_rmse": 0.998971,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_fhn/seed1_support200.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "fhn",
+      "seed": 1,
+      "support": 5,
+      "historical_rmse": 0.2586577,
+      "historical_initial_rmse": 0.998971,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_fhn/seed1_support5.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "fhn",
+      "seed": 1,
+      "support": 50,
+      "historical_rmse": 0.3163516,
+      "historical_initial_rmse": 0.998971,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_fhn/seed1_support50.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "fhn",
+      "seed": 1,
+      "support": 500,
+      "historical_rmse": 0.3139512,
+      "historical_initial_rmse": 0.998971,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_fhn/seed1_support500.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "fhn",
+      "seed": 2,
+      "support": 1,
+      "historical_rmse": 0.203891,
+      "historical_initial_rmse": 1.028939,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_fhn/seed2_support1.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "fhn",
+      "seed": 2,
+      "support": 10,
+      "historical_rmse": 0.2418493,
+      "historical_initial_rmse": 1.028939,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_fhn/seed2_support10.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "fhn",
+      "seed": 2,
+      "support": 100,
+      "historical_rmse": 0.2415027,
+      "historical_initial_rmse": 1.028939,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_fhn/seed2_support100.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "fhn",
+      "seed": 2,
+      "support": 20,
+      "historical_rmse": 0.2435453,
+      "historical_initial_rmse": 1.028939,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_fhn/seed2_support20.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "fhn",
+      "seed": 2,
+      "support": 200,
+      "historical_rmse": 0.2365631,
+      "historical_initial_rmse": 1.028939,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_fhn/seed2_support200.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "fhn",
+      "seed": 2,
+      "support": 5,
+      "historical_rmse": 0.2337595,
+      "historical_initial_rmse": 1.028939,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_fhn/seed2_support5.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "fhn",
+      "seed": 2,
+      "support": 50,
+      "historical_rmse": 0.2411224,
+      "historical_initial_rmse": 1.028939,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_fhn/seed2_support50.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "fhn",
+      "seed": 2,
+      "support": 500,
+      "historical_rmse": 0.2373637,
+      "historical_initial_rmse": 1.028939,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_fhn/seed2_support500.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "fhn",
+      "seed": 3,
+      "support": 1,
+      "historical_rmse": 0.1739302,
+      "historical_initial_rmse": 1.009857,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_fhn/seed3_support1.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "fhn",
+      "seed": 3,
+      "support": 10,
+      "historical_rmse": 0.1542646,
+      "historical_initial_rmse": 1.009857,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_fhn/seed3_support10.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "fhn",
+      "seed": 3,
+      "support": 100,
+      "historical_rmse": 0.1539449,
+      "historical_initial_rmse": 1.009857,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_fhn/seed3_support100.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "fhn",
+      "seed": 3,
+      "support": 20,
+      "historical_rmse": 0.1565638,
+      "historical_initial_rmse": 1.009857,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_fhn/seed3_support20.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "fhn",
+      "seed": 3,
+      "support": 200,
+      "historical_rmse": 0.1519929,
+      "historical_initial_rmse": 1.009857,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_fhn/seed3_support200.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "fhn",
+      "seed": 3,
+      "support": 5,
+      "historical_rmse": 0.1529432,
+      "historical_initial_rmse": 1.009857,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_fhn/seed3_support5.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "fhn",
+      "seed": 3,
+      "support": 50,
+      "historical_rmse": 0.1545499,
+      "historical_initial_rmse": 1.009857,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_fhn/seed3_support50.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "fhn",
+      "seed": 3,
+      "support": 500,
+      "historical_rmse": 0.1528249,
+      "historical_initial_rmse": 1.009857,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_fhn/seed3_support500.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "fhn",
+      "seed": 4,
+      "support": 1,
+      "historical_rmse": 0.2117447,
+      "historical_initial_rmse": 1.053993,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_fhn/seed4_support1.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "fhn",
+      "seed": 4,
+      "support": 10,
+      "historical_rmse": 0.2819824,
+      "historical_initial_rmse": 1.053993,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_fhn/seed4_support10.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "fhn",
+      "seed": 4,
+      "support": 100,
+      "historical_rmse": 0.2107206,
+      "historical_initial_rmse": 1.053993,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_fhn/seed4_support100.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "fhn",
+      "seed": 4,
+      "support": 20,
+      "historical_rmse": 0.2269138,
+      "historical_initial_rmse": 1.053993,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_fhn/seed4_support20.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "fhn",
+      "seed": 4,
+      "support": 200,
+      "historical_rmse": 0.2007729,
+      "historical_initial_rmse": 1.053993,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_fhn/seed4_support200.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "fhn",
+      "seed": 4,
+      "support": 5,
+      "historical_rmse": 0.2707207,
+      "historical_initial_rmse": 1.053993,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_fhn/seed4_support5.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "fhn",
+      "seed": 4,
+      "support": 50,
+      "historical_rmse": 0.2103475,
+      "historical_initial_rmse": 1.053993,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_fhn/seed4_support50.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "fhn",
+      "seed": 4,
+      "support": 500,
+      "historical_rmse": 0.2034711,
+      "historical_initial_rmse": 1.053993,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_fhn/seed4_support500.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "fhn",
+      "seed": 5,
+      "support": 1,
+      "historical_rmse": 0.2098305,
+      "historical_initial_rmse": 1.020791,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_fhn/seed5_support1.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "fhn",
+      "seed": 5,
+      "support": 10,
+      "historical_rmse": 0.2194624,
+      "historical_initial_rmse": 1.020791,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_fhn/seed5_support10.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "fhn",
+      "seed": 5,
+      "support": 100,
+      "historical_rmse": 0.220863,
+      "historical_initial_rmse": 1.020791,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_fhn/seed5_support100.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "fhn",
+      "seed": 5,
+      "support": 20,
+      "historical_rmse": 0.2208226,
+      "historical_initial_rmse": 1.020791,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_fhn/seed5_support20.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "fhn",
+      "seed": 5,
+      "support": 200,
+      "historical_rmse": 0.218357,
+      "historical_initial_rmse": 1.020791,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_fhn/seed5_support200.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "fhn",
+      "seed": 5,
+      "support": 5,
+      "historical_rmse": 0.2224806,
+      "historical_initial_rmse": 1.020791,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_fhn/seed5_support5.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "fhn",
+      "seed": 5,
+      "support": 50,
+      "historical_rmse": 0.2195151,
+      "historical_initial_rmse": 1.020791,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_fhn/seed5_support50.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "fhn",
+      "seed": 5,
+      "support": 500,
+      "historical_rmse": 0.2183627,
+      "historical_initial_rmse": 1.020791,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_fhn/seed5_support500.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "lorenz",
+      "seed": 1,
+      "support": 1,
+      "historical_rmse": 0.4722718,
+      "historical_initial_rmse": 0.552929,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed1_support1.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "lorenz",
+      "seed": 1,
+      "support": 10,
+      "historical_rmse": 0.3938819,
+      "historical_initial_rmse": 0.552929,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed1_support10.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "lorenz",
+      "seed": 1,
+      "support": 100,
+      "historical_rmse": 0.3583264,
+      "historical_initial_rmse": 0.552929,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed1_support100.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "lorenz",
+      "seed": 1,
+      "support": 20,
+      "historical_rmse": 0.3841967,
+      "historical_initial_rmse": 0.552929,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed1_support20.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "lorenz",
+      "seed": 1,
+      "support": 200,
+      "historical_rmse": 0.3358367,
+      "historical_initial_rmse": 0.552929,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed1_support200.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "lorenz",
+      "seed": 1,
+      "support": 5,
+      "historical_rmse": 0.4514685,
+      "historical_initial_rmse": 0.552929,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed1_support5.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "lorenz",
+      "seed": 1,
+      "support": 50,
+      "historical_rmse": 0.3374853,
+      "historical_initial_rmse": 0.552929,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed1_support50.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "lorenz",
+      "seed": 1,
+      "support": 500,
+      "historical_rmse": 0.343062,
+      "historical_initial_rmse": 0.552929,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed1_support500.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "lorenz",
+      "seed": 2,
+      "support": 1,
+      "historical_rmse": 0.3853371,
+      "historical_initial_rmse": 0.540407,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed2_support1.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "lorenz",
+      "seed": 2,
+      "support": 10,
+      "historical_rmse": 0.4224233,
+      "historical_initial_rmse": 0.540407,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed2_support10.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "lorenz",
+      "seed": 2,
+      "support": 100,
+      "historical_rmse": 0.3240874,
+      "historical_initial_rmse": 0.540407,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed2_support100.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "lorenz",
+      "seed": 2,
+      "support": 20,
+      "historical_rmse": 0.4068998,
+      "historical_initial_rmse": 0.540407,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed2_support20.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "lorenz",
+      "seed": 2,
+      "support": 200,
+      "historical_rmse": 0.3160935,
+      "historical_initial_rmse": 0.540407,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed2_support200.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "lorenz",
+      "seed": 2,
+      "support": 5,
+      "historical_rmse": 0.4163999,
+      "historical_initial_rmse": 0.540407,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed2_support5.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "lorenz",
+      "seed": 2,
+      "support": 50,
+      "historical_rmse": 0.3262109,
+      "historical_initial_rmse": 0.540407,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed2_support50.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "lorenz",
+      "seed": 2,
+      "support": 500,
+      "historical_rmse": 0.3103438,
+      "historical_initial_rmse": 0.540407,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed2_support500.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "lorenz",
+      "seed": 3,
+      "support": 1,
+      "historical_rmse": 0.3554476,
+      "historical_initial_rmse": 0.575285,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed3_support1.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "lorenz",
+      "seed": 3,
+      "support": 10,
+      "historical_rmse": 0.3626417,
+      "historical_initial_rmse": 0.575285,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed3_support10.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "lorenz",
+      "seed": 3,
+      "support": 100,
+      "historical_rmse": 0.3185287,
+      "historical_initial_rmse": 0.575285,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed3_support100.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "lorenz",
+      "seed": 3,
+      "support": 20,
+      "historical_rmse": 0.3756573,
+      "historical_initial_rmse": 0.575285,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed3_support20.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "lorenz",
+      "seed": 3,
+      "support": 200,
+      "historical_rmse": 0.3138555,
+      "historical_initial_rmse": 0.575285,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed3_support200.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "lorenz",
+      "seed": 3,
+      "support": 5,
+      "historical_rmse": 0.3577355,
+      "historical_initial_rmse": 0.575285,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed3_support5.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "lorenz",
+      "seed": 3,
+      "support": 50,
+      "historical_rmse": 0.3180766,
+      "historical_initial_rmse": 0.575285,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed3_support50.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "lorenz",
+      "seed": 3,
+      "support": 500,
+      "historical_rmse": 0.3144357,
+      "historical_initial_rmse": 0.575285,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed3_support500.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "lorenz",
+      "seed": 4,
+      "support": 1,
+      "historical_rmse": 0.4312386,
+      "historical_initial_rmse": 0.552006,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed4_support1.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "lorenz",
+      "seed": 4,
+      "support": 10,
+      "historical_rmse": 0.4485378,
+      "historical_initial_rmse": 0.552006,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed4_support10.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "lorenz",
+      "seed": 4,
+      "support": 100,
+      "historical_rmse": 0.3371783,
+      "historical_initial_rmse": 0.552006,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed4_support100.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "lorenz",
+      "seed": 4,
+      "support": 20,
+      "historical_rmse": 0.4746215,
+      "historical_initial_rmse": 0.552006,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed4_support20.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "lorenz",
+      "seed": 4,
+      "support": 200,
+      "historical_rmse": 0.3316536,
+      "historical_initial_rmse": 0.552006,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed4_support200.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "lorenz",
+      "seed": 4,
+      "support": 5,
+      "historical_rmse": 0.4452857,
+      "historical_initial_rmse": 0.552006,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed4_support5.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "lorenz",
+      "seed": 4,
+      "support": 50,
+      "historical_rmse": 0.3248507,
+      "historical_initial_rmse": 0.552006,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed4_support50.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "lorenz",
+      "seed": 4,
+      "support": 500,
+      "historical_rmse": 0.3213674,
+      "historical_initial_rmse": 0.552006,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed4_support500.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "lorenz",
+      "seed": 5,
+      "support": 1,
+      "historical_rmse": 0.3949378,
+      "historical_initial_rmse": 0.557225,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed5_support1.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "lorenz",
+      "seed": 5,
+      "support": 10,
+      "historical_rmse": 0.4201227,
+      "historical_initial_rmse": 0.557225,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed5_support10.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "lorenz",
+      "seed": 5,
+      "support": 100,
+      "historical_rmse": 0.3469309,
+      "historical_initial_rmse": 0.557225,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed5_support100.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "lorenz",
+      "seed": 5,
+      "support": 20,
+      "historical_rmse": 0.4021365,
+      "historical_initial_rmse": 0.557225,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed5_support20.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "lorenz",
+      "seed": 5,
+      "support": 200,
+      "historical_rmse": 0.3290181,
+      "historical_initial_rmse": 0.557225,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed5_support200.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "lorenz",
+      "seed": 5,
+      "support": 5,
+      "historical_rmse": 0.4187791,
+      "historical_initial_rmse": 0.557225,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed5_support5.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "lorenz",
+      "seed": 5,
+      "support": 50,
+      "historical_rmse": 0.335727,
+      "historical_initial_rmse": 0.557225,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed5_support50.log"
+    },
+    {
+      "method": "DSSDL",
+      "system": "lorenz",
+      "seed": 5,
+      "support": 500,
+      "historical_rmse": 0.3286163,
+      "historical_initial_rmse": 0.557225,
+      "log": "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed5_support500.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "fhn",
+      "seed": 1,
+      "support": 1,
+      "historical_rmse": 0.7180074,
+      "historical_initial_rmse": 0.828209,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_fhn/seed1_support1.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "fhn",
+      "seed": 1,
+      "support": 10,
+      "historical_rmse": 0.708207,
+      "historical_initial_rmse": 0.828209,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_fhn/seed1_support10.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "fhn",
+      "seed": 1,
+      "support": 100,
+      "historical_rmse": 0.7194795,
+      "historical_initial_rmse": 0.828209,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_fhn/seed1_support100.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "fhn",
+      "seed": 1,
+      "support": 20,
+      "historical_rmse": 0.7117788,
+      "historical_initial_rmse": 0.828209,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_fhn/seed1_support20.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "fhn",
+      "seed": 1,
+      "support": 200,
+      "historical_rmse": 0.7215726,
+      "historical_initial_rmse": 0.828209,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_fhn/seed1_support200.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "fhn",
+      "seed": 1,
+      "support": 5,
+      "historical_rmse": 0.7076365,
+      "historical_initial_rmse": 0.828209,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_fhn/seed1_support5.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "fhn",
+      "seed": 1,
+      "support": 50,
+      "historical_rmse": 0.7161114,
+      "historical_initial_rmse": 0.828209,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_fhn/seed1_support50.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "fhn",
+      "seed": 1,
+      "support": 500,
+      "historical_rmse": 0.7195094,
+      "historical_initial_rmse": 0.828209,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_fhn/seed1_support500.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "fhn",
+      "seed": 2,
+      "support": 1,
+      "historical_rmse": 0.5951565,
+      "historical_initial_rmse": 0.7397156,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_fhn/seed2_support1.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "fhn",
+      "seed": 2,
+      "support": 10,
+      "historical_rmse": 0.5837327,
+      "historical_initial_rmse": 0.7397156,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_fhn/seed2_support10.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "fhn",
+      "seed": 2,
+      "support": 100,
+      "historical_rmse": 0.5820836,
+      "historical_initial_rmse": 0.7397156,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_fhn/seed2_support100.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "fhn",
+      "seed": 2,
+      "support": 20,
+      "historical_rmse": 0.5843729,
+      "historical_initial_rmse": 0.7397156,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_fhn/seed2_support20.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "fhn",
+      "seed": 2,
+      "support": 200,
+      "historical_rmse": 0.5812461,
+      "historical_initial_rmse": 0.7397156,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_fhn/seed2_support200.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "fhn",
+      "seed": 2,
+      "support": 5,
+      "historical_rmse": 0.5880038,
+      "historical_initial_rmse": 0.7397156,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_fhn/seed2_support5.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "fhn",
+      "seed": 2,
+      "support": 50,
+      "historical_rmse": 0.5831164,
+      "historical_initial_rmse": 0.7397156,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_fhn/seed2_support50.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "fhn",
+      "seed": 2,
+      "support": 500,
+      "historical_rmse": 0.5811148,
+      "historical_initial_rmse": 0.7397156,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_fhn/seed2_support500.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "fhn",
+      "seed": 3,
+      "support": 1,
+      "historical_rmse": 0.5354739,
+      "historical_initial_rmse": 0.6687729,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_fhn/seed3_support1.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "fhn",
+      "seed": 3,
+      "support": 10,
+      "historical_rmse": 0.531383,
+      "historical_initial_rmse": 0.6687729,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_fhn/seed3_support10.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "fhn",
+      "seed": 3,
+      "support": 100,
+      "historical_rmse": 0.5392134,
+      "historical_initial_rmse": 0.6687729,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_fhn/seed3_support100.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "fhn",
+      "seed": 3,
+      "support": 20,
+      "historical_rmse": 0.5348386,
+      "historical_initial_rmse": 0.6687729,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_fhn/seed3_support20.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "fhn",
+      "seed": 3,
+      "support": 200,
+      "historical_rmse": 0.5404937,
+      "historical_initial_rmse": 0.6687729,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_fhn/seed3_support200.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "fhn",
+      "seed": 3,
+      "support": 5,
+      "historical_rmse": 0.5290069,
+      "historical_initial_rmse": 0.6687729,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_fhn/seed3_support5.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "fhn",
+      "seed": 3,
+      "support": 50,
+      "historical_rmse": 0.5370749,
+      "historical_initial_rmse": 0.6687729,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_fhn/seed3_support50.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "fhn",
+      "seed": 3,
+      "support": 500,
+      "historical_rmse": 0.5395801,
+      "historical_initial_rmse": 0.6687729,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_fhn/seed3_support500.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "fhn",
+      "seed": 4,
+      "support": 1,
+      "historical_rmse": 0.6968961,
+      "historical_initial_rmse": 0.7648969,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_fhn/seed4_support1.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "fhn",
+      "seed": 4,
+      "support": 10,
+      "historical_rmse": 0.6912425,
+      "historical_initial_rmse": 0.7648969,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_fhn/seed4_support10.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "fhn",
+      "seed": 4,
+      "support": 100,
+      "historical_rmse": 0.6987714,
+      "historical_initial_rmse": 0.7648969,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_fhn/seed4_support100.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "fhn",
+      "seed": 4,
+      "support": 20,
+      "historical_rmse": 0.6916348,
+      "historical_initial_rmse": 0.7648969,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_fhn/seed4_support20.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "fhn",
+      "seed": 4,
+      "support": 200,
+      "historical_rmse": 0.6999568,
+      "historical_initial_rmse": 0.7648969,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_fhn/seed4_support200.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "fhn",
+      "seed": 4,
+      "support": 5,
+      "historical_rmse": 0.6905741,
+      "historical_initial_rmse": 0.7648969,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_fhn/seed4_support5.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "fhn",
+      "seed": 4,
+      "support": 50,
+      "historical_rmse": 0.6959112,
+      "historical_initial_rmse": 0.7648969,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_fhn/seed4_support50.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "fhn",
+      "seed": 4,
+      "support": 500,
+      "historical_rmse": 0.6985577,
+      "historical_initial_rmse": 0.7648969,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_fhn/seed4_support500.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "fhn",
+      "seed": 5,
+      "support": 1,
+      "historical_rmse": 0.5679221,
+      "historical_initial_rmse": 0.6633137,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_fhn/seed5_support1.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "fhn",
+      "seed": 5,
+      "support": 10,
+      "historical_rmse": 0.5566478,
+      "historical_initial_rmse": 0.6633137,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_fhn/seed5_support10.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "fhn",
+      "seed": 5,
+      "support": 100,
+      "historical_rmse": 0.5579294,
+      "historical_initial_rmse": 0.6633137,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_fhn/seed5_support100.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "fhn",
+      "seed": 5,
+      "support": 20,
+      "historical_rmse": 0.5557981,
+      "historical_initial_rmse": 0.6633137,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_fhn/seed5_support20.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "fhn",
+      "seed": 5,
+      "support": 200,
+      "historical_rmse": 0.5583529,
+      "historical_initial_rmse": 0.6633137,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_fhn/seed5_support200.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "fhn",
+      "seed": 5,
+      "support": 5,
+      "historical_rmse": 0.5575636,
+      "historical_initial_rmse": 0.6633137,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_fhn/seed5_support5.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "fhn",
+      "seed": 5,
+      "support": 50,
+      "historical_rmse": 0.5572398,
+      "historical_initial_rmse": 0.6633137,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_fhn/seed5_support50.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "fhn",
+      "seed": 5,
+      "support": 500,
+      "historical_rmse": 0.5574548,
+      "historical_initial_rmse": 0.6633137,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_fhn/seed5_support500.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "lorenz",
+      "seed": 1,
+      "support": 1,
+      "historical_rmse": 1.237093,
+      "historical_initial_rmse": 1.258114,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed1_support1.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "lorenz",
+      "seed": 1,
+      "support": 10,
+      "historical_rmse": 1.240129,
+      "historical_initial_rmse": 1.258114,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed1_support10.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "lorenz",
+      "seed": 1,
+      "support": 100,
+      "historical_rmse": 1.248465,
+      "historical_initial_rmse": 1.258114,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed1_support100.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "lorenz",
+      "seed": 1,
+      "support": 20,
+      "historical_rmse": 1.247133,
+      "historical_initial_rmse": 1.258114,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed1_support20.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "lorenz",
+      "seed": 1,
+      "support": 200,
+      "historical_rmse": 1.249229,
+      "historical_initial_rmse": 1.258114,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed1_support200.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "lorenz",
+      "seed": 1,
+      "support": 5,
+      "historical_rmse": 1.238253,
+      "historical_initial_rmse": 1.258114,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed1_support5.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "lorenz",
+      "seed": 1,
+      "support": 50,
+      "historical_rmse": 1.246939,
+      "historical_initial_rmse": 1.258114,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed1_support50.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "lorenz",
+      "seed": 1,
+      "support": 500,
+      "historical_rmse": 1.24175,
+      "historical_initial_rmse": 1.258114,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed1_support500.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "lorenz",
+      "seed": 2,
+      "support": 1,
+      "historical_rmse": 1.267353,
+      "historical_initial_rmse": 1.278297,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed2_support1.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "lorenz",
+      "seed": 2,
+      "support": 10,
+      "historical_rmse": 1.269042,
+      "historical_initial_rmse": 1.278297,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed2_support10.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "lorenz",
+      "seed": 2,
+      "support": 100,
+      "historical_rmse": 1.276689,
+      "historical_initial_rmse": 1.278297,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed2_support100.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "lorenz",
+      "seed": 2,
+      "support": 20,
+      "historical_rmse": 1.272631,
+      "historical_initial_rmse": 1.278297,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed2_support20.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "lorenz",
+      "seed": 2,
+      "support": 200,
+      "historical_rmse": 1.277488,
+      "historical_initial_rmse": 1.278297,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed2_support200.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "lorenz",
+      "seed": 2,
+      "support": 5,
+      "historical_rmse": 1.268573,
+      "historical_initial_rmse": 1.278297,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed2_support5.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "lorenz",
+      "seed": 2,
+      "support": 50,
+      "historical_rmse": 1.272729,
+      "historical_initial_rmse": 1.278297,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed2_support50.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "lorenz",
+      "seed": 2,
+      "support": 500,
+      "historical_rmse": 1.273128,
+      "historical_initial_rmse": 1.278297,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed2_support500.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "lorenz",
+      "seed": 3,
+      "support": 1,
+      "historical_rmse": 1.270348,
+      "historical_initial_rmse": 1.288245,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed3_support1.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "lorenz",
+      "seed": 3,
+      "support": 10,
+      "historical_rmse": 1.269568,
+      "historical_initial_rmse": 1.288245,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed3_support10.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "lorenz",
+      "seed": 3,
+      "support": 100,
+      "historical_rmse": 1.283094,
+      "historical_initial_rmse": 1.288245,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed3_support100.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "lorenz",
+      "seed": 3,
+      "support": 20,
+      "historical_rmse": 1.274845,
+      "historical_initial_rmse": 1.288245,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed3_support20.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "lorenz",
+      "seed": 3,
+      "support": 200,
+      "historical_rmse": 1.283523,
+      "historical_initial_rmse": 1.288245,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed3_support200.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "lorenz",
+      "seed": 3,
+      "support": 5,
+      "historical_rmse": 1.270071,
+      "historical_initial_rmse": 1.288245,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed3_support5.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "lorenz",
+      "seed": 3,
+      "support": 50,
+      "historical_rmse": 1.279327,
+      "historical_initial_rmse": 1.288245,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed3_support50.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "lorenz",
+      "seed": 3,
+      "support": 500,
+      "historical_rmse": 1.277925,
+      "historical_initial_rmse": 1.288245,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed3_support500.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "lorenz",
+      "seed": 4,
+      "support": 1,
+      "historical_rmse": 1.238358,
+      "historical_initial_rmse": 1.248585,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed4_support1.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "lorenz",
+      "seed": 4,
+      "support": 10,
+      "historical_rmse": 1.238984,
+      "historical_initial_rmse": 1.248585,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed4_support10.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "lorenz",
+      "seed": 4,
+      "support": 100,
+      "historical_rmse": 1.247177,
+      "historical_initial_rmse": 1.248585,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed4_support100.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "lorenz",
+      "seed": 4,
+      "support": 20,
+      "historical_rmse": 1.242518,
+      "historical_initial_rmse": 1.248585,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed4_support20.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "lorenz",
+      "seed": 4,
+      "support": 200,
+      "historical_rmse": 1.247429,
+      "historical_initial_rmse": 1.248585,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed4_support200.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "lorenz",
+      "seed": 4,
+      "support": 5,
+      "historical_rmse": 1.239081,
+      "historical_initial_rmse": 1.248585,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed4_support5.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "lorenz",
+      "seed": 4,
+      "support": 50,
+      "historical_rmse": 1.243309,
+      "historical_initial_rmse": 1.248585,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed4_support50.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "lorenz",
+      "seed": 4,
+      "support": 500,
+      "historical_rmse": 1.243738,
+      "historical_initial_rmse": 1.248585,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed4_support500.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "lorenz",
+      "seed": 5,
+      "support": 1,
+      "historical_rmse": 1.385258,
+      "historical_initial_rmse": 1.392859,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed5_support1.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "lorenz",
+      "seed": 5,
+      "support": 10,
+      "historical_rmse": 1.384517,
+      "historical_initial_rmse": 1.392859,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed5_support10.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "lorenz",
+      "seed": 5,
+      "support": 100,
+      "historical_rmse": 1.389008,
+      "historical_initial_rmse": 1.392859,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed5_support100.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "lorenz",
+      "seed": 5,
+      "support": 20,
+      "historical_rmse": 1.388879,
+      "historical_initial_rmse": 1.392859,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed5_support20.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "lorenz",
+      "seed": 5,
+      "support": 200,
+      "historical_rmse": 1.387867,
+      "historical_initial_rmse": 1.392859,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed5_support200.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "lorenz",
+      "seed": 5,
+      "support": 5,
+      "historical_rmse": 1.386555,
+      "historical_initial_rmse": 1.392859,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed5_support5.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "lorenz",
+      "seed": 5,
+      "support": 50,
+      "historical_rmse": 1.38993,
+      "historical_initial_rmse": 1.392859,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed5_support50.log"
+    },
+    {
+      "method": "CAVIA",
+      "system": "lorenz",
+      "seed": 5,
+      "support": 500,
+      "historical_rmse": 1.383297,
+      "historical_initial_rmse": 1.392859,
+      "log": "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed5_support500.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "fhn",
+      "seed": 1,
+      "support": 1,
+      "historical_rmse": 0.362441,
+      "historical_initial_rmse": 0.8964,
+      "log": "workspace/compare2/Reptile/log/auto_runs_fhn/seed1_support1.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "fhn",
+      "seed": 1,
+      "support": 10,
+      "historical_rmse": 0.663858,
+      "historical_initial_rmse": 0.8964,
+      "log": "workspace/compare2/Reptile/log/auto_runs_fhn/seed1_support10.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "fhn",
+      "seed": 1,
+      "support": 100,
+      "historical_rmse": 1.720945,
+      "historical_initial_rmse": 0.8964,
+      "log": "workspace/compare2/Reptile/log/auto_runs_fhn/seed1_support100.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "fhn",
+      "seed": 1,
+      "support": 20,
+      "historical_rmse": 1.632074,
+      "historical_initial_rmse": 0.8964,
+      "log": "workspace/compare2/Reptile/log/auto_runs_fhn/seed1_support20.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "fhn",
+      "seed": 1,
+      "support": 200,
+      "historical_rmse": 1.684996,
+      "historical_initial_rmse": 0.8964,
+      "log": "workspace/compare2/Reptile/log/auto_runs_fhn/seed1_support200.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "fhn",
+      "seed": 1,
+      "support": 5,
+      "historical_rmse": 0.494041,
+      "historical_initial_rmse": 0.8964,
+      "log": "workspace/compare2/Reptile/log/auto_runs_fhn/seed1_support5.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "fhn",
+      "seed": 1,
+      "support": 50,
+      "historical_rmse": 1.650468,
+      "historical_initial_rmse": 0.8964,
+      "log": "workspace/compare2/Reptile/log/auto_runs_fhn/seed1_support50.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "fhn",
+      "seed": 1,
+      "support": 500,
+      "historical_rmse": 1.657249,
+      "historical_initial_rmse": 0.8964,
+      "log": "workspace/compare2/Reptile/log/auto_runs_fhn/seed1_support500.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "fhn",
+      "seed": 2,
+      "support": 1,
+      "historical_rmse": 0.399251,
+      "historical_initial_rmse": 0.920615,
+      "log": "workspace/compare2/Reptile/log/auto_runs_fhn/seed2_support1.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "fhn",
+      "seed": 2,
+      "support": 10,
+      "historical_rmse": 0.659341,
+      "historical_initial_rmse": 0.920615,
+      "log": "workspace/compare2/Reptile/log/auto_runs_fhn/seed2_support10.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "fhn",
+      "seed": 2,
+      "support": 100,
+      "historical_rmse": 1.804398,
+      "historical_initial_rmse": 0.920615,
+      "log": "workspace/compare2/Reptile/log/auto_runs_fhn/seed2_support100.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "fhn",
+      "seed": 2,
+      "support": 20,
+      "historical_rmse": 1.332133,
+      "historical_initial_rmse": 0.920615,
+      "log": "workspace/compare2/Reptile/log/auto_runs_fhn/seed2_support20.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "fhn",
+      "seed": 2,
+      "support": 200,
+      "historical_rmse": 1.794178,
+      "historical_initial_rmse": 0.920615,
+      "log": "workspace/compare2/Reptile/log/auto_runs_fhn/seed2_support200.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "fhn",
+      "seed": 2,
+      "support": 5,
+      "historical_rmse": 0.663119,
+      "historical_initial_rmse": 0.920615,
+      "log": "workspace/compare2/Reptile/log/auto_runs_fhn/seed2_support5.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "fhn",
+      "seed": 2,
+      "support": 50,
+      "historical_rmse": 1.693344,
+      "historical_initial_rmse": 0.920615,
+      "log": "workspace/compare2/Reptile/log/auto_runs_fhn/seed2_support50.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "fhn",
+      "seed": 2,
+      "support": 500,
+      "historical_rmse": 1.781978,
+      "historical_initial_rmse": 0.920615,
+      "log": "workspace/compare2/Reptile/log/auto_runs_fhn/seed2_support500.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "fhn",
+      "seed": 3,
+      "support": 1,
+      "historical_rmse": 0.33459,
+      "historical_initial_rmse": 0.924204,
+      "log": "workspace/compare2/Reptile/log/auto_runs_fhn/seed3_support1.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "fhn",
+      "seed": 3,
+      "support": 10,
+      "historical_rmse": 0.632234,
+      "historical_initial_rmse": 0.924204,
+      "log": "workspace/compare2/Reptile/log/auto_runs_fhn/seed3_support10.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "fhn",
+      "seed": 3,
+      "support": 100,
+      "historical_rmse": 1.452801,
+      "historical_initial_rmse": 0.924204,
+      "log": "workspace/compare2/Reptile/log/auto_runs_fhn/seed3_support100.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "fhn",
+      "seed": 3,
+      "support": 20,
+      "historical_rmse": 1.388432,
+      "historical_initial_rmse": 0.924204,
+      "log": "workspace/compare2/Reptile/log/auto_runs_fhn/seed3_support20.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "fhn",
+      "seed": 3,
+      "support": 200,
+      "historical_rmse": 1.474471,
+      "historical_initial_rmse": 0.924204,
+      "log": "workspace/compare2/Reptile/log/auto_runs_fhn/seed3_support200.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "fhn",
+      "seed": 3,
+      "support": 5,
+      "historical_rmse": 0.536596,
+      "historical_initial_rmse": 0.924204,
+      "log": "workspace/compare2/Reptile/log/auto_runs_fhn/seed3_support5.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "fhn",
+      "seed": 3,
+      "support": 50,
+      "historical_rmse": 1.415258,
+      "historical_initial_rmse": 0.924204,
+      "log": "workspace/compare2/Reptile/log/auto_runs_fhn/seed3_support50.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "fhn",
+      "seed": 3,
+      "support": 500,
+      "historical_rmse": 1.453851,
+      "historical_initial_rmse": 0.924204,
+      "log": "workspace/compare2/Reptile/log/auto_runs_fhn/seed3_support500.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "fhn",
+      "seed": 4,
+      "support": 1,
+      "historical_rmse": 0.511681,
+      "historical_initial_rmse": 0.927742,
+      "log": "workspace/compare2/Reptile/log/auto_runs_fhn/seed4_support1.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "fhn",
+      "seed": 4,
+      "support": 10,
+      "historical_rmse": 0.767898,
+      "historical_initial_rmse": 0.927742,
+      "log": "workspace/compare2/Reptile/log/auto_runs_fhn/seed4_support10.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "fhn",
+      "seed": 4,
+      "support": 100,
+      "historical_rmse": 1.641681,
+      "historical_initial_rmse": 0.927742,
+      "log": "workspace/compare2/Reptile/log/auto_runs_fhn/seed4_support100.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "fhn",
+      "seed": 4,
+      "support": 20,
+      "historical_rmse": 1.502897,
+      "historical_initial_rmse": 0.927742,
+      "log": "workspace/compare2/Reptile/log/auto_runs_fhn/seed4_support20.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "fhn",
+      "seed": 4,
+      "support": 200,
+      "historical_rmse": 1.619207,
+      "historical_initial_rmse": 0.927742,
+      "log": "workspace/compare2/Reptile/log/auto_runs_fhn/seed4_support200.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "fhn",
+      "seed": 4,
+      "support": 5,
+      "historical_rmse": 0.593764,
+      "historical_initial_rmse": 0.927742,
+      "log": "workspace/compare2/Reptile/log/auto_runs_fhn/seed4_support5.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "fhn",
+      "seed": 4,
+      "support": 50,
+      "historical_rmse": 1.594881,
+      "historical_initial_rmse": 0.927742,
+      "log": "workspace/compare2/Reptile/log/auto_runs_fhn/seed4_support50.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "fhn",
+      "seed": 4,
+      "support": 500,
+      "historical_rmse": 1.609209,
+      "historical_initial_rmse": 0.927742,
+      "log": "workspace/compare2/Reptile/log/auto_runs_fhn/seed4_support500.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "fhn",
+      "seed": 5,
+      "support": 1,
+      "historical_rmse": 0.289997,
+      "historical_initial_rmse": 0.93062,
+      "log": "workspace/compare2/Reptile/log/auto_runs_fhn/seed5_support1.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "fhn",
+      "seed": 5,
+      "support": 10,
+      "historical_rmse": 0.535643,
+      "historical_initial_rmse": 0.93062,
+      "log": "workspace/compare2/Reptile/log/auto_runs_fhn/seed5_support10.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "fhn",
+      "seed": 5,
+      "support": 100,
+      "historical_rmse": 1.906907,
+      "historical_initial_rmse": 0.93062,
+      "log": "workspace/compare2/Reptile/log/auto_runs_fhn/seed5_support100.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "fhn",
+      "seed": 5,
+      "support": 20,
+      "historical_rmse": 1.591079,
+      "historical_initial_rmse": 0.93062,
+      "log": "workspace/compare2/Reptile/log/auto_runs_fhn/seed5_support20.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "fhn",
+      "seed": 5,
+      "support": 200,
+      "historical_rmse": 1.833275,
+      "historical_initial_rmse": 0.93062,
+      "log": "workspace/compare2/Reptile/log/auto_runs_fhn/seed5_support200.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "fhn",
+      "seed": 5,
+      "support": 5,
+      "historical_rmse": 0.397007,
+      "historical_initial_rmse": 0.93062,
+      "log": "workspace/compare2/Reptile/log/auto_runs_fhn/seed5_support5.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "fhn",
+      "seed": 5,
+      "support": 50,
+      "historical_rmse": 1.801821,
+      "historical_initial_rmse": 0.93062,
+      "log": "workspace/compare2/Reptile/log/auto_runs_fhn/seed5_support50.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "fhn",
+      "seed": 5,
+      "support": 500,
+      "historical_rmse": 1.809511,
+      "historical_initial_rmse": 0.93062,
+      "log": "workspace/compare2/Reptile/log/auto_runs_fhn/seed5_support500.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "lorenz",
+      "seed": 1,
+      "support": 1,
+      "historical_rmse": 3.618245,
+      "historical_initial_rmse": 2.263139,
+      "log": "workspace/compare2/Reptile/log/auto_runs_lorenz/seed1_support1.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "lorenz",
+      "seed": 1,
+      "support": 10,
+      "historical_rmse": 3.319437,
+      "historical_initial_rmse": 2.263139,
+      "log": "workspace/compare2/Reptile/log/auto_runs_lorenz/seed1_support10.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "lorenz",
+      "seed": 1,
+      "support": 100,
+      "historical_rmse": 2.968244,
+      "historical_initial_rmse": 2.263139,
+      "log": "workspace/compare2/Reptile/log/auto_runs_lorenz/seed1_support100.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "lorenz",
+      "seed": 1,
+      "support": 20,
+      "historical_rmse": 3.477306,
+      "historical_initial_rmse": 2.263139,
+      "log": "workspace/compare2/Reptile/log/auto_runs_lorenz/seed1_support20.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "lorenz",
+      "seed": 1,
+      "support": 200,
+      "historical_rmse": 0.504992,
+      "historical_initial_rmse": 2.263139,
+      "log": "workspace/compare2/Reptile/log/auto_runs_lorenz/seed1_support200.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "lorenz",
+      "seed": 1,
+      "support": 5,
+      "historical_rmse": 3.46158,
+      "historical_initial_rmse": 2.263139,
+      "log": "workspace/compare2/Reptile/log/auto_runs_lorenz/seed1_support5.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "lorenz",
+      "seed": 1,
+      "support": 50,
+      "historical_rmse": 3.492646,
+      "historical_initial_rmse": 2.263139,
+      "log": "workspace/compare2/Reptile/log/auto_runs_lorenz/seed1_support50.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "lorenz",
+      "seed": 1,
+      "support": 500,
+      "historical_rmse": 0.218202,
+      "historical_initial_rmse": 2.263139,
+      "log": "workspace/compare2/Reptile/log/auto_runs_lorenz/seed1_support500.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "lorenz",
+      "seed": 2,
+      "support": 1,
+      "historical_rmse": 3.738865,
+      "historical_initial_rmse": 2.340584,
+      "log": "workspace/compare2/Reptile/log/auto_runs_lorenz/seed2_support1.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "lorenz",
+      "seed": 2,
+      "support": 10,
+      "historical_rmse": 3.446982,
+      "historical_initial_rmse": 2.340584,
+      "log": "workspace/compare2/Reptile/log/auto_runs_lorenz/seed2_support10.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "lorenz",
+      "seed": 2,
+      "support": 100,
+      "historical_rmse": 3.107277,
+      "historical_initial_rmse": 2.340584,
+      "log": "workspace/compare2/Reptile/log/auto_runs_lorenz/seed2_support100.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "lorenz",
+      "seed": 2,
+      "support": 20,
+      "historical_rmse": 3.40993,
+      "historical_initial_rmse": 2.340584,
+      "log": "workspace/compare2/Reptile/log/auto_runs_lorenz/seed2_support20.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "lorenz",
+      "seed": 2,
+      "support": 200,
+      "historical_rmse": 0.495362,
+      "historical_initial_rmse": 2.340584,
+      "log": "workspace/compare2/Reptile/log/auto_runs_lorenz/seed2_support200.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "lorenz",
+      "seed": 2,
+      "support": 5,
+      "historical_rmse": 3.585317,
+      "historical_initial_rmse": 2.340584,
+      "log": "workspace/compare2/Reptile/log/auto_runs_lorenz/seed2_support5.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "lorenz",
+      "seed": 2,
+      "support": 50,
+      "historical_rmse": 3.316778,
+      "historical_initial_rmse": 2.340584,
+      "log": "workspace/compare2/Reptile/log/auto_runs_lorenz/seed2_support50.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "lorenz",
+      "seed": 2,
+      "support": 500,
+      "historical_rmse": 0.226808,
+      "historical_initial_rmse": 2.340584,
+      "log": "workspace/compare2/Reptile/log/auto_runs_lorenz/seed2_support500.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "lorenz",
+      "seed": 3,
+      "support": 1,
+      "historical_rmse": 3.459989,
+      "historical_initial_rmse": 2.300844,
+      "log": "workspace/compare2/Reptile/log/auto_runs_lorenz/seed3_support1.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "lorenz",
+      "seed": 3,
+      "support": 10,
+      "historical_rmse": 3.194767,
+      "historical_initial_rmse": 2.300844,
+      "log": "workspace/compare2/Reptile/log/auto_runs_lorenz/seed3_support10.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "lorenz",
+      "seed": 3,
+      "support": 100,
+      "historical_rmse": 2.886991,
+      "historical_initial_rmse": 2.300844,
+      "log": "workspace/compare2/Reptile/log/auto_runs_lorenz/seed3_support100.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "lorenz",
+      "seed": 3,
+      "support": 20,
+      "historical_rmse": 3.166873,
+      "historical_initial_rmse": 2.300844,
+      "log": "workspace/compare2/Reptile/log/auto_runs_lorenz/seed3_support20.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "lorenz",
+      "seed": 3,
+      "support": 200,
+      "historical_rmse": 0.543177,
+      "historical_initial_rmse": 2.300844,
+      "log": "workspace/compare2/Reptile/log/auto_runs_lorenz/seed3_support200.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "lorenz",
+      "seed": 3,
+      "support": 5,
+      "historical_rmse": 3.364689,
+      "historical_initial_rmse": 2.300844,
+      "log": "workspace/compare2/Reptile/log/auto_runs_lorenz/seed3_support5.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "lorenz",
+      "seed": 3,
+      "support": 50,
+      "historical_rmse": 3.060801,
+      "historical_initial_rmse": 2.300844,
+      "log": "workspace/compare2/Reptile/log/auto_runs_lorenz/seed3_support50.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "lorenz",
+      "seed": 3,
+      "support": 500,
+      "historical_rmse": 0.183959,
+      "historical_initial_rmse": 2.300844,
+      "log": "workspace/compare2/Reptile/log/auto_runs_lorenz/seed3_support500.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "lorenz",
+      "seed": 4,
+      "support": 1,
+      "historical_rmse": 3.921166,
+      "historical_initial_rmse": 2.325467,
+      "log": "workspace/compare2/Reptile/log/auto_runs_lorenz/seed4_support1.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "lorenz",
+      "seed": 4,
+      "support": 10,
+      "historical_rmse": 3.709836,
+      "historical_initial_rmse": 2.325467,
+      "log": "workspace/compare2/Reptile/log/auto_runs_lorenz/seed4_support10.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "lorenz",
+      "seed": 4,
+      "support": 100,
+      "historical_rmse": 2.998843,
+      "historical_initial_rmse": 2.325467,
+      "log": "workspace/compare2/Reptile/log/auto_runs_lorenz/seed4_support100.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "lorenz",
+      "seed": 4,
+      "support": 20,
+      "historical_rmse": 3.740576,
+      "historical_initial_rmse": 2.325467,
+      "log": "workspace/compare2/Reptile/log/auto_runs_lorenz/seed4_support20.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "lorenz",
+      "seed": 4,
+      "support": 200,
+      "historical_rmse": 0.456298,
+      "historical_initial_rmse": 2.325467,
+      "log": "workspace/compare2/Reptile/log/auto_runs_lorenz/seed4_support200.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "lorenz",
+      "seed": 4,
+      "support": 5,
+      "historical_rmse": 3.781341,
+      "historical_initial_rmse": 2.325467,
+      "log": "workspace/compare2/Reptile/log/auto_runs_lorenz/seed4_support5.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "lorenz",
+      "seed": 4,
+      "support": 50,
+      "historical_rmse": 3.618834,
+      "historical_initial_rmse": 2.325467,
+      "log": "workspace/compare2/Reptile/log/auto_runs_lorenz/seed4_support50.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "lorenz",
+      "seed": 4,
+      "support": 500,
+      "historical_rmse": 0.222379,
+      "historical_initial_rmse": 2.325467,
+      "log": "workspace/compare2/Reptile/log/auto_runs_lorenz/seed4_support500.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "lorenz",
+      "seed": 5,
+      "support": 1,
+      "historical_rmse": 3.660466,
+      "historical_initial_rmse": 2.277461,
+      "log": "workspace/compare2/Reptile/log/auto_runs_lorenz/seed5_support1.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "lorenz",
+      "seed": 5,
+      "support": 10,
+      "historical_rmse": 3.412132,
+      "historical_initial_rmse": 2.277461,
+      "log": "workspace/compare2/Reptile/log/auto_runs_lorenz/seed5_support10.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "lorenz",
+      "seed": 5,
+      "support": 100,
+      "historical_rmse": 2.988975,
+      "historical_initial_rmse": 2.277461,
+      "log": "workspace/compare2/Reptile/log/auto_runs_lorenz/seed5_support100.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "lorenz",
+      "seed": 5,
+      "support": 20,
+      "historical_rmse": 3.533319,
+      "historical_initial_rmse": 2.277461,
+      "log": "workspace/compare2/Reptile/log/auto_runs_lorenz/seed5_support20.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "lorenz",
+      "seed": 5,
+      "support": 200,
+      "historical_rmse": 0.538232,
+      "historical_initial_rmse": 2.277461,
+      "log": "workspace/compare2/Reptile/log/auto_runs_lorenz/seed5_support200.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "lorenz",
+      "seed": 5,
+      "support": 5,
+      "historical_rmse": 3.634547,
+      "historical_initial_rmse": 2.277461,
+      "log": "workspace/compare2/Reptile/log/auto_runs_lorenz/seed5_support5.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "lorenz",
+      "seed": 5,
+      "support": 50,
+      "historical_rmse": 3.56003,
+      "historical_initial_rmse": 2.277461,
+      "log": "workspace/compare2/Reptile/log/auto_runs_lorenz/seed5_support50.log"
+    },
+    {
+      "method": "Reptile",
+      "system": "lorenz",
+      "seed": 5,
+      "support": 500,
+      "historical_rmse": 0.191167,
+      "historical_initial_rmse": 2.277461,
+      "log": "workspace/compare2/Reptile/log/auto_runs_lorenz/seed5_support500.log"
+    }
+  ],
+  "data": {
+    "fhn": {
+      "source_records": [
+        {
+          "count": 1000,
+          "duration": 10.0,
+          "parameters": [
+            0.6,
+            0.8,
+            0.0
+          ],
+          "split": "train"
+        },
+        {
+          "count": 1000,
+          "duration": 10.0,
+          "parameters": [
+            0.6,
+            0.8,
+            0.1
+          ],
+          "split": "train"
+        },
+        {
+          "count": 1000,
+          "duration": 10.0,
+          "parameters": [
+            0.6,
+            0.8,
+            0.2
+          ],
+          "split": "train"
+        },
+        {
+          "count": 1000,
+          "duration": 10.0,
+          "parameters": [
+            0.6,
+            0.9,
+            0.0
+          ],
+          "split": "train"
+        },
+        {
+          "count": 1000,
+          "duration": 10.0,
+          "parameters": [
+            0.6,
+            0.9,
+            0.1
+          ],
+          "split": "train"
+        },
+        {
+          "count": 1000,
+          "duration": 10.0,
+          "parameters": [
+            0.6,
+            0.9,
+            0.2
+          ],
+          "split": "train"
+        },
+        {
+          "count": 1000,
+          "duration": 10.0,
+          "parameters": [
+            0.6,
+            1.0,
+            0.0
+          ],
+          "split": "train"
+        },
+        {
+          "count": 1000,
+          "duration": 10.0,
+          "parameters": [
+            0.6,
+            1.0,
+            0.1
+          ],
+          "split": "train"
+        },
+        {
+          "count": 1000,
+          "duration": 10.0,
+          "parameters": [
+            0.6,
+            1.0,
+            0.2
+          ],
+          "split": "train"
+        },
+        {
+          "count": 1000,
+          "duration": 10.0,
+          "parameters": [
+            0.7,
+            0.8,
+            0.0
+          ],
+          "split": "train"
+        },
+        {
+          "count": 1000,
+          "duration": 10.0,
+          "parameters": [
+            0.7,
+            0.8,
+            0.1
+          ],
+          "split": "train"
+        },
+        {
+          "count": 1000,
+          "duration": 10.0,
+          "parameters": [
+            0.7,
+            0.8,
+            0.2
+          ],
+          "split": "train"
+        },
+        {
+          "count": 1000,
+          "duration": 10.0,
+          "parameters": [
+            0.7,
+            0.9,
+            0.0
+          ],
+          "split": "train"
+        },
+        {
+          "count": 1000,
+          "duration": 10.0,
+          "parameters": [
+            0.7,
+            0.9,
+            0.1
+          ],
+          "split": "train"
+        },
+        {
+          "count": 1000,
+          "duration": 10.0,
+          "parameters": [
+            0.7,
+            0.9,
+            0.2
+          ],
+          "split": "train"
+        },
+        {
+          "count": 1000,
+          "duration": 10.0,
+          "parameters": [
+            0.7,
+            1.0,
+            0.0
+          ],
+          "split": "train"
+        },
+        {
+          "count": 1000,
+          "duration": 10.0,
+          "parameters": [
+            0.7,
+            1.0,
+            0.1
+          ],
+          "split": "train"
+        },
+        {
+          "count": 1000,
+          "duration": 10.0,
+          "parameters": [
+            0.7,
+            1.0,
+            0.2
+          ],
+          "split": "train"
+        },
+        {
+          "count": 1000,
+          "duration": 10.0,
+          "parameters": [
+            0.8,
+            0.8,
+            0.0
+          ],
+          "split": "train"
+        },
+        {
+          "count": 1000,
+          "duration": 10.0,
+          "parameters": [
+            0.8,
+            0.8,
+            0.1
+          ],
+          "split": "train"
+        },
+        {
+          "count": 1000,
+          "duration": 10.0,
+          "parameters": [
+            0.8,
+            0.8,
+            0.2
+          ],
+          "split": "train"
+        },
+        {
+          "count": 1000,
+          "duration": 10.0,
+          "parameters": [
+            0.8,
+            0.9,
+            0.0
+          ],
+          "split": "train"
+        },
+        {
+          "count": 1000,
+          "duration": 10.0,
+          "parameters": [
+            0.8,
+            0.9,
+            0.1
+          ],
+          "split": "train"
+        },
+        {
+          "count": 1000,
+          "duration": 10.0,
+          "parameters": [
+            0.8,
+            0.9,
+            0.2
+          ],
+          "split": "train"
+        },
+        {
+          "count": 1000,
+          "duration": 10.0,
+          "parameters": [
+            0.8,
+            1.0,
+            0.0
+          ],
+          "split": "train"
+        },
+        {
+          "count": 1000,
+          "duration": 10.0,
+          "parameters": [
+            0.8,
+            1.0,
+            0.1
+          ],
+          "split": "train"
+        },
+        {
+          "count": 1000,
+          "duration": 10.0,
+          "parameters": [
+            0.8,
+            1.0,
+            0.2
+          ],
+          "split": "train"
+        }
+      ],
+      "query": {
+        "count": 1000,
+        "duration": 10.0,
+        "parameters": [
+          0.85,
+          1.05,
+          0.85
+        ],
+        "split": "query"
+      },
+      "ranges": [
+        [
+          -2.0,
+          2.0
+        ],
+        [
+          -2.0,
+          2.0
+        ]
+      ],
+      "normalization": {
+        "input": {
+          "mean": [
+            -0.8184501252188714,
+            0.11589468243530916
+          ],
+          "std": [
+            1.238060988701409,
+            0.6782514530511612
+          ]
+        },
+        "output": {
+          "mean": [
+            -0.13377117996477242,
+            -0.04499987508320659
+          ],
+          "std": [
+            0.5088727137609343,
+            0.2470758253396034
+          ]
+        }
+      },
+      "source_seed_start": 0,
+      "support_data_seed": 2025,
+      "query_data_seed": 4096,
+      "supports": {
+        "1": {
+          "count": 1,
+          "duration": 10.0,
+          "parameters": [
+            0.85,
+            1.05,
+            0.85
+          ],
+          "split": "support"
+        },
+        "5": {
+          "count": 5,
+          "duration": 10.0,
+          "parameters": [
+            0.85,
+            1.05,
+            0.85
+          ],
+          "split": "support"
+        },
+        "10": {
+          "count": 10,
+          "duration": 10.0,
+          "parameters": [
+            0.85,
+            1.05,
+            0.85
+          ],
+          "split": "support"
+        },
+        "20": {
+          "count": 20,
+          "duration": 10.0,
+          "parameters": [
+            0.85,
+            1.05,
+            0.85
+          ],
+          "split": "support"
+        },
+        "50": {
+          "count": 50,
+          "duration": 10.0,
+          "parameters": [
+            0.85,
+            1.05,
+            0.85
+          ],
+          "split": "support"
+        },
+        "100": {
+          "count": 100,
+          "duration": 10.0,
+          "parameters": [
+            0.85,
+            1.05,
+            0.85
+          ],
+          "split": "support"
+        },
+        "200": {
+          "count": 200,
+          "duration": 10.0,
+          "parameters": [
+            0.85,
+            1.05,
+            0.85
+          ],
+          "split": "support"
+        },
+        "500": {
+          "count": 500,
+          "duration": 10.0,
+          "parameters": [
+            0.85,
+            1.05,
+            0.85
+          ],
+          "split": "support"
+        }
+      }
+    },
+    "lorenz": {
+      "source_records": [
+        {
+          "count": 1000,
+          "duration": 10.0,
+          "parameters": [
+            11.5,
+            22,
+            4
+          ],
+          "split": "train"
+        },
+        {
+          "count": 1000,
+          "duration": 10.0,
+          "parameters": [
+            7,
+            33,
+            1.2
+          ],
+          "split": "train"
+        },
+        {
+          "count": 1000,
+          "duration": 10.0,
+          "parameters": [
+            13,
+            21,
+            4.5
+          ],
+          "split": "train"
+        },
+        {
+          "count": 1000,
+          "duration": 10.0,
+          "parameters": [
+            6.5,
+            34,
+            1
+          ],
+          "split": "train"
+        },
+        {
+          "count": 1000,
+          "duration": 10.0,
+          "parameters": [
+            14,
+            20,
+            5
+          ],
+          "split": "train"
+        },
+        {
+          "count": 1000,
+          "duration": 10.0,
+          "parameters": [
+            6,
+            35,
+            0.8
+          ],
+          "split": "train"
+        },
+        {
+          "count": 1000,
+          "duration": 10.0,
+          "parameters": [
+            15,
+            19,
+            5.5
+          ],
+          "split": "train"
+        },
+        {
+          "count": 1000,
+          "duration": 10.0,
+          "parameters": [
+            5.5,
+            36,
+            0.6
+          ],
+          "split": "train"
+        },
+        {
+          "count": 1000,
+          "duration": 10.0,
+          "parameters": [
+            16,
+            18,
+            6
+          ],
+          "split": "train"
+        },
+        {
+          "count": 1000,
+          "duration": 10.0,
+          "parameters": [
+            5,
+            37,
+            0.5
+          ],
+          "split": "train"
+        },
+        {
+          "count": 1000,
+          "duration": 10.0,
+          "parameters": [
+            17,
+            17,
+            6.5
+          ],
+          "split": "train"
+        },
+        {
+          "count": 1000,
+          "duration": 10.0,
+          "parameters": [
+            4.5,
+            38,
+            0.4
+          ],
+          "split": "train"
+        },
+        {
+          "count": 1000,
+          "duration": 10.0,
+          "parameters": [
+            18,
+            16,
+            7
+          ],
+          "split": "train"
+        },
+        {
+          "count": 1000,
+          "duration": 10.0,
+          "parameters": [
+            4,
+            39,
+            0.3
+          ],
+          "split": "train"
+        },
+        {
+          "count": 1000,
+          "duration": 10.0,
+          "parameters": [
+            19,
+            15,
+            7.5
+          ],
+          "split": "train"
+        }
+      ],
+      "query": {
+        "count": 500,
+        "duration": 5.0,
+        "parameters": [
+          9.9,
+          29.5,
+          2.9
+        ],
+        "split": "query"
+      },
+      "ranges": [
+        [
+          5,
+          10
+        ],
+        [
+          -10,
+          -5
+        ],
+        [
+          20,
+          30
+        ]
+      ],
+      "normalization": {
+        "input": {
+          "mean": [
+            -5.431099183057551,
+            -5.5609723529922634,
+            24.98305783821501
+          ],
+          "std": [
+            5.776028734259492,
+            6.124045971521195,
+            9.415379351219638
+          ]
+        },
+        "output": {
+          "mean": [
+            -1.3904163378179437,
+            0.06328787476433266,
+            0.0983605466880982
+          ],
+          "std": [
+            17.64603741213676,
+            23.051402547297492,
+            27.220157361052063
+          ]
+        }
+      },
+      "source_seed_start": 0,
+      "support_data_seed": 2025,
+      "query_data_seed": 4096,
+      "supports": {
+        "1": {
+          "count": 1,
+          "duration": 0.01,
+          "parameters": [
+            9.9,
+            29.5,
+            2.9
+          ],
+          "split": "support"
+        },
+        "5": {
+          "count": 5,
+          "duration": 0.05,
+          "parameters": [
+            9.9,
+            29.5,
+            2.9
+          ],
+          "split": "support"
+        },
+        "10": {
+          "count": 10,
+          "duration": 0.1,
+          "parameters": [
+            9.9,
+            29.5,
+            2.9
+          ],
+          "split": "support"
+        },
+        "20": {
+          "count": 20,
+          "duration": 0.2,
+          "parameters": [
+            9.9,
+            29.5,
+            2.9
+          ],
+          "split": "support"
+        },
+        "50": {
+          "count": 50,
+          "duration": 0.5,
+          "parameters": [
+            9.9,
+            29.5,
+            2.9
+          ],
+          "split": "support"
+        },
+        "100": {
+          "count": 100,
+          "duration": 1.0,
+          "parameters": [
+            9.9,
+            29.5,
+            2.9
+          ],
+          "split": "support"
+        },
+        "200": {
+          "count": 200,
+          "duration": 2.0,
+          "parameters": [
+            9.9,
+            29.5,
+            2.9
+          ],
+          "split": "support"
+        },
+        "500": {
+          "count": 500,
+          "duration": 5.0,
+          "parameters": [
+            9.9,
+            29.5,
+            2.9
+          ],
+          "split": "support"
+        }
+      }
+    }
+  },
+  "protected_hashes": {
+    "workspace/compare2/DSSDL-symbol/final_data/seed/auto_runs_fhn_by_seed.csv": "577b9133fd3506ab8dcb0997b26ae222a0de7cd97674921593cedd25f4b533db",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed1_support1.log": "a7b8a8ee1ba0303a0391597a463482bb0e6e2da98f452c4bd83eddf233d81ce1",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed1_support10.log": "9d97a3532f1e8aaf940f36bcb644fa4e005f7628356bf50c9c9c4ce85e147bb6",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed1_support100.log": "5c99b56b643bb0b1585075a8f1805510d39eb4f6f3a5dace44b3b90908a1a6f1",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed1_support20.log": "9f1a4320a5a9fcdbdbd98bbddf0602f4d143ae0a47b01d0f70730d33b1623850",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed1_support200.log": "fdd6358c432d27129805cbe55936c5bad3318524d61d30d4ac225ed5fe51ef4b",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed1_support5.log": "5891456ac932b0bba2cac3508c63fc7d617f542c551334fad1274fe90ccb35eb",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed1_support50.log": "ad8b61ded9b783fc392d61d61c7aacadf1b8c8056eb3f8d33f93c1f15b056c4f",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed1_support500.log": "087fd889c634bb2f535c1da6dd6fdbfa908d43273f737f3ca1469255dd0d2302",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed2_support1.log": "4a731d46504b2c58fc98cfa0ad7d17c11225ea0574d3bdbcea819c70e85185d9",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed2_support10.log": "a50610d91684a847349ed304fefc264dc8fdfd6a047eb6ff281ca7b4ddaf4cbb",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed2_support100.log": "0981e7609c1bceca4f84a024fa9435ba19101e00844da31c3d5b3a5982d8beb8",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed2_support20.log": "dc822a8ac4c0b42c3c620a4295dba8d7af4d61ddf0cf9bc134d6e1884fc2e0db",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed2_support200.log": "eabd45b3dda43fe0c13bc1f1a6383d6409536b7db3d2e197d79a500c70f322ce",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed2_support5.log": "44a091ec01fd0d782aee8d0f2333c93fbb184872f1ecb1a0d42455db42c46ef4",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed2_support50.log": "99ffe7f93dad87f86ed17c6a720f95978d7ca49b006c8e3d7c5cb1b2be21f21e",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed2_support500.log": "460b31cad747a57d8480d50b477e6f696613af82368bd639adc442ecbcc04e92",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed3_support1.log": "ef95ee6c1e7bb36a8095c7ef23ca0f393d61afb4e82ba588d94cf16e53e42294",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed3_support10.log": "413d5f45263c800e8b7bb1822e3fee83ba6a5aa2c90f2b220d0b9225b96001fc",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed3_support100.log": "f493f52b38e9f2e005b21e08afe4fd2f56eaa7fbe59b45b7627977c834232a63",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed3_support20.log": "b2ce5ad78fb808b827812d67bc6a315470c810f267824b125a3316a31e3b1248",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed3_support200.log": "9180aa51567bb179b960eac8b391db3ac0e68c86f685c618f4a47dd5fb273b05",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed3_support5.log": "c5c13066e36e9b5aeb69dee15001ac7ed8b43930bc8b5b17c7a01d664ef9adec",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed3_support50.log": "ea5e096fdf3044e3887fb9ce57fa608f7595d0ab465cc1426c224665f876e9e8",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed3_support500.log": "582a3bceaf36ce3a373cd04f23ad7c31801c890d25e86bcfa8509224840655c4",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed4_support1.log": "b09f9163fbc3255d7d93aa291fa8ab51ee43f62f2bb8b3a8c58be52502206cc2",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed4_support10.log": "01d6caabad28b819e8cc456308a77dcf0bce6bc3cff00258bebbdf2438693c03",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed4_support100.log": "1ad5d3d973df9d945c4943ebf5029e698cea04baaa406e2f5ddc724d24fbcfff",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed4_support20.log": "728b395a3eceda02dc593c8e65332bcd73002330d58e793ca532b8db2520f3ee",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed4_support200.log": "9290c01e0bc4cc42d731d41a49767cd707918b4b199fd7c5a1329907f7de0a60",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed4_support5.log": "bfc8579eb423f26509d1eeca4a1b19c9a02ae11c01c99079a6918409764a9a9a",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed4_support50.log": "6883765448adb0becd85b3f94bf63700ab62399fa0af9c5d5b0fbd68f875ebc9",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed4_support500.log": "581634eb9c6dc7467d718b5575718a2cd0ea090dfdca4ef2413a0c7d7acbd390",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed5_support1.log": "3cdf8d3253294eb9803147bc39b37c89e80e29cf4aa782df88f3485fe4350c5f",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed5_support10.log": "5904048bd67262f63c9a4abf914fcce5c72f4c268e601d51a2bacb700595d9cd",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed5_support100.log": "5e1606b164dc07864f74c702210eeb826481ba880db1be47dee5335cc5bec110",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed5_support20.log": "acad725c390b29d1ef9e434cefbacd01a777dbaab0733c1ac36641a83d59c208",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed5_support200.log": "2ce9591bba08e325665e10af53a4bfa6a90197e226461be584354af0868eb3ce",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed5_support5.log": "4f03c85b36e65de48909854d8653732118bb1bbf48ea10c2c6b418d237863a7e",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed5_support50.log": "6f9b4a6c565374c286dd61082aeb0ab0411bd576bcc422cb593e6797afc25ba5",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_fhn/seed5_support500.log": "52bd26cb3741bee8b0083d6808fdfabd1559074108205eab96c78ebd9027efe4",
+    "workspace/compare2/DSSDL-symbol/final_data/seed/auto_runs_lorenz_by_seed.csv": "07e5d8701cf516864a7dbe075e1921b355939cc84446912ffe97024b09707a42",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed1_support1.log": "f9a4541ab5aec4fac319b4d7628b696136572b8c33ebfc07c23d52d78b0bccad",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed1_support10.log": "3c6311ec36b746d68e48b4389e1a45a6a47c9d74040dffe2a5ffadd116cf8913",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed1_support100.log": "8f2ee7ae0f3aee6df5d0d1388ee151c69396a1ed1e3667e73aa08c626bcb7ccb",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed1_support20.log": "37975a8ac353c174fd012be7dde36663eb97a0930656fd2c27bfbd875cd60215",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed1_support200.log": "5eea8977b8e4e082b39cc0b4787ef45b986fbf1c744c0bbfbda180bb4b134ace",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed1_support5.log": "9aec89b61f97175c6dc7a4c32c207cecb8bad46c7e0100bd1a8a0a97d8a8a59d",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed1_support50.log": "7323666bb59eff63e27dbbb054023dfab561814a8fa9567db868a2e7f14ca729",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed1_support500.log": "eaf98d787e70396565dcd63798c5ec9075046b6abd45b7d7f1503c58acbf7527",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed2_support1.log": "50fd9c954334b70e8f3026ac1f37c21a8fd1dc541a2a3b974f882b2b82e7fdd3",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed2_support10.log": "0ebb1285badbd82e2ad7c753b04b6e5217eaeaaae6ed8cb8366fb108cdd707a7",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed2_support100.log": "3c77a61c9b0d31a940d409ee232a84deb135c0793358609f034885024356abc4",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed2_support20.log": "f598bc365091aa443cbd0ce186f347a8e3556053caab8d1bf04d2884fb604832",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed2_support200.log": "745db9f1e9c14f8d38167d4ab98f72300202cf2ee58cadfbc614d1b8d08ec750",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed2_support5.log": "efcfa0519f8540aa8345143c26e313c6ed911d6ffbb1eb562b09d871453b3078",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed2_support50.log": "d6bd5368d78ffddb2e3196aa7cffd26c19faac480f2607bbaeba1b343ac2d265",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed2_support500.log": "90cdcbdee212ef170f064905ece7ee61f7c7a4fd57a363fb1658702988bca15d",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed3_support1.log": "b18cf6480e065aef9f4f41431298bf97acde1e563306fdac77508766d87e4147",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed3_support10.log": "057e6aaa69b2549f8bc58102894b16b6562a8d8f959004a18eb41e18be90e37e",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed3_support100.log": "906d7388eeac600f0beab356be5ef6e577bd3f432310f4e788ea75c7e2a04890",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed3_support20.log": "b64fe2a6ac23bda613736ecb63e45371efdde0e1b4eca8fd8f2b64c947228389",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed3_support200.log": "a8df7a84884f60d031044ed9d8cae0aca1585b5111a7cf5f20ba7ee19a4966c5",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed3_support5.log": "8fd0afea237927b3d290cfbc059a3c29d1a347a2bb8dd79b5b2c3b52fe409568",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed3_support50.log": "de413f8315671013d848935f68282f51347f1d6c7c6e0f3ef61e98b0757617fb",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed3_support500.log": "6de8cf3a5f26765d064a2ef492f5b2bea9b0cd17b69b501d6d3eb0575e900b2b",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed4_support1.log": "4aff697cad7d801d5981cac6c6035a9ad1fc8a76f946a5c796b2a23b6bb3807d",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed4_support10.log": "81b44bd65d43790b91c6f0d6d372ce5e16d3c092ba35263f4bc21e79b7379719",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed4_support100.log": "89902221bc1e1c9e0a110f3f71abbbb38c7322a0c1d9275a3b57366d8df95956",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed4_support20.log": "f41342fd86e31896a4b675bec2dd27435faffc5e0573538f3f102044f019ff6b",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed4_support200.log": "a0466eaad46a780670caa9bd9a2b682062e88f3003dd55571831274adef65499",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed4_support5.log": "fb577769ef462ca6dbc1a6e9ac6bb1b309bf64bbd666726686125873df28a58d",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed4_support50.log": "53bc560b9787ab41fbfefd9de72bf89103827647345d19bfa88b68793bf42b42",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed4_support500.log": "5048827d1641ee988fe411c8e4b1c24df4a01e1fda6ea70f4396f6c7f003d10d",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed5_support1.log": "515df403358f28902dff1edbd015fa5248a75ebb2ab4b86180ab847efa1cdd14",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed5_support10.log": "3a38a01097a1e944c15e7653e281d1d27ead8487f2e47b0b6f6069037eefe8f1",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed5_support100.log": "4a1d9c179ae193fdc606cda5020a0da43ee7e6033425fb9d6c3cb6312ccf2e21",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed5_support20.log": "27c056eff19f07dd2dcaf48f571be1dbe0bd658849ad6b78513085d4a3bd200e",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed5_support200.log": "e083fccd2a7d52c6cc5c874e90e09638b366af1c84263e2e82b461acb3b51aef",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed5_support5.log": "f22504390832ce32b7d6b860d5fed59f5dcad2f7408c9c04d848e7fb37ba3680",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed5_support50.log": "bc7cfdded0769992045c2b655f4410e274aa8d381aced067c99856fc9e1201b3",
+    "workspace/compare2/DSSDL-symbol/log/auto_runs_lorenz/seed5_support500.log": "6515e089c51c254bf0323469b6e84d564566c55e836da12eae17a0ee8a1d4998",
+    "workspace/compare2/DSSDL-symbol/DSSDL_.py": "32dbbc502aea4d3fa3e673d42786a8ed1f4528ace26254cafad1f589ec23edea",
+    "workspace/compare2/DSSDL-symbol/DSSDL_mask.py": "12dfa6a8c4dd7b97e0502883b9537fc109067242523e42271c994d20761d7d11",
+    "workspace/compare2/DSSDL-symbol/evaluate.py": "e52e2e3651a134bc1135d1c187d3edec8768323fb90ab14cfd58ca818b1d5233",
+    "workspace/compare2/DSSDL-symbol/evaluate_mask.py": "2c354843949bba90ee8950a66b40a743cf5c35992575336664c8985b2234af92",
+    "workspace/compare2/DSSDL-symbol/finetune copy.py": "0b7275b43fd57be07b696fcaf706007d4a521a9ade18a7c9975a23e60f74d03a",
+    "workspace/compare2/DSSDL-symbol/finetune.py": "40b7266d44c7273af1d972af92e37e34b416aa8e1ec93a0b101ac5a718853f85",
+    "workspace/compare2/DSSDL-symbol/predict_with_pysr_model.py": "1b0e36862e1f8b53e27e959e677c5ceece371ca4ee1b2e9c691e950d0a543aca",
+    "workspace/compare2/DSSDL-symbol/pretrain.py": "9777fa2265012f8c5f88f6359dbc0edfebdb2293f936f6bbe50e453aeeb0e88e",
+    "workspace/compare2/DSSDL-symbol/symbolic_regression_pysr.py": "2d1572cd032d497bc07c7275ac3130f1f980515af6390c2c02c0ee1e9e927c9f",
+    "workspace/compare2/DSSDL-symbol/train_from_scratch.py": "36d41654c59b8910901af26594484e3eff17d9a9c8c6e59298f0afd240bb6e02",
+    "workspace/compare2/DSSDL-symbol/visualize_slowparam_distribution.py": "92b80e1760b6bb7d07043bb00348e01a270271438323d6dadae35bf7d94c2219",
+    "workspace/compare2/DSSDL-symbol/datasets/FHN/create_dataset.py": "011a86b50b8a58648e51713ae11a5cb0130d074f6437366df4e09b4e5be9ec53",
+    "workspace/compare2/DSSDL-symbol/datasets/FHN/__init__.py": "47def9383026f29e80683f1d8c009f3215c3463f181af6c97ec8fff5090683b3",
+    "workspace/compare2/DSSDL-symbol/datasets/lorenz/create_dataset.py": "bcd48f898aa65910035a8e12899ca8a599248ed017ebd74ca1a310c524693d72",
+    "workspace/compare2/DSSDL-symbol/datasets/lorenz/__init__.py": "306802620d02063e44cf73e11dc477794ee2a110cb8a71473e78a2cddbe82663",
+    "workspace/compare2/DSSDL-symbol/datasets/utils.py": "5b11d1e8542fb9a231fd542c0267b441c0dc03762059cf7b3fd420a4af19297c",
+    "workspace/compare2/DSSDL/final_data/seed/auto_runs_fhn_by_seed.csv": "37138a7d976ffad11e40d55b43e5de9b018847bb963960284146b733954e80bf",
+    "workspace/compare2/DSSDL/log/auto_runs_fhn/seed1_support1.log": "b5a2975f44eab24d48b33a046b6f3f5f7820aaa080462850c7e702ef5820457b",
+    "workspace/compare2/DSSDL/log/auto_runs_fhn/seed1_support10.log": "cba5bdad365ef494f2dc87341fe9b75dbef7f9333bfa72f01a1d2501f98669ea",
+    "workspace/compare2/DSSDL/log/auto_runs_fhn/seed1_support100.log": "56c58a19ecf51b40e005bb0f0dc86e33732a885419ecf9cf9f5a99152739cc33",
+    "workspace/compare2/DSSDL/log/auto_runs_fhn/seed1_support20.log": "3ccd6af42b8cc560a3e8a5ef355e8961e8e9e4dc89b12e0e8f3e79aa6234c444",
+    "workspace/compare2/DSSDL/log/auto_runs_fhn/seed1_support200.log": "528957c77004581b84959fabfcd0be194e42214bb2547a56403696bd1a4f4182",
+    "workspace/compare2/DSSDL/log/auto_runs_fhn/seed1_support5.log": "7c4aa14aa7680c41e0099eced60e7ffaaecc78c61ea8f460d2ec72ae8b91e8de",
+    "workspace/compare2/DSSDL/log/auto_runs_fhn/seed1_support50.log": "7f828016df24da1e9cc7afa9d79fd9fcc1c8a6cbf4a862341ea80bf4a2086d0f",
+    "workspace/compare2/DSSDL/log/auto_runs_fhn/seed1_support500.log": "bc8de29b863b22a534a981e3355ee72410ef22dd259a495cbd9de1086bf82387",
+    "workspace/compare2/DSSDL/log/auto_runs_fhn/seed2_support1.log": "8477e102ca18395fc0c224d118fd3fb11056f1326efb228520a3775b6f883e19",
+    "workspace/compare2/DSSDL/log/auto_runs_fhn/seed2_support10.log": "bfdf1356038a1a2eb96ddbe805f73ff749a27c1a05f6ea1ec3335345de109dc6",
+    "workspace/compare2/DSSDL/log/auto_runs_fhn/seed2_support100.log": "9454c26f24042b3c9b1c78289890e7fec3659ad15cca2f65f94a31ac13a50f56",
+    "workspace/compare2/DSSDL/log/auto_runs_fhn/seed2_support20.log": "3a6bd8c0165afb22847984d6181b51f485701ab1ecccbc66b2af95e640a111e6",
+    "workspace/compare2/DSSDL/log/auto_runs_fhn/seed2_support200.log": "f01e06ad6db8380a9becb04cc007d9dd5c31b430c331f73ff0eb771b594821af",
+    "workspace/compare2/DSSDL/log/auto_runs_fhn/seed2_support5.log": "d6dc84a0c82eaa0dcf9a2a1005dd1c9b758c1b136f7015fdc1a79d806f8f6b86",
+    "workspace/compare2/DSSDL/log/auto_runs_fhn/seed2_support50.log": "16fb0cf2a9fef852057c4b1070ed1600eb5796610fa67c911aec149d438194c7",
+    "workspace/compare2/DSSDL/log/auto_runs_fhn/seed2_support500.log": "61a7d53c9b8631b1d7372e914a34400329691158e6997187489f7cc046113423",
+    "workspace/compare2/DSSDL/log/auto_runs_fhn/seed3_support1.log": "b1ce4e4e981234372e8f9df61270ac5ab04de9affb5f361c6fba2e704deecaf1",
+    "workspace/compare2/DSSDL/log/auto_runs_fhn/seed3_support10.log": "238ed37591ba984d4fea8fdb970f95dd1fcc0453f1b8f7e7f472738207104d28",
+    "workspace/compare2/DSSDL/log/auto_runs_fhn/seed3_support100.log": "66bc8d2c7539793cdfb67d1ed1a27cd834fe3228f138ff5e18e05f3e4e1035de",
+    "workspace/compare2/DSSDL/log/auto_runs_fhn/seed3_support20.log": "fbbad20cf836e88b6a7c43737863f6a1bea10601a69137462d9b88b0cefdebdb",
+    "workspace/compare2/DSSDL/log/auto_runs_fhn/seed3_support200.log": "8f854ea26a46a2328775b097f87cc0fb36945994048ea17022460065f92281d5",
+    "workspace/compare2/DSSDL/log/auto_runs_fhn/seed3_support5.log": "6a7ba209210e8da046360a27b2bb938191e35872f8d302f01c17cfb6dc0b9e76",
+    "workspace/compare2/DSSDL/log/auto_runs_fhn/seed3_support50.log": "c4a0c7609b896c348bb29751ef172b949b6e1bc810bc5652a5aca661e4693196",
+    "workspace/compare2/DSSDL/log/auto_runs_fhn/seed3_support500.log": "26cbbe8e8bb63f313c0dd965c487c45cf7de83ff92ca38abc38f184450e81b7b",
+    "workspace/compare2/DSSDL/log/auto_runs_fhn/seed4_support1.log": "ce14c195ccf0be778aeb43ab3e49f4f8f8dd57bbbacfdbebc85b7a06c4584129",
+    "workspace/compare2/DSSDL/log/auto_runs_fhn/seed4_support10.log": "7f47a814d4c498f94ecbfd20b6412b3cf2041c346e3f3655f9626155ba171acf",
+    "workspace/compare2/DSSDL/log/auto_runs_fhn/seed4_support100.log": "93123d2423da465fca8d2f3ddba8cbf424fff867d84885a94f97ea11d016b47f",
+    "workspace/compare2/DSSDL/log/auto_runs_fhn/seed4_support20.log": "0c4ac36f2eae5aac9c860325be601bc74e21e700511ee853a3adc329a95e25a6",
+    "workspace/compare2/DSSDL/log/auto_runs_fhn/seed4_support200.log": "17bbc1903fa834ee00835873ce9ad041da8844e415626743dca3a403cd5186bb",
+    "workspace/compare2/DSSDL/log/auto_runs_fhn/seed4_support5.log": "b2c0fb1217ba1140a45c2dbb9fa41613f8b4244248270fe2872f0b8c96747ebf",
+    "workspace/compare2/DSSDL/log/auto_runs_fhn/seed4_support50.log": "2e9c279c289424298cf190c1c379d1e1ed94b850bd1bb6f5de3acc7a47f570dd",
+    "workspace/compare2/DSSDL/log/auto_runs_fhn/seed4_support500.log": "a2f8a5b997f6fa2509c8466dbfe49408b5dab47d1fb3f367dea43217b022ec87",
+    "workspace/compare2/DSSDL/log/auto_runs_fhn/seed5_support1.log": "c3da513b173712ecd9ea87e766db12dbe9c37abf4a2154fc660b575cbe93668e",
+    "workspace/compare2/DSSDL/log/auto_runs_fhn/seed5_support10.log": "330feee64d0745620482e70500e44924c3c6fb94a92013e6926710881633cd80",
+    "workspace/compare2/DSSDL/log/auto_runs_fhn/seed5_support100.log": "467915bcec5de90001ef090210aa75e9fc763c12dd8c76d31e347e752e34ef74",
+    "workspace/compare2/DSSDL/log/auto_runs_fhn/seed5_support20.log": "3681915fcadac66a8b373392bd10d14b86e8ab0225ac5e3847922df3bc538ad0",
+    "workspace/compare2/DSSDL/log/auto_runs_fhn/seed5_support200.log": "dadf1e905fa68e05b0e9d77275cfaa2490794bd85827afa0d5ed569329d2d8d3",
+    "workspace/compare2/DSSDL/log/auto_runs_fhn/seed5_support5.log": "d6e50547d7de505a980fe22805ea24a67325e573a73bc04474a5e5620bddde93",
+    "workspace/compare2/DSSDL/log/auto_runs_fhn/seed5_support50.log": "cded49518163ac86a9a3741af458d442c8a5838ab5f280d9684ddc59e61f66cd",
+    "workspace/compare2/DSSDL/log/auto_runs_fhn/seed5_support500.log": "f696a0a8ed6ac637aeec9433d1d162ecfffd9fca43f3e934f913d82d3c7ae280",
+    "workspace/compare2/DSSDL/final_data/seed/auto_runs_lorenz_by_seed.csv": "40f503eb9568e20fc0b103220db75d5c665180437e0df520f7163b580cbd4960",
+    "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed1_support1.log": "06d5787ef9c9be8c5bedfbd8fc517c43920534ce22a2bb378b7705591d4387b7",
+    "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed1_support10.log": "79fe528dec2775aaff5c93da3eeeda9a3d3b4b1e97fb933cd76abbc37eeb0814",
+    "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed1_support100.log": "84a76e6702b556635f81c6902aa821688a5b3ee5c968a9f7ef69699e55dc3469",
+    "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed1_support20.log": "3b7a6cc6278fe50f2a0164da1be08dce113eadcd5b911506e37938550ca5f02e",
+    "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed1_support200.log": "bc5c370869d2f7790f475dc3446d9c957dd632912d65c4d7125ba717647b52aa",
+    "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed1_support5.log": "f9a369cf87327f4cf986489ee58d981d7ea6b1d54a74d226c02b56f4a5cb493e",
+    "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed1_support50.log": "b77899ac66869d694e50a9f11b72e881bf9cdcde1b7c41eaba81d9c99f92f66d",
+    "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed1_support500.log": "234e6ebc7bdf17db51bf1f1e6cef54dbee9250469cff3d7c8b592072ef70c09b",
+    "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed2_support1.log": "4ff3efb9c9df43aa773e40a5c723f62149f85d43e805580a2bd35b71299ddcda",
+    "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed2_support10.log": "d42b70686a04af7acb89eaca8c33472558ebd4f1f8984f19517753d88ec0b9ae",
+    "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed2_support100.log": "8ae0515ac7c1ebd8f80157039228768c33ee61e120d4f0072987a31b5053b7e2",
+    "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed2_support20.log": "7ee5e314e1a91a209726e93d5580b9090e106b7df38244448e11ae3365410819",
+    "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed2_support200.log": "dd2d20b4bdd7e1b6a1bdcdc9cd353c36cb5312646488013ea4a9d9be235e8591",
+    "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed2_support5.log": "855b9c7a9a9fe4da2c3b22c5efa77acf8c7901cd5bf10a10fee7c496792cafb3",
+    "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed2_support50.log": "f7924a44ec0ca05d65e218a9dfb13a2f186faf42467c59eb77f58e0bd1ba6a58",
+    "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed2_support500.log": "b1c76452c0932b887465b010eaf8b658b8d9ea644297b4f09435f2e027abfc5b",
+    "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed3_support1.log": "62b5ddcff4b5ba78a02ae7a864ea713ac8657bdc13880380dc6d5f0345e659c4",
+    "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed3_support10.log": "0c1624743e98b2c7292352e36ada847f7d21b4ae933664d6a746f3c40a0d9951",
+    "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed3_support100.log": "cd413d85e44ecfbec00dff1d2b5093d637d7f79326c9651329ae58cdf2888b6b",
+    "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed3_support20.log": "a0c5917376ed3737e15f85133b0c7ec0f0c28bb05741b19521349b61c9b0917c",
+    "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed3_support200.log": "35bb4f2f1051d0d28d7e2556975eeb7d94c9dab200abaf2832401d50535497ce",
+    "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed3_support5.log": "061f16a8aa3a293a93da5837c10e2e990eaf5b5fbdaddc0f5f77279e87e94db6",
+    "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed3_support50.log": "f6edd7d7449a1915a28e4f47787e166e3440e375ad7e0b33e4383f9ce888dbea",
+    "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed3_support500.log": "ac2743c19f49b5c6681af45dd1758296f94ae419a6a7786ea90a11ab6d5baad1",
+    "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed4_support1.log": "058bce58842bcf2bfeceb70b45548cb08d0bf39e81d0f88143ab7e097812af32",
+    "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed4_support10.log": "d850a4f3075d1dfbab3e6b8718bdc80ecaf3b64cb7e35abd0969bcdf3841be7e",
+    "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed4_support100.log": "53188ca02a32577ca1e8be1a10ec2f3c8c51a7fb7d6682e395eca8faa967a0b6",
+    "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed4_support20.log": "0789b690a0aeee41b85a246e4070b63764eb31babec0774937a4c94eb58887f0",
+    "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed4_support200.log": "2230b4c939733d5a617f85fc9e8ae9d3a8b3a987ff8a52266f0acf574111460c",
+    "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed4_support5.log": "0aa91a33d67f691d83c5a37985b91286c95e191e0f49d35c0767ca3f59fa407d",
+    "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed4_support50.log": "268077fc26d87856d140430d4437ba963f0403db0b19b813b2ff4e805fcf8967",
+    "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed4_support500.log": "d85b429e0c15c9c2486a577462cc0482edbfc0c3e0efa8c1ac3ee066de55b79d",
+    "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed5_support1.log": "d8d01c83bcd23cfa630776730bc0645cf0584e95571a331aab3b9a6c8f67c5ff",
+    "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed5_support10.log": "d71ade6c18d55cf6cf201530d103d18594c083d249009d754fda6a3a8bbfba94",
+    "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed5_support100.log": "867935d79552937e8c0c7d5c02646bcf0120323a4d57a0133b36664edc14f39c",
+    "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed5_support20.log": "73ed355630eb7bf68622ff27ac1b18763a28f786b9abe5f75d7390a67eec2b03",
+    "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed5_support200.log": "f1e7ef9f70f591d6c860ca62bd756ed2acb9f3b2e59110db08c3d85e861fd750",
+    "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed5_support5.log": "311fc774a66d28b9a8517c8c82c27f0e32c42fc35fca5c28d14f0aa7fd4aa120",
+    "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed5_support50.log": "c2dac1712aabd4a989bbe6d3cd84ea1f32157ef49bfbde4ff1e3dcb3b2e88103",
+    "workspace/compare2/DSSDL/log/auto_runs_lorenz/seed5_support500.log": "73444d874603045846c71d6cb956bcfc4c0e350e49ddfab61777c2c2693789ce",
+    "workspace/compare2/DSSDL/DSSDL_.py": "32dbbc502aea4d3fa3e673d42786a8ed1f4528ace26254cafad1f589ec23edea",
+    "workspace/compare2/DSSDL/DSSDL_mask.py": "12dfa6a8c4dd7b97e0502883b9537fc109067242523e42271c994d20761d7d11",
+    "workspace/compare2/DSSDL/evaluate.py": "e52e2e3651a134bc1135d1c187d3edec8768323fb90ab14cfd58ca818b1d5233",
+    "workspace/compare2/DSSDL/evaluate_mask.py": "2c354843949bba90ee8950a66b40a743cf5c35992575336664c8985b2234af92",
+    "workspace/compare2/DSSDL/finetune copy.py": "0b7275b43fd57be07b696fcaf706007d4a521a9ade18a7c9975a23e60f74d03a",
+    "workspace/compare2/DSSDL/finetune.py": "40b7266d44c7273af1d972af92e37e34b416aa8e1ec93a0b101ac5a718853f85",
+    "workspace/compare2/DSSDL/predict_with_pysr_model.py": "1b0e36862e1f8b53e27e959e677c5ceece371ca4ee1b2e9c691e950d0a543aca",
+    "workspace/compare2/DSSDL/pretrain.py": "f1039bd7c1dc254b8848c8f8ec301b02be3c40f3de679f5bb740382abf8d2b46",
+    "workspace/compare2/DSSDL/symbolic_regression_pysr.py": "2d1572cd032d497bc07c7275ac3130f1f980515af6390c2c02c0ee1e9e927c9f",
+    "workspace/compare2/DSSDL/train_from_scratch.py": "36d41654c59b8910901af26594484e3eff17d9a9c8c6e59298f0afd240bb6e02",
+    "workspace/compare2/DSSDL/visualize_slowparam_distribution.py": "92b80e1760b6bb7d07043bb00348e01a270271438323d6dadae35bf7d94c2219",
+    "workspace/compare2/DSSDL/datasets/FHN/create_dataset.py": "b80d0e90dbe4a7b0b5fe50f45b1b707f885eaea92d322f991ef963f40adeb36f",
+    "workspace/compare2/DSSDL/datasets/FHN/__init__.py": "47def9383026f29e80683f1d8c009f3215c3463f181af6c97ec8fff5090683b3",
+    "workspace/compare2/DSSDL/datasets/lorenz/create_dataset.py": "85986333caf4d4a127df8943bfb881a141f7dc4ef09c35587da1dfc58c8a109c",
+    "workspace/compare2/DSSDL/datasets/lorenz/__init__.py": "306802620d02063e44cf73e11dc477794ee2a110cb8a71473e78a2cddbe82663",
+    "workspace/compare2/DSSDL/datasets/utils.py": "5b11d1e8542fb9a231fd542c0267b441c0dc03762059cf7b3fd420a4af19297c",
+    "workspace/compare2/CAVIA/final_data/seed/auto_runs_fhn_by_seed.csv": "56f26971e9b2fc25cda7b84a805acc3d44645e2738a368fe7dea99acca0f246e",
+    "workspace/compare2/CAVIA/log/auto_runs_fhn/seed1_support1.log": "aefa24686ef829ecb27baa4dcd16c690aa45b77508988fac10ca6f6243ca01fb",
+    "workspace/compare2/CAVIA/log/auto_runs_fhn/seed1_support10.log": "b4047715a12ab10b0035018479f95e1ba0fb4b50127e87c373990c8de285293b",
+    "workspace/compare2/CAVIA/log/auto_runs_fhn/seed1_support100.log": "e4527e61f5497d6c1fe7b7ad07102f9c29968a2d93a6db3344bb5287f17dcc57",
+    "workspace/compare2/CAVIA/log/auto_runs_fhn/seed1_support20.log": "b48cfdc62dd2879886937b7eb5b8a38dc5ecef88767f18075220a1c721a7a990",
+    "workspace/compare2/CAVIA/log/auto_runs_fhn/seed1_support200.log": "79ef70250901cd6d3f3fb7fec53c705dd139ba1df06e4bd7fdcfb588acc5a35e",
+    "workspace/compare2/CAVIA/log/auto_runs_fhn/seed1_support5.log": "127cbe049c0c86df0215c1affed3bac9fe14be99649f9da6950558a2d6eeffde",
+    "workspace/compare2/CAVIA/log/auto_runs_fhn/seed1_support50.log": "04eb696d5e6115a29c11db63b86fb271af2fbb687cfa3389d66a72099655bbde",
+    "workspace/compare2/CAVIA/log/auto_runs_fhn/seed1_support500.log": "de422b20c95e7a26868bcaed998bf87f6bc3094e2da8c25eb8b3d7cf262f3de3",
+    "workspace/compare2/CAVIA/log/auto_runs_fhn/seed2_support1.log": "ca8804615a25b1ea83d3a2c29dca128d744f0e7018d413943584b4303f9125be",
+    "workspace/compare2/CAVIA/log/auto_runs_fhn/seed2_support10.log": "ca63a09846ef9c53944eb1decf1367c2c3ec6e3313b173617f17c5743bdc3479",
+    "workspace/compare2/CAVIA/log/auto_runs_fhn/seed2_support100.log": "3e2a0fda96e5d808c09742d2d202ade63c6193dc07eae36e34c3d1e2061b2d61",
+    "workspace/compare2/CAVIA/log/auto_runs_fhn/seed2_support20.log": "e077ab8be8afa5c04f303cf82060b8dbae19f1ffff9e4f873356648065e58184",
+    "workspace/compare2/CAVIA/log/auto_runs_fhn/seed2_support200.log": "de5c2da367f83316b6df0f186da34dba94a939959418e066e6cb068b21efffd7",
+    "workspace/compare2/CAVIA/log/auto_runs_fhn/seed2_support5.log": "4c4c558f34d1e62b7b338a57127e07b23be80d510a4e305c3dd336779e7d2076",
+    "workspace/compare2/CAVIA/log/auto_runs_fhn/seed2_support50.log": "c4c8c8b745b005ad4ef2ae37f3cbd1e97d5a30851e32606d3c0eff159649a542",
+    "workspace/compare2/CAVIA/log/auto_runs_fhn/seed2_support500.log": "89ea34a587145c1e55cd9c44070f7083079012b3c0ebcb61ed592388c50dc965",
+    "workspace/compare2/CAVIA/log/auto_runs_fhn/seed3_support1.log": "df1611921810bb78d1b33fb5d494b5475107f62b3a0e63b4f07ccdee08198815",
+    "workspace/compare2/CAVIA/log/auto_runs_fhn/seed3_support10.log": "2a9f4dcb882dfd02ddbb08bff0252be3680bef5837b4188d1273a1d7959d5cde",
+    "workspace/compare2/CAVIA/log/auto_runs_fhn/seed3_support100.log": "6a211c67d94c4c7c60428322291029c8a88c0557be6850af3c9447c9f0f97b44",
+    "workspace/compare2/CAVIA/log/auto_runs_fhn/seed3_support20.log": "0a08dd213f076fe6b40a2a392332382e8782c77130598a2f8f3e2f4a317aff9d",
+    "workspace/compare2/CAVIA/log/auto_runs_fhn/seed3_support200.log": "398246f24f70b011fafb39f4da4fe688094695a62567f0cf3c7d84905819e0f6",
+    "workspace/compare2/CAVIA/log/auto_runs_fhn/seed3_support5.log": "143a61296873d49c01eeed5761fbe31022f33faf7c9e442c37608079a5e61f6a",
+    "workspace/compare2/CAVIA/log/auto_runs_fhn/seed3_support50.log": "3f6e67f20a2cde324d87ec1b47484a565a7cefa9363462b7b4752216df208c46",
+    "workspace/compare2/CAVIA/log/auto_runs_fhn/seed3_support500.log": "86d2089745465a8760dc204578b534fbbd3a0890604708cdca9f88de6a476e39",
+    "workspace/compare2/CAVIA/log/auto_runs_fhn/seed4_support1.log": "3f3bdc46bb5d542ee62058ba31768795b4a99e2eda74647cf738ea3c7c0dc660",
+    "workspace/compare2/CAVIA/log/auto_runs_fhn/seed4_support10.log": "e2a116195e7b7bf2edd9372edfb9a4a105536a374c0b1ea6228c86a5b008342b",
+    "workspace/compare2/CAVIA/log/auto_runs_fhn/seed4_support100.log": "4674f9f86e8faac6e7a0646876b1e61d5a2c8a7ab5438e09f9414a3669360325",
+    "workspace/compare2/CAVIA/log/auto_runs_fhn/seed4_support20.log": "57bed3d92de478271a15d9c1b03978e7945e5945068ae7f10ec7407dfec8e012",
+    "workspace/compare2/CAVIA/log/auto_runs_fhn/seed4_support200.log": "06557e12958dc3f2672513f8fae68cb6e31038d5dcadb3be14fbd8e9d3eda133",
+    "workspace/compare2/CAVIA/log/auto_runs_fhn/seed4_support5.log": "4d2544a9f31465d6c7b9a6cfb5296f6965784f9eef0ab6dfa4f0ec53e69f0371",
+    "workspace/compare2/CAVIA/log/auto_runs_fhn/seed4_support50.log": "3e476ac4b49e69df0af1f81948e8126e5433ac785036336bf5d7074dec53454e",
+    "workspace/compare2/CAVIA/log/auto_runs_fhn/seed4_support500.log": "52a3425c721e5816019ab851c6f177655caad61fdfdc1ee0466c3297c2c15cbd",
+    "workspace/compare2/CAVIA/log/auto_runs_fhn/seed5_support1.log": "a934ad3f034d5cc5885a0f6e7e6fa73b99ebca5a09bb4de1947ffb54e955ca5d",
+    "workspace/compare2/CAVIA/log/auto_runs_fhn/seed5_support10.log": "3d5e352a4a6360c8fd6c395a3e9e55b68b8ff5a3bdfbf787d66b39f6ff0418e3",
+    "workspace/compare2/CAVIA/log/auto_runs_fhn/seed5_support100.log": "a0afa95808b5d7ce775209921ebae77e34c861c65435e42caa47406a0c898203",
+    "workspace/compare2/CAVIA/log/auto_runs_fhn/seed5_support20.log": "3479624d1036c41b3f3576d020d341a51aab087cff108da5b714720e95156f48",
+    "workspace/compare2/CAVIA/log/auto_runs_fhn/seed5_support200.log": "693a46519fe71468fd6b774a50bb4161f5b2a57ce6349a095b3c61b2254c904c",
+    "workspace/compare2/CAVIA/log/auto_runs_fhn/seed5_support5.log": "07848950e5b0c4addc800b5de80ea5c5c449d7ec22bfb52d31e3c53feb9f8656",
+    "workspace/compare2/CAVIA/log/auto_runs_fhn/seed5_support50.log": "fe0fc3c2aec37af12ca2e38e293b8a081ce70366f0b43aa3345750ffa99181b8",
+    "workspace/compare2/CAVIA/log/auto_runs_fhn/seed5_support500.log": "62c59a805a6c21bee062f3ae44eae47347b988046d8812cd43e7253b73b4cc4e",
+    "workspace/compare2/CAVIA/final_data/seed/auto_runs_lorenz_by_seed.csv": "a201ffc32e15aa6a1ed38a2ec5f7f03b635b472e5df78622d2f0fbd1c64e91e0",
+    "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed1_support1.log": "6e1098c503e31822d065875ad850043e9fd952aec2c7c0c1d63ced77ccfe269c",
+    "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed1_support10.log": "f40ecd45800e38f1262da19d2c5699c8ddd82152498ea07a9fee9cf1a11ce987",
+    "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed1_support100.log": "aebbe427ba599d378b7793167c5c6551b32ade0d0084fff609ea61e11cfbba04",
+    "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed1_support20.log": "fd93083534b8ca3fceebab1b2c44f87f7d01503eaa76b75abe87ac23d2267197",
+    "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed1_support200.log": "8565a831681779b0e3df1135d6111aa7e14c80a7d86396c7d4356f263bc72d37",
+    "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed1_support5.log": "dd1acfe74d35837be251c5208698e3089821d82bce30d69135574382b3652de3",
+    "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed1_support50.log": "e4b689e3e1073cff7b0974495a07ae232bbf66bb0c62f7a5593a3ab13021537e",
+    "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed1_support500.log": "757549fed52b1a8649d53475d649c7eea99434211a4fb77e079eaf2790da89f8",
+    "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed2_support1.log": "8f39a842c34e6406b27b8a8e296fbe0257804c255c1be5f79e5ef56d01912aa7",
+    "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed2_support10.log": "d9a72197c6789d11a9b09d283ac911bfa6dd9c63a084def607cb6aa7c9ff8aa6",
+    "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed2_support100.log": "936e4462f6710d48637e90fad6e0cf5119a10ca3f8688a9cc9f6a77d9dce5ce5",
+    "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed2_support20.log": "f7a8e7d57b882af58964f93c680b23c8c89124385ff97ffa32023e074020fcda",
+    "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed2_support200.log": "ad35522419de4fc03f4d8d693642ce8d8167abf1f4c895529638fad45cb64524",
+    "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed2_support5.log": "25925b8dff62a72257a0f7e89a94c2964fa8037e010d993cc0bf2e038eab00f4",
+    "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed2_support50.log": "99f02caa3d136311718d0c6e28fac473e93fbdec715f782f072e9615ced82305",
+    "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed2_support500.log": "e37534c44e982dea2227c04ae730247bd217ba4d8d8a2dd086c94ca5c17d1cf2",
+    "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed3_support1.log": "5f17784352258320c60ed6c8914830bfbfef1b6a3ae2a7171e06408393dea0b3",
+    "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed3_support10.log": "65e0764466f9df4b12dd90a5f15ae53791a8e3dcd55ed9b481f91c37a420fcb0",
+    "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed3_support100.log": "69dfa34afb306cf7df7ca498105478d7cf8a0e59694eef8b1a24a4f37cc7039a",
+    "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed3_support20.log": "27c7989a302f201538b082c982dd0e5fdef26c0a1fe6996a3f762ca7c122c7a2",
+    "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed3_support200.log": "eb7ec31741ad29a38b44af76e472220155ffd9cd1d83ef0e693a5fec6b93e193",
+    "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed3_support5.log": "e4544f090d8868d9c234966d8e4c9fe1060bb503713d8f221c0684d95122696d",
+    "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed3_support50.log": "854a0a0c3054855079b7a6db4547c59115ce667fde340fb93dbd48ec95e7db64",
+    "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed3_support500.log": "f5e010f4f5a9ee0d824ee426d42a5dbee15d4acc1ac746631d6123675aea18ca",
+    "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed4_support1.log": "6750ad147aa88eb827037e2a2348ffc84bf26734d6faba4d3359f7ba04e29716",
+    "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed4_support10.log": "65eab3d8b2e0dff0a49b2f702beb6f77df4727642684372dd081e1825529997d",
+    "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed4_support100.log": "f4bbf181271e4ec9282d04a9d168552a980eaefdd08bcfc5361034101f5d52fa",
+    "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed4_support20.log": "6e7fc33f51a43c5d5ecaed38fba185bcc473a6f12560f882203434ee6a335fcb",
+    "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed4_support200.log": "7a21ab8cba7015bb3c84c688b8d2f829b98239e5c144a5eecdaa26470ffdb3f6",
+    "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed4_support5.log": "6e58346603d12e187ee287d5a8d276091d986b70193d8246cd717e5fac93bda4",
+    "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed4_support50.log": "3c003a82be92d0c51c1bf2e2e62b48e18f0329a15a03cbc2a41ea55959915155",
+    "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed4_support500.log": "1c33caaaeaf00cab6d70e8dfede2e765781b824de5f4f6b1103fcde3d7eeda80",
+    "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed5_support1.log": "76a5c90a886753d66a3082a00c8f63a5ac293bc0dbe06ea026a2471fd5ee520e",
+    "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed5_support10.log": "a2dc93156460330f5d8ab92a8352ada47da5fd90d4e984a4690beb4513ca7852",
+    "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed5_support100.log": "53cca4c979949c48592835780b025ac21b0749c05829db791d1a525726914bd0",
+    "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed5_support20.log": "355e4100ed4da3321c6decfcdc7f23bb46196326141b3159b7e5edb6477150d3",
+    "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed5_support200.log": "60bdfd1cd105d84be9ea5d20f6bcc36d0cedb2f2e412016c1874b05063a4193e",
+    "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed5_support5.log": "e293bf23b26df0b8d3a2ceb1feda17ff8fad7751d1ae238d5671f09130f9bc72",
+    "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed5_support50.log": "488315cc6ac3b14b77006150cfe8fa62fe5b599ee435b24166abac3360c1978a",
+    "workspace/compare2/CAVIA/log/auto_runs_lorenz/seed5_support500.log": "a42ea636c7106f65baeb1c018a537efcdaeae2b7fb443d4e6c1505fee5f35619",
+    "workspace/compare2/CAVIA/cavia_evaluate.py": "8e8dfdf4afb0c9dd9ebdd3d29964fcabbfef9aa1db34efd0af1b0c29897b7974",
+    "workspace/compare2/CAVIA/cavia_finetune.py": "0f9649c7e16a461f28e50175065367a60f07b56dce8d1ba08a726540c0d23c8d",
+    "workspace/compare2/CAVIA/cavia_pretrain.py": "8ab68457df3548a1cf098b3667eacc6ea0b5af95f11289fd67820c562f62dc19",
+    "workspace/compare2/CAVIA/cavia_workflow.py": "c327e807f0c3fd86dbedc352038dbb38c3d17380b2455f62d78905c038be6b62",
+    "workspace/compare2/CAVIA/DSSDL_.py": "e260d5117211bffcd8ec318443c7a15062e851da7e5547e44c4f4246a8aa9b9b",
+    "workspace/compare2/CAVIA/evaluate.py": "e52e2e3651a134bc1135d1c187d3edec8768323fb90ab14cfd58ca818b1d5233",
+    "workspace/compare2/CAVIA/finetune.py": "2f0ef4d93e9354c4a84f69e0127d7f7eaf780e800c0742e57b6af188c5913b2d",
+    "workspace/compare2/CAVIA/pretrain.py": "a78bf75e714d908193e8ff8c877b3c639b46da1efd9a034492ad7ed26a6c1295",
+    "workspace/compare2/CAVIA/datasets/FHN/create_dataset.py": "a1bd912f0433ecc3f77531fbdf39ab9b99b11d734e5acc59d04e336093d8b6dc",
+    "workspace/compare2/CAVIA/datasets/FHN/__init__.py": "47def9383026f29e80683f1d8c009f3215c3463f181af6c97ec8fff5090683b3",
+    "workspace/compare2/CAVIA/datasets/lorenz/create_dataset.py": "c5544628d14e866772121aee74c15143511d2fd8a46287e8fccd83ccb1ed92b6",
+    "workspace/compare2/CAVIA/datasets/lorenz/__init__.py": "306802620d02063e44cf73e11dc477794ee2a110cb8a71473e78a2cddbe82663",
+    "workspace/compare2/CAVIA/datasets/utils.py": "5b11d1e8542fb9a231fd542c0267b441c0dc03762059cf7b3fd420a4af19297c",
+    "workspace/compare2/Reptile/final_data/seed/auto_runs_fhn_by_seed.csv": "69b8690d1a65e65777c696ce9260d7caa617c5a4de8ba1ae6eda984548d6860b",
+    "workspace/compare2/Reptile/log/auto_runs_fhn/seed1_support1.log": "f1e2694720e16a958258a95ed5427ac2599aeb876c7b10929a569a8b4f4e3670",
+    "workspace/compare2/Reptile/log/auto_runs_fhn/seed1_support10.log": "9c2b2e1e479280a237a0c3d5ab6048152099cb6b52d6ac00342607216f382181",
+    "workspace/compare2/Reptile/log/auto_runs_fhn/seed1_support100.log": "e04bd3a9950364f1931331c99720eef31daf53761dd537d146addd1afa102431",
+    "workspace/compare2/Reptile/log/auto_runs_fhn/seed1_support20.log": "919f9fbe5f1eb1430545b5e0c0dfdefa2b47af95226561bca3273b69ff61e769",
+    "workspace/compare2/Reptile/log/auto_runs_fhn/seed1_support200.log": "d1f4c829e25460208e40069d62e52f555bf3a6edfe1ada8748689c223cda65b5",
+    "workspace/compare2/Reptile/log/auto_runs_fhn/seed1_support5.log": "b137bf8fd83bae67bb316ff7328d6017d36cd752944a61750cd3d9ce9f22d2d2",
+    "workspace/compare2/Reptile/log/auto_runs_fhn/seed1_support50.log": "03b64208db11d4615d786e72bc115a481ebe934f04476faa01c2d4f6f9b8adef",
+    "workspace/compare2/Reptile/log/auto_runs_fhn/seed1_support500.log": "ff2832b3a0949a01fa51ef268d07eba89fb981b9e669e0e1ff6bf9049d27d91d",
+    "workspace/compare2/Reptile/log/auto_runs_fhn/seed2_support1.log": "039a18ea13d0c391aa00e1523dbbcd80fcd7dcf6da31357ccba06a41fdd093a2",
+    "workspace/compare2/Reptile/log/auto_runs_fhn/seed2_support10.log": "309ba93dd7463fd5049f5f0fc6a42bb507be69a4a7ce3c7b13bd4500b8c1fc78",
+    "workspace/compare2/Reptile/log/auto_runs_fhn/seed2_support100.log": "24c23900653ccae7d796001534e25d5193012dc7ea20b8fdd9e548a854bc0fd8",
+    "workspace/compare2/Reptile/log/auto_runs_fhn/seed2_support20.log": "9b844142ba3ebe1ed9d70b7e536c0cd54dd14ab4ff657f765ad040e4ad5bc569",
+    "workspace/compare2/Reptile/log/auto_runs_fhn/seed2_support200.log": "1e16ed1a932f33cb69a43b7844bbb96083276ec69a8cb73835cb69c0d2324455",
+    "workspace/compare2/Reptile/log/auto_runs_fhn/seed2_support5.log": "8378cc6043ac3f4692d260fe7386719b1fb1ab79543bdbc632e3b4a05fcaaec1",
+    "workspace/compare2/Reptile/log/auto_runs_fhn/seed2_support50.log": "3fb3c5b5896575bdb71b0264dd805b19c1c912bfb7cb78a25e7cc0f26c3a3fe8",
+    "workspace/compare2/Reptile/log/auto_runs_fhn/seed2_support500.log": "79536478360121c3787bb8d1502b30cb758028de0e2630348c964f001955dbb9",
+    "workspace/compare2/Reptile/log/auto_runs_fhn/seed3_support1.log": "269e4ae108fda56dcbbf2c94170fae15126647451a309d9913498275ab388d10",
+    "workspace/compare2/Reptile/log/auto_runs_fhn/seed3_support10.log": "ed54a9a04a458236941580bdeca1994583c57de74224345f2d7df73f067388cf",
+    "workspace/compare2/Reptile/log/auto_runs_fhn/seed3_support100.log": "b4f8f02305e4392737d385a036c20c2abd343db489ffdf49a17aabf56ba901ca",
+    "workspace/compare2/Reptile/log/auto_runs_fhn/seed3_support20.log": "b1b91f39852ce5874ec6e2391d7e757c77cbe956c0ef8b251053c38d720e96b8",
+    "workspace/compare2/Reptile/log/auto_runs_fhn/seed3_support200.log": "15d0ffff552415d6f894d9c63d6b4d73e7da2359b92c88a16bed0122dfd900c7",
+    "workspace/compare2/Reptile/log/auto_runs_fhn/seed3_support5.log": "5ba4927cdc7e8102fc9fe12011cdd26007204496b9c3baa91dae3b7ea84f0084",
+    "workspace/compare2/Reptile/log/auto_runs_fhn/seed3_support50.log": "776937bf9dffcf705a71cb5b70ffd4b19a29111107e85f2d780f0c85ae4f3488",
+    "workspace/compare2/Reptile/log/auto_runs_fhn/seed3_support500.log": "a5065e79c233bf7ec22a976c88a4bbc4c245d03443900ce4967e1934e82a8245",
+    "workspace/compare2/Reptile/log/auto_runs_fhn/seed4_support1.log": "248aafea23bbfb3e56d9a4d4ef14a873bbd366fcd31826148b9979b092422b8a",
+    "workspace/compare2/Reptile/log/auto_runs_fhn/seed4_support10.log": "66c7b0d711d821e6faf29f533bf3febb9e5a7a5629cf712c2fdffbe6fa93becf",
+    "workspace/compare2/Reptile/log/auto_runs_fhn/seed4_support100.log": "26ac0964b81d05168fc81fbd1de1a3b1b520270fb855f0f2473ad2c5a7c3c3e2",
+    "workspace/compare2/Reptile/log/auto_runs_fhn/seed4_support20.log": "42cb092bafd265703fe08bcc4e721ca15bb631ff93669dc7e385452121a5e7a0",
+    "workspace/compare2/Reptile/log/auto_runs_fhn/seed4_support200.log": "e4128f75fdbf51ffabfc2a631b4c52a3e8d1e836b5d22a20dd643353650bebcb",
+    "workspace/compare2/Reptile/log/auto_runs_fhn/seed4_support5.log": "daeed1caef8879bb91fbdd911e8b928cb4c63b1bcae0ffb5f7cc5d519640df7d",
+    "workspace/compare2/Reptile/log/auto_runs_fhn/seed4_support50.log": "b569979777d5fd031d35e13ed81d4005d23cf8ff9e4f2a28016f23df29e6ff5f",
+    "workspace/compare2/Reptile/log/auto_runs_fhn/seed4_support500.log": "f8fd56983ee5238dc2350ed638cc61dc757b2a084ec850e0d54d31101b161c4b",
+    "workspace/compare2/Reptile/log/auto_runs_fhn/seed5_support1.log": "55ad112a1f81e8658c6b747f51c4b3a1843d81faf519c12d7bd283e5472dadd9",
+    "workspace/compare2/Reptile/log/auto_runs_fhn/seed5_support10.log": "38399d6723a7c6c760c76acbf9bc00808d271f547efeb30d91bd915a3221bfe2",
+    "workspace/compare2/Reptile/log/auto_runs_fhn/seed5_support100.log": "d20237216ddba8a601fe63bdc031e417e7d91d7818a8de2ad5469d2de53ca372",
+    "workspace/compare2/Reptile/log/auto_runs_fhn/seed5_support20.log": "35aaf612c9d8d5e5ea8896549906268f7e537f3bf61ab043fe79ee8e5fb9c14b",
+    "workspace/compare2/Reptile/log/auto_runs_fhn/seed5_support200.log": "f9e366137865cd8ad0d5d344979161de3aba43eb07171cb3ab2b393517f59316",
+    "workspace/compare2/Reptile/log/auto_runs_fhn/seed5_support5.log": "ba6be9964e7d078264d5bb14104c0f2dac7e7b10135537977937ec37c622aba7",
+    "workspace/compare2/Reptile/log/auto_runs_fhn/seed5_support50.log": "f2bdc4d3bbf74c55fa448a84cd619bf83bfd256b375e6641792d9caf0b330265",
+    "workspace/compare2/Reptile/log/auto_runs_fhn/seed5_support500.log": "41ae4be7f6aea1833da78aaeff7377c7a591564591ff3d65ba87af768c1b2353",
+    "workspace/compare2/Reptile/final_data/seed/auto_runs_lorenz_by_seed.csv": "4b2145e76b98f50941156ebc63f4553ec5c13fc715ba850d6eeb6adba6e4f673",
+    "workspace/compare2/Reptile/log/auto_runs_lorenz/seed1_support1.log": "236b8122ae76171c13b156ae458d0ac5f03f3887db3eb4c045d7f8ccf7014738",
+    "workspace/compare2/Reptile/log/auto_runs_lorenz/seed1_support10.log": "7be86f0bc94914e6e399e7c2206964efb67de4936b777a126cab3a3cb76b8809",
+    "workspace/compare2/Reptile/log/auto_runs_lorenz/seed1_support100.log": "0383de1b118ee537fce8830abd431f48904f474a80db49ba236ad87a4c75d4a6",
+    "workspace/compare2/Reptile/log/auto_runs_lorenz/seed1_support20.log": "61548e398b506ec3b99addee0705da12a4d65cd150f4f92fb82a1632c552c4a4",
+    "workspace/compare2/Reptile/log/auto_runs_lorenz/seed1_support200.log": "dfafe9217972c77e166e074a2feb42c54a63240e84f3db850d3e9dbf6ac71cdd",
+    "workspace/compare2/Reptile/log/auto_runs_lorenz/seed1_support5.log": "3cf9f1ed26c63d5a1966622062362d2dfe0248dcf8a960a8be0738cc55c0b699",
+    "workspace/compare2/Reptile/log/auto_runs_lorenz/seed1_support50.log": "f59df3b0e8662bd7594ad030a176407f8557f07081505f883e788994d8c10772",
+    "workspace/compare2/Reptile/log/auto_runs_lorenz/seed1_support500.log": "6e14e4687d8c92435aefbcf297dcbe1d2c0f503b4650b1d1b946d5415a5d7866",
+    "workspace/compare2/Reptile/log/auto_runs_lorenz/seed2_support1.log": "562717dc441d5a4dcd65a1c4b992045c6e149a3d22dce56e916366cbf89d6f3d",
+    "workspace/compare2/Reptile/log/auto_runs_lorenz/seed2_support10.log": "4c5a8b791d8727a0a2ff53b3790829d06babacf2bfdf5ba26069156498958bf8",
+    "workspace/compare2/Reptile/log/auto_runs_lorenz/seed2_support100.log": "436275c80b2ceafe8e7850844afc2c6f32051b1a2657f350e725e3d50ff23c70",
+    "workspace/compare2/Reptile/log/auto_runs_lorenz/seed2_support20.log": "6049a631c1cff439e4a7cbd0d3770e0864dae161664b4db3e776fe3942420842",
+    "workspace/compare2/Reptile/log/auto_runs_lorenz/seed2_support200.log": "ec3c50e4f583483bc5c79e52d60b436792aee1ce6a2850268c524fc1b77b3599",
+    "workspace/compare2/Reptile/log/auto_runs_lorenz/seed2_support5.log": "ded2abb111248b10d6595e3dc92e8614e782addcf47d50153a84d0e5d82d74dc",
+    "workspace/compare2/Reptile/log/auto_runs_lorenz/seed2_support50.log": "1cbc47921c03c5bdfc9f200d1c4e252652e543d6954528046710e6be2b5277f9",
+    "workspace/compare2/Reptile/log/auto_runs_lorenz/seed2_support500.log": "0f4a0773fa1a70cebf8f6d8d9161e5860fc8820b04c10689ddb209a06d81f608",
+    "workspace/compare2/Reptile/log/auto_runs_lorenz/seed3_support1.log": "50bbc4c2e0677dc437de5582ab761a4d3799f0ec96601db2d104dd6676e9af0e",
+    "workspace/compare2/Reptile/log/auto_runs_lorenz/seed3_support10.log": "b463b24387f09539d19926bc8e13b9b3feb5145f48a47c13e4d28811bb60fdff",
+    "workspace/compare2/Reptile/log/auto_runs_lorenz/seed3_support100.log": "2b0468051c2a30cf1038c28fabdc920feee01135297168e7ece38a186a135c1d",
+    "workspace/compare2/Reptile/log/auto_runs_lorenz/seed3_support20.log": "1a1b8a5fd4f4031d5cc54aeb1e5308716328a84134286e4b701cbcb16d195e86",
+    "workspace/compare2/Reptile/log/auto_runs_lorenz/seed3_support200.log": "42d4d6737fbe33d2505ee65ad4610d28b5b9becba871cf09b1e91878f262d6ca",
+    "workspace/compare2/Reptile/log/auto_runs_lorenz/seed3_support5.log": "1da332d48554fc6a13575203c0d0c4d81fcb6fd2aeda56f6018ae243a6555019",
+    "workspace/compare2/Reptile/log/auto_runs_lorenz/seed3_support50.log": "2a32a8d8aa48d3c79a481b02f1e33295ed591dcaf75c928cf404ec155ee86352",
+    "workspace/compare2/Reptile/log/auto_runs_lorenz/seed3_support500.log": "2d3be183844dc6d79b47aec919b430ad601e0ef3ab34011b5fdbefc2ef3daae4",
+    "workspace/compare2/Reptile/log/auto_runs_lorenz/seed4_support1.log": "78da0ccd4efea5a52c0f4511211d74dfc4b92de7c74c05c1694fa988884a06be",
+    "workspace/compare2/Reptile/log/auto_runs_lorenz/seed4_support10.log": "85cb736544b53a183abd5cd9c82253e28d8bcb44f266588463d03d7a4a3c454c",
+    "workspace/compare2/Reptile/log/auto_runs_lorenz/seed4_support100.log": "94fce08ac93253d2c8657cd531f9e3596f6d8037cfc8c20a0c98f95f623c82b3",
+    "workspace/compare2/Reptile/log/auto_runs_lorenz/seed4_support20.log": "9dd257e6dce5cefb9d8d647e78560f526d931b9d2598722555c8943157367b6e",
+    "workspace/compare2/Reptile/log/auto_runs_lorenz/seed4_support200.log": "dea4ad60ef11191c3c85edf601b4450734660bf4cc7c9267bbdcdcc0d204827d",
+    "workspace/compare2/Reptile/log/auto_runs_lorenz/seed4_support5.log": "b638d47e7658b90150b614f565ab7363d3828c3f98b7c7845dc1fd7249b9487f",
+    "workspace/compare2/Reptile/log/auto_runs_lorenz/seed4_support50.log": "73537bd90259e22d64cdb524620a30f36a1afec9beef7b4987b2b608c32fce18",
+    "workspace/compare2/Reptile/log/auto_runs_lorenz/seed4_support500.log": "97e724a586f6a8e1e1588a1419c174492cc8c5a426d2712f460067e1507a2043",
+    "workspace/compare2/Reptile/log/auto_runs_lorenz/seed5_support1.log": "cf6269078892fd4008dbb8b9e240353375276497ff82a7859a763edef0a7db61",
+    "workspace/compare2/Reptile/log/auto_runs_lorenz/seed5_support10.log": "22d566dc6437baf11ddee096f86ed5d9836f6aa514ba93724a4321badfe5522d",
+    "workspace/compare2/Reptile/log/auto_runs_lorenz/seed5_support100.log": "279d23a45cc2a200f05bfb536fad19ffa602879e55080da4f6b30e422ed16c1d",
+    "workspace/compare2/Reptile/log/auto_runs_lorenz/seed5_support20.log": "f0b107ed2aa4a50fe710a1bdcfc12fe6fd21dfa8edfe558e7db2c80a5ec3468f",
+    "workspace/compare2/Reptile/log/auto_runs_lorenz/seed5_support200.log": "ead5afb7a851c0cdcd65b6433bedeb997e55090fd20896fefa2ab0e7aa2835ca",
+    "workspace/compare2/Reptile/log/auto_runs_lorenz/seed5_support5.log": "748fa76a36bfa02cac75131f2e8568a39f9afa132c021cd65c821b309a71de96",
+    "workspace/compare2/Reptile/log/auto_runs_lorenz/seed5_support50.log": "69d9b7dbfef0ec10270264a6ac666f07f559f971619c04cb58f215c5813cb6ed",
+    "workspace/compare2/Reptile/log/auto_runs_lorenz/seed5_support500.log": "77183a5258d87d28903274990764412fb509e3b431aef102d3373c5095ac32b0",
+    "workspace/compare2/Reptile/evaluate.py": "5f4c00f123363f66dca78331edb5850a6f8adc84460b54b22fce1df271ff9812",
+    "workspace/compare2/Reptile/evaluate_example.py": "9fdaceb1a90a1532e5d99afb4bda35b6d9553cad0c9b34731a57226481a8949d",
+    "workspace/compare2/Reptile/finetune.py": "b5841d35962930962370a8678b44e1cfe2f6a9c8670062c2ee65e2fec09df92d",
+    "workspace/compare2/Reptile/pretrain.py": "25beeca8aafd672d8bd332130b36dfcc30f64f2e462e141bc5a8553b10a65ba0",
+    "workspace/compare2/Reptile/Reptile.py": "8e515f29e0c7782dc689d192312253a2da27792e52108e49588a41a39ce5b36a",
+    "workspace/compare2/Reptile/datasets/FHN/create_dataset.py": "ee970ccb90a25ee2911c568e527df65a247f6eb41a3963a0a1a181f7d16512ac",
+    "workspace/compare2/Reptile/datasets/FHN/__init__.py": "47def9383026f29e80683f1d8c009f3215c3463f181af6c97ec8fff5090683b3",
+    "workspace/compare2/Reptile/datasets/lorenz/create_dataset.py": "c5544628d14e866772121aee74c15143511d2fd8a46287e8fccd83ccb1ed92b6",
+    "workspace/compare2/Reptile/datasets/lorenz/__init__.py": "306802620d02063e44cf73e11dc477794ee2a110cb8a71473e78a2cddbe82663",
+    "workspace/compare2/Reptile/datasets/utils.py": "12d4dfac991f9b67920271ca8bb3fb613a769574b7e140f4ce70f4c3ed9200d4"
+  }
+}

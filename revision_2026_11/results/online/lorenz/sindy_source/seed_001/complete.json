@@ -1,0 +1,6 @@
+{
+  "protocol_sha256": "018c0f6151141c66938d889e7ec54d6035c53b0932fe0264c0d94fecf0cce1ac",
+  "data_sha256": "8ff713a34f92159133cf5d9f79f8dd260f03a55b20190063167ebe8f6d99e637",
+  "windows": 45,
+  "no_target_parameters_during_fit": true
+}

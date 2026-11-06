@@ -1,0 +1,29 @@
+{
+  "method": "DSSDL-symbol",
+  "system": "lorenz",
+  "seed": 3,
+  "config": {
+    "specific_param_dim": 3,
+    "epochs": 200,
+    "reg_rate": 1.0,
+    "use_raw_data": false,
+    "use_trajectory_sampling": false,
+    "num_trajectories": 1,
+    "trajectory_duration": 10,
+    "batch_size": 128,
+    "learning_rate": 0.1,
+    "hidden_widths": [
+      64,
+      64
+    ],
+    "adam_lr": 0.01,
+    "optimizer": "adam",
+    "device": "cuda:0"
+  },
+  "device": "cuda:0",
+  "torch_version": "2.8.0+cu129",
+  "source_training_seconds": 166.2377193000284,
+  "checkpoint_sha256": "3943de184b1449bd301223fd2d3f2c4a1c43d374bfeec84f34464d660352b5b8",
+  "original_modules_read_only": true,
+  "source_data_sha256": "2a2f76e9f6a4dc7525d30541956cbfc7743de502bcd844a43a7f9f42f2fc2f0d"
+}

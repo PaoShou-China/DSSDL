@@ -1,0 +1,90 @@
+{
+  "version": "47-v1",
+  "systems": [
+    "fhn",
+    "lorenz"
+  ],
+  "profiles": [
+    "constant",
+    "jump_return",
+    "slow_sine",
+    "fast_sine",
+    "ramp"
+  ],
+  "methods": [
+    "paper_dssdl",
+    "pysr44",
+    "paper_no_symbol",
+    "sindy",
+    "sindy_source"
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "dt": 0.01,
+  "duration_s": 24.0,
+  "window_s": [
+    0.5
+  ],
+  "horizon_s": [
+    0.01,
+    0.25,
+    0.5,
+    1.0
+  ],
+  "origin_start_s": 1.0,
+  "update_interval_s": 0.5,
+  "initial_hold_s": 4.0,
+  "jump_times_s": [
+    8.0,
+    16.0
+  ],
+  "sine_period_s": {
+    "slow_sine": 12.0,
+    "fast_sine": 6.0
+  },
+  "ramp_end_s": 20.0,
+  "ranges": {
+    "fhn": [
+      0.0,
+      0.9
+    ],
+    "lorenz": [
+      20.0,
+      29.0
+    ]
+  },
+  "fixed_parameters": {
+    "fhn": {
+      "a": 0.7,
+      "b": 0.9,
+      "epsilon": 0.2
+    },
+    "lorenz": {
+      "sigma": 10.0,
+      "beta": 2.67
+    }
+  },
+  "observation_noise_std": 0.0,
+  "optimizer": {
+    "name": "LBFGS",
+    "lr": 0.1,
+    "max_outer_steps": 10,
+    "max_iter": 20,
+    "support_tolerance": 1e-07,
+    "support_patience": 3
+  },
+  "paper_weight_decay": 0.0001,
+  "pysr38_weight_decay": 0.0,
+  "state_limit": {
+    "fhn": 100.0,
+    "lorenz": 500.0
+  },
+  "seed_kind": "target initial-condition repeats; a fixed source checkpoint per method",
+  "forecast_protocol": "At t fit transitions ending at or before t, then predict t+dt through t+H without future observation or parameter input.",
+  "frozen_control": "Adapt once at the first origin, then freeze the same task vector; evaluate the same future origins.",
+  "additional_fhn_profile": "legacy_fast_sine",
+  "sindy_source_protocol": "README.md; source-only support and temporal-penalty selection"
+}

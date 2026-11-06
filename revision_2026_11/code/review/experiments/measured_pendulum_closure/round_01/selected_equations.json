@@ -1,0 +1,29 @@
+{
+  "round": 1,
+  "active_slot": 4,
+  "equations": [
+    {
+      "index": 14,
+      "complexity": 16,
+      "normalized_expression": "-u*u + (q*0.6724985 - 2.8481226)*sin(theta + u*0.70708853)",
+      "stored_expression": "0.0902597132285354*q*sin(theta + 0.70708853*u) - 0.134215486322327*u**2 - 0.38226215986461*sin(theta + 0.70708853*u) - 6.23060227371127e-5",
+      "val_teacher_nrmse": 0.03833202419121043,
+      "val_data_nrmse": 0.06228094116760019
+    },
+    {
+      "index": 5,
+      "complexity": 11,
+      "normalized_expression": "(8.788933 - 0.09802886*theta)*(q*0.00071964186 + u)",
+      "stored_expression": "-8.04766088374342e-6*q*theta + 0.000721525806930139*q - 0.0111828693285621*theta*u + 1.0026178951432*u - 8.19166350819764e-5",
+      "val_teacher_nrmse": 0.003023067356121002,
+      "val_data_nrmse": 0.006391093928733968
+    }
+  ],
+  "physical_labels": false,
+  "decoder": false,
+  "observed_pairs_only": true,
+  "units": [
+    "alpha/100",
+    "omega/20"
+  ]
+}

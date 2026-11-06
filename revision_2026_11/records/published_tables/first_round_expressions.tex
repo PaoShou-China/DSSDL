@@ -1,0 +1,96 @@
+\begingroup\small
+\setlength{\tabcolsep}{5pt}
+\begin{longtable}{@{}p{1.2cm}p{2cm}p{11.5cm}@{}}
+\caption{FHN first-round expression before consolidation.}\label{tab:raw_fhn}\\
+\toprule Output & State factor & Coefficient in the original learned coordinates\\\midrule\endfirsthead
+\toprule Output & State factor & Coefficient (continued)\\\midrule\endhead
+\bottomrule\endfoot
+$\dot v$ & $v^{3}$ & $-0.319794$\\
+$\dot v$ & $v^{2} w^{2}$ & $- 0.00796986 q_{1}$\\
+$\dot v$ & $v^{2} w$ & $0.00626824 q_{1} - 0.0125213 q_{2}$\\
+$\dot v$ & $v^{2}$ & $0.00965494 q_{1} + 0.0142291 q_{2} + 0.0103978$\\
+$\dot v$ & $v w^{2}$ & $- 0.0219351 q_{1} + 0.0212546 q_{3}$\\
+$\dot v$ & $v w$ & $0.0452142 q_{1} - 0.0204498 q_{2} - 0.02382 q_{3}$\\
+$\dot v$ & $v$ & $- 0.0140437 q_{1} + 0.0265775 q_{2} + 0.949271$\\
+$\dot v$ & $w^{3}$ & $-0.0196646$\\
+$\dot v$ & $w^{2}$ & $0.0439112 q_{3} + 0.0225757$\\
+$\dot v$ & $w$ & $\begin{aligned}[t]&0.0396407 q_{1} - 0.992379\\&{}+\bigl(- 0.0218537 q_{2} - 0.0493542 q_{3}\bigr)\end{aligned}$\\
+$\dot v$ & $1$ & $\begin{aligned}[t]&- 0.300927 q_{2} + 0.0573602\\&{}+\bigl(- 0.059411 q_{1} - 0.0199281 q_{3}\bigr)\end{aligned}$\\
+\addlinespace
+$\dot w$ & $v^{3}$ & $-0.000890881$\\
+$\dot w$ & $v^{2} w^{3}$ & $0.000701794$\\
+$\dot w$ & $v^{2} w^{2}$ & $0.00231001$\\
+$\dot w$ & $v^{2} w$ & $-0.00121291$\\
+$\dot w$ & $v^{2}$ & $- 0.00996697 q_{1} - 0.00316678$\\
+$\dot w$ & $v w^{4}$ & $-0.00066317$\\
+$\dot w$ & $v w^{3}$ & $0.00201685$\\
+$\dot w$ & $v w$ & $-0.00108028$\\
+$\dot w$ & $v$ & $- 0.0118602 q_{1} + 0.200094$\\
+$\dot w$ & $w^{4}$ & $0.00162351$\\
+$\dot w$ & $w^{3}$ & $0.00102292$\\
+$\dot w$ & $w^{2}$ & $-0.0121316$\\
+$\dot w$ & $w$ & $- 0.0373548 q_{1} - 0.0253893 q_{3} - 0.182681$\\
+$\dot w$ & $1$ & $\begin{aligned}[t]&0.0291418 q_{1} + 0.145192\\&{}+\bigl(0.00698911 q_{2} - 0.0568702 q_{3}\bigr)\end{aligned}$\\
+\addlinespace
+\end{longtable}
+\endgroup
+\noindent The collected coordinates are
+\begin{align*}
+Q_1&=- 0.059411 q_{1} - 0.300927 q_{2} - 0.0199281 q_{3} + 0.0573602,\\
+Q_2&=0.0291418 q_{1} + 0.00698911 q_{2} - 0.0568702 q_{3} + 0.145192,\\
+Q_3&=- 0.0373548 q_{1} - 0.0253893 q_{3} - 0.182681.
+\end{align*}
+\noindent Shared coefficients are initialized to their source-task means:
+\[
+(c_1,c_2,c_3,c_4)=(0.949655,-0.319794,-0.992933,0.200395).
+\]
+The retained state factors are $(v,v^3,w,1)$ for $\dot v$ and $(v,1,w)$ for $\dot w$; all other rows are discarded. The coefficients of $v$ and $w$ in $\dot v$, and of $v$ in $\dot w$, are replaced by shared values at initialization. The coefficient of $v^3$ was already shared.
+These shared values are fitted during feedback. The new coordinates are initialized by the displayed maps and then optimized, rather than held to the old coordinate functions.
+\begingroup\small
+\setlength{\tabcolsep}{5pt}
+\begin{longtable}{@{}p{1.2cm}p{2cm}p{11.5cm}@{}}
+\caption{LORENZ first-round expression before consolidation.}\label{tab:raw_lorenz}\\
+\toprule Output & State factor & Coefficient in the original learned coordinates\\\midrule\endfirsthead
+\toprule Output & State factor & Coefficient (continued)\\\midrule\endhead
+\bottomrule\endfoot
+$\dot x$ & $x$ & $\begin{aligned}[t]&2.48794 q_{2} - 9.67486\\&{}+\bigl(0.900524 q_{1} + 0.110274 q_{3}\bigr)\end{aligned}$\\
+$\dot x$ & $y z$ & $-0.00629282$\\
+$\dot x$ & $y$ & $\begin{aligned}[t]&- 0.288245 q_{3} + 9.6224\\&{}+\bigl(- 0.873764 q_{1} - 2.51111 q_{2}\bigr)\end{aligned}$\\
+$\dot x$ & $z$ & $-0.0395483$\\
+$\dot x$ & $1$ & $- 0.797818 q_{3} - 0.0728082$\\
+\addlinespace
+$\dot y$ & $x y^{2} z$ & $2.34782 \cdot 10^{-5} q_{3}$\\
+$\dot y$ & $x y^{2}$ & $0.000574267 q_{3}$\\
+$\dot y$ & $x y z$ & $0.00490437 q_{3} + 0.000482797$\\
+$\dot y$ & $x y$ & $- 0.121754 q_{3} - 0.0109218$\\
+$\dot y$ & $x z^{2}$ & $0.00691915 q_{3} + 0.000462678$\\
+$\dot y$ & $x z$ & $0.0601852 q_{3}^{2} - 0.326638 q_{3} - 0.978364$\\
+$\dot y$ & $x$ & $- 1.36054 q_{3}^{2} - 5.53973 q_{3} + 19.2366$\\
+$\dot y$ & $y^{2} z$ & $- 0.00285965 q_{3} - 0.000281435$\\
+$\dot y$ & $y^{2}$ & $0.0832218 q_{3} + 0.00715046$\\
+$\dot y$ & $y z$ & $0.0301663 q_{3}$\\
+$\dot y$ & $y$ & $- 0.723789 q_{3} - 0.597969$\\
+$\dot y$ & $z$ & $0.0516479 q_{3}^{2} - 0.132355 q_{3} + 0.030638$\\
+$\dot y$ & $1$ & $- 0.876438 q_{3}^{2} + 1.15515 q_{3} + 0.593081$\\
+\addlinespace
+$\dot z$ & $x y$ & $0.999391$\\
+$\dot z$ & $x z$ & $0.00514488$\\
+$\dot z$ & $x$ & $-0.16828$\\
+$\dot z$ & $y$ & $0.266351 q_{3} + 0.167472$\\
+$\dot z$ & $z$ & $0.209142 q_{3} - 2.52702$\\
+$\dot z$ & $1$ & $\begin{aligned}[t]&9.43592 q_{2} - 3.10879\\&{}+\bigl(- 13.1312 q_{1} + 2.46781 q_{3}^{2} - 2.44326 q_{3}\bigr)\end{aligned}$\\
+\addlinespace
+\end{longtable}
+\endgroup
+\noindent The collected coordinates are
+\begin{align*}
+Q_1&=- 0.887144 q_{1} - 2.49953 q_{2} - 0.199259 q_{3} + 9.64863,\\
+Q_2&=- 1.36054 q_{3}^{2} - 5.53973 q_{3} + 19.2366,\\
+Q_3&=0.209142 q_{3} - 2.52702.
+\end{align*}
+\noindent Shared coefficients are initialized to their source-task means:
+\[
+(c_1,c_2,c_3)=(-0.918007,-0.539269,0.999391).
+\]
+The retained state factors are $(x,y)$, $(x,xz,y)$ and $(xy,z)$ for the three outputs. All other rows are discarded. The first two retained coefficients are tied through $Q_1(y-x)$; the $xz$ and $y$ coefficients in $\dot y$ are replaced by their source-task means. The $xy$ coefficient in $\dot z$ was already shared.
+These shared values are fitted during feedback. The new coordinates are initialized by the displayed maps and then optimized, rather than held to the old coordinate functions.
