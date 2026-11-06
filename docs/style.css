@@ -140,6 +140,9 @@ button:disabled {
   align-items: center;
   gap: 24px;
 }
+#menu {
+  display: none;
+}
 .language-switch {
   display: flex;
   gap: 2px;
@@ -941,10 +944,6 @@ canvas {
     gap: 17px;
     font-size: 11px;
   }
-  .site-header nav a:nth-child(2),
-  .site-header nav a:nth-child(4) {
-    display: none;
-  }
   .repo-link span,
   .repo-link > svg:last-child {
     display: none;
@@ -1137,6 +1136,25 @@ canvas {
   }
   .site-header nav {
     display: none;
+  }
+  #menu {
+    display: inline-flex;
+  }
+  .site-header nav.is-open {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    position: absolute;
+    top: 68px;
+    left: 0;
+    right: 0;
+    background: white;
+    border-bottom: 1px solid var(--line);
+    padding: 18px;
+    gap: 12px;
+    box-shadow: 0 5px 12px #17242d0d;
+  }
+  .site-header nav.is-open a {
+    padding: 6px;
   }
   html[lang="en"] h1 > span {
     font-size: 23px;

@@ -37,13 +37,28 @@
         <img src="assets/mark.png" width="44" height="44" alt="" />
         <span>DSSDL<small data-i18n="brand">动力学学习</small></span></a
       >
-      <nav aria-label="主导航" data-i18n-aria-label="navigation">
+      <nav
+        id="site-navigation"
+        aria-label="主导航"
+        data-i18n-aria-label="navigation"
+      >
         <a data-i18n="methodNav" href="#method">算法</a>
         <a data-i18n="experimentsNav" href="#experiments">实验</a>
         <a data-i18n="startNav" href="#start">快速开始</a>
         <a data-i18n="docsNav" href="#resources">文档</a>
       </nav>
       <div class="header-actions">
+        <button
+          id="menu"
+          type="button"
+          class="icon-button"
+          aria-controls="site-navigation"
+          aria-expanded="false"
+          aria-label="打开导航"
+          title="打开导航"
+        >
+          <i data-lucide="menu" aria-hidden="true"></i>
+        </button>
         <div
           class="language-switch"
           role="group"

@@ -14,6 +14,8 @@ window.DSSDL_TRANSLATIONS = {
   home: ["DSSDL 首页", "DSSDL home"],
   brand: ["动力学学习", "DYNAMICS LEARNING"],
   navigation: ["主导航", "Main navigation"],
+  openMenu: ["打开导航", "Open navigation"],
+  closeMenu: ["关闭导航", "Close navigation"],
   methodNav: ["算法", "Method"],
   experimentsNav: ["实验", "Experiments"],
   startNav: ["快速开始", "Get started"],

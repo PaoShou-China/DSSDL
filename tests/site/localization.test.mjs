@@ -43,6 +43,8 @@ test("all static and dynamic translation references exist", () => {
         "installNote",
         "verifyNote",
         "runNote",
+        "openMenu",
+        "closeMenu",
     ])
         assert.ok(translations[key], `Missing translation: ${key}`);
     assert.match(html, /data-language="zh"/);

@@ -23,6 +23,7 @@ let system = "lorenz";
 let language = "zh";
 let currentCommand = "install";
 let copyStatus = "";
+let menuOpen = false;
 let playing = false;
 let lastTime = 0;
 let progress = 1;
@@ -76,11 +77,41 @@ function setLanguage(next, persist = true) {
     }
   }
   renderCommand();
+  renderNavigation();
   playbackState();
   renderSystem();
 }
 document.querySelectorAll("[data-language]").forEach((button) => {
   button.addEventListener("click", () => setLanguage(button.dataset.language));
+});
+function renderNavigation() {
+  const menu = document.querySelector("#menu");
+  const label = translate(menuOpen ? "closeMenu" : "openMenu");
+  menu.setAttribute("aria-expanded", String(menuOpen));
+  menu.setAttribute("aria-label", label);
+  menu.title = label;
+  menu.innerHTML = `<i data-lucide="${menuOpen ? "x" : "menu"}" aria-hidden="true"></i>`;
+  document
+    .querySelector("#site-navigation")
+    .classList.toggle("is-open", menuOpen);
+  icons();
+}
+document.querySelector("#menu").addEventListener("click", () => {
+  menuOpen = !menuOpen;
+  renderNavigation();
+});
+document.querySelectorAll("#site-navigation a").forEach((link) => {
+  link.addEventListener("click", () => {
+    menuOpen = false;
+    renderNavigation();
+  });
+});
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && menuOpen) {
+    menuOpen = false;
+    renderNavigation();
+    document.querySelector("#menu").focus();
+  }
 });
 
 function icons() {
