@@ -723,6 +723,11 @@ canvas {
   color: #98acb9;
   min-height: 50px;
 }
+#copy-status {
+  flex: 0 0 3em;
+  white-space: nowrap;
+  text-align: right;
+}
 .resources-band {
   background: #f7f8f9;
   border-block: 1px solid var(--line);

@@ -3,8 +3,8 @@
   "private": true,
   "version": "0.2.0",
   "scripts": {
-    "format": "prettier --write docs/index.html docs/style.css docs/app.js tests/site/*.mjs",
-    "format:check": "prettier --check docs/index.html docs/style.css docs/app.js tests/site/*.mjs",
+    "format": "prettier --write index.html docs/index.html docs/style.css docs/app.js tests/site/*.mjs",
+    "format:check": "prettier --check index.html docs/index.html docs/style.css docs/app.js tests/site/*.mjs",
     "test:site": "node tests/site/check.mjs"
   },
   "devDependencies": {

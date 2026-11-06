@@ -37,6 +37,14 @@ def test_local_assets_and_navigation_exist():
     assert set(parser.anchors) <= set(parser.ids)
 
 
+def test_root_pages_entry_points_to_the_published_site():
+    entry = (ROOT / "index.html").read_text(encoding="utf-8")
+    assert 'content="0; url=docs/"' in entry
+    assert 'href="docs/"' in entry
+    assert (ROOT / ".nojekyll").is_file()
+    assert (DOCS / "index.html").is_file()
+
+
 def test_website_numbers_match_the_saved_metric_table():
     text = (DOCS / "assets/results.js").read_text(encoding="utf-8")
     data = json.loads(text.removeprefix("window.DSSDL_RESULTS = ").removesuffix(";\n"))

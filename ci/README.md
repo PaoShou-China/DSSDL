@@ -11,10 +11,10 @@ Windows/Linux and Python 3.10/3.12; the scientific job checks the recorded data
 and model inputs on Python 3.10. The website job runs in an isolated GitHub runner
 and serves only the public `docs/` tree before testing desktop and mobile layouts.
 
-For GitHub Pages, choose **Deploy from a branch**, branch **main**, folder
-**/docs** in Settings > Pages. The site is static and needs no build command.
-The intended URL is `https://paoshou-china.github.io/DSSDL/`; it should not be
-advertised as live until deployment has completed and the URL has been checked.
+GitHub Pages is published using **Deploy from a branch**, branch **main**, folder
+**/ (root)**. The root page redirects to the static `docs/` site; no application
+build is required. The public entry point is `https://paoshou-china.github.io/DSSDL/`.
+The Pages deployment is separate from the inactive quality-check templates above.
 
 Local code checks already have independent entry points in CONTRIBUTING.md.
 The browser suite accepts only an HTTP(S) test deployment, never `file://`.

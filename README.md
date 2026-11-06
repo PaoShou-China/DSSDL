@@ -10,7 +10,7 @@ low-dimensional task coordinates from limited observations, and studying symboli
 discovery with feedback training.
 
 [Getting started / 使用指南](GETTING_STARTED.md) ·
-[Project page source](docs/index.html) ·
+[Project website](https://paoshou-china.github.io/DSSDL/) ·
 [Experiment map](revision_2026_11/EXPERIMENTS.md) ·
 [Contributing](CONTRIBUTING.md)
 
@@ -98,8 +98,8 @@ The style cleanup preserves executable syntax for all 80 pre-existing Python
 files. Numerical records are checked separately. See
 [CONTRIBUTING.md](CONTRIBUTING.md) before modifying an experiment.
 
-Local checks pass. GitHub CI and the public Pages address require the repository
-administrator to enable the corresponding permissions; see [CI setup](ci/README.md).
+Local code checks pass and the project website is published on GitHub Pages.
+GitHub CI activation still requires workflow authorization; see [CI setup](ci/README.md).
 
 The project page uses Beihang-inspired colors and an original project emblem,
 not the university seal. Concept imagery is distinct from plotted experimental
