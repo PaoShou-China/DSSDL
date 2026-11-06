@@ -3,15 +3,12 @@
 const commands = {
   install: [
     'git clone https://github.com/PaoShou-China/DSSDL.git\ncd DSSDL\npython -m pip install -e ".[experiments]"\ndssdl doctor',
-    "建议在独立虚拟环境中安装。",
+    "installNote",
   ],
-  verify: [
-    "dssdl verify\ndssdl check\ndssdl list",
-    "核验已有结果，不启动训练或符号搜索。",
-  ],
+  verify: ["dssdl verify\ndssdl check\ndssdl list", "verifyNote"],
   run: [
     "dssdl run wasserstein --name w-example\n\ndssdl run online --system fhn \\\n  --method pysr44 --seed 0 --smoke \\\n  --name online-example",
-    "短运行只用于检查安装；完整协议见使用指南。Windows 命令请合并为一行。",
+    "runNote",
   ],
 };
 const colors = [
@@ -23,6 +20,9 @@ const colors = [
   "#739383",
 ];
 let system = "lorenz";
+let language = "zh";
+let currentCommand = "install";
+let copyStatus = "";
 let playing = false;
 let lastTime = 0;
 let progress = 1;
@@ -30,6 +30,58 @@ const canvas = document.querySelector("#trajectory");
 const slider = document.querySelector("#time");
 const play = document.querySelector("#play");
 const data = window.DSSDL_RESULTS;
+
+function translate(key) {
+  return window.DSSDL_TRANSLATIONS[key][language === "en" ? 1 : 0];
+}
+function renderCommand() {
+  const [text, noteKey] = commands[currentCommand];
+  document.querySelector("#command-text").textContent = text;
+  document.querySelector("#command-note").textContent = translate(noteKey);
+  document.querySelector("#copy-status").textContent = copyStatus
+    ? translate(copyStatus)
+    : "";
+}
+function setLanguage(next, persist = true) {
+  language = next === "en" ? "en" : "zh";
+  document.documentElement.lang = language === "en" ? "en" : "zh-CN";
+  document.querySelectorAll("[data-i18n]").forEach((element) => {
+    element.textContent = translate(element.dataset.i18n);
+  });
+  for (const attribute of ["aria-label", "title", "alt"]) {
+    document.querySelectorAll(`[data-i18n-${attribute}]`).forEach((element) => {
+      element.setAttribute(
+        attribute,
+        translate(element.getAttribute(`data-i18n-${attribute}`)),
+      );
+    });
+  }
+  document.querySelectorAll("[data-language]").forEach((button) => {
+    button.setAttribute(
+      "aria-pressed",
+      String(button.dataset.language === language),
+    );
+  });
+  document.querySelector('meta[name="description"]').content =
+    translate("description");
+  document.querySelector('meta[property="og:description"]').content =
+    translate("description");
+  document.querySelector('meta[property="og:title"]').content =
+    translate("pageTitle");
+  if (persist) {
+    try {
+      localStorage.setItem("dssdl-language", language);
+    } catch {
+      // Language switching still works when browser storage is disabled.
+    }
+  }
+  renderCommand();
+  playbackState();
+  renderSystem();
+}
+document.querySelectorAll("[data-language]").forEach((button) => {
+  button.addEventListener("click", () => setLanguage(button.dataset.language));
+});
 
 function icons() {
   if (window.lucide) window.lucide.createIcons();
@@ -120,14 +172,17 @@ function renderPlot() {
 function renderSystem() {
   const record = data[system];
   document.querySelector("#plot-title").textContent =
-    (system === "fhn" ? "FHN" : "Lorenz") + " · 固定参数轨迹";
+    (system === "fhn" ? "FHN" : "Lorenz") +
+    " · " +
+    translate("fixedTrajectory");
   const max = Math.max(...record.wasserstein.map((r) => r.value || 0));
   document.querySelector("#metric-bars").replaceChildren(
     ...record.wasserstein.map((r, i) => {
       const row = document.createElement("div");
       row.className = "metric-row";
       const name = document.createElement("span");
-      name.textContent = r.method;
+      name.textContent =
+        r.method === "w/o symbol" ? translate("noSymbol") : r.method;
       const track = document.createElement("div");
       track.className = "metric-track";
       const fill = document.createElement("div");
@@ -140,7 +195,7 @@ function renderSystem() {
       value.className = "metric-value" + (r.value === null ? " failed" : "");
       value.textContent =
         r.value === null
-          ? "Failed"
+          ? translate("failed")
           : r.value < 0.01
             ? r.value.toExponential(2)
             : r.value.toFixed(4);
@@ -148,10 +203,9 @@ function renderSystem() {
       return row;
     }),
   );
-  document.querySelector("#result-context").textContent =
-    system === "lorenz"
-      ? "Lorenz 中 DSSDL 与 SINDy 的分布距离接近；GPLearn 未完成整个预测区间。"
-      : "FHN 中 DSSDL 的分布距离最低。该指标描述此条有限时段轨迹，不代表所有任务。";
+  document.querySelector("#result-context").textContent = translate(
+    system === "lorenz" ? "lorenzContext" : "fhnContext",
+  );
   document.querySelector("#source-link").href =
     "https://github.com/PaoShou-China/DSSDL/tree/main/" + record.source;
   renderPlot();
@@ -170,10 +224,9 @@ document.querySelectorAll("[data-command]").forEach((button) =>
     document
       .querySelectorAll("[data-command]")
       .forEach((b) => b.setAttribute("aria-pressed", String(b === button)));
-    const [text, note] = commands[button.dataset.command];
-    document.querySelector("#command-text").textContent = text;
-    document.querySelector("#command-note").textContent = note;
-    document.querySelector("#copy-status").textContent = "";
+    currentCommand = button.dataset.command;
+    copyStatus = "";
+    renderCommand();
   }),
 );
 document.querySelector("#copy").addEventListener("click", async () => {
@@ -192,15 +245,16 @@ document.querySelector("#copy").addEventListener("click", async () => {
       input.remove();
       if (!copied) throw new Error("clipboard unavailable");
     }
-    document.querySelector("#copy-status").textContent = "已复制";
+    copyStatus = "copied";
   } catch {
-    document.querySelector("#copy-status").textContent =
-      "复制受限，请选中命令复制";
+    copyStatus = "copyFailed";
   }
+  renderCommand();
 });
 function playbackState() {
-  play.setAttribute("aria-label", playing ? "暂停轨迹" : "播放轨迹");
-  play.title = playing ? "暂停轨迹" : "播放轨迹";
+  const label = translate(playing ? "pause" : "play");
+  play.setAttribute("aria-label", label);
+  play.title = label;
   play.innerHTML = playing
     ? '<i data-lucide="pause" aria-hidden="true"></i>'
     : '<i data-lucide="play" aria-hidden="true"></i>';
@@ -239,5 +293,11 @@ document.addEventListener("visibilitychange", () => {
   }
 });
 new ResizeObserver(renderPlot).observe(canvas.parentElement);
-icons();
-renderSystem();
+const requestedLanguage = new URLSearchParams(location.search).get("lang");
+let savedLanguage;
+try {
+  savedLanguage = localStorage.getItem("dssdl-language");
+} catch {
+  savedLanguage = null;
+}
+setLanguage(requestedLanguage || savedLanguage || "zh", false);

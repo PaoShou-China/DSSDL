@@ -1,3 +1,7 @@
+[English](#english) | [中文](#chinese)
+
+<a id="english"></a>
+
 # Experiment-to-evidence map
 
 | Evidence | Location | Reproduction | Interpretation |
@@ -64,3 +68,47 @@ The main 0.5-second forecast averages are:
 
 These averages describe the displayed online tests and are not a claim that
 DSSDL beats SINDy on every prediction metric.
+
+---
+
+<a id="chinese"></a>
+
+# 实验与证据对应
+
+| 证据 | 位置 | 复现入口 | 解释范围 |
+|---|---|---|---|
+| SI 表 13：维度选择 | `results/controls/pairs/gate` | `code/run.py gate` | 8 个候选坐标、5 个成对种子；单摆选 1 维、四旋翼选 3 维，不要求精度全部提高 |
+| SI 表 14：符号重构 | `results/controls/pairs/separation` | `code/run.py regularizer-pendulum` / `regularizer-lorenz` | 固定 teacher/模板；lambda=1 与 0 两臂都保留符号项 |
+| SI 表 15：适配预算 | `results/matched_budget` | `reproduce.py budget` | 2 系统 × 4 神经方法 × 5 记录 × 8 支持集大小；比较第 10,000 次更新 |
+| SI Note 3.5：符号发现 | `code/review/experiments/label_free_discovery`、`symbolic_feedback`、`measured_pendulum_closure` | `code/run.py discover`、`feedback`、`pendulum` | 搜索、整理、回填分别记录；不拟合物理参数标签 |
+| 图 5e、6e：分布距离 | `results/wasserstein`、`code/review/experiments/wasserstein/data` | `reproduce.py wasserstein` | 原固定参数轨迹；128 投影、种子 20260720；每方法一条保存轨迹 |
+| 图 5f–g、6f–g、SI 表 12：在线部署 | `results/online`、`code/review/experiments/online` | `reproduce.py online` | 固定离线模型、向后 0.5 秒观测窗；每方法/系统共 135 段预测的平均状态 RMSE |
+
+## 部件对照
+
+每组成对对照使用相同观测与初值。源验证独立于目标适配；目标坐标固定执行 500 次 Adam 更新，学习率 0.03，最终迭代在 query 上评分。query 不参与停止适配。
+
+实测单摆保留源文件 1–7、目标文件 8 及原缩放：角速度除以 20，加速度除以 100。新增 query 评价排除了与 support 完全相同的 50 行，剩余 2,118 行。估计摆长不是训练标签。
+
+Lorenz 正则目标配置已存在于源任务中，但使用新观测；该对照不是参数外推。源数据按时间 80/20 切分，按完整模型的源验证误差选检查点。单摆使用原随机 80/20 切分和回填最终轮。两种规则分别记录，不混称一致。
+
+## 对齐预算
+
+支持集大小为 1、5、10、20、50、100、200、500；历史记录为 1–5。320 份汇总含第 10,000 次更新及之后可能的支持集诊断延长；聚合核验明确选择 10,000 步，而非最后一个预算。
+
+Lorenz DSSDL-symbol 源正则在记录 1–4 中为 10，但记录 1、支持数 1 为例外；记录 5 和该例外为 1。因此五记录标准差不是完全相同源超参数下的纯种子变异。原停止规则回放与固定预算比较使用成对新运行；并非逐位复现旧输出，310/320 条回放误差在绝对 RMSE 2e-5 内一致。全部记录均保留。
+
+## 轨迹指标
+
+静态 FHN 配置为参数 [0.85, 1.05, 0.85]、初态 [-1, 1]、5 秒；Lorenz 为 [9.9, 29.5, 2.9]、初态 [8, -8, 27]、3.5 秒。它们对应原时序误差图，并非上面的样本量实验。Lorenz GPLearn 未完成轨迹，标记失败；不对其短前缀赋予完整区间距离。
+
+在线沿用所选保存工况，没有新造测试条件。系数读出为 FHN 偏置或 Lorenz y 方程中 x 的乘子；不使用物理标签 decoder、后验时间平移或幅值校正。纯神经模型通过状态预测比较，不任意指定物理系数。
+
+0.5 秒预测窗的主要平均状态误差为：
+
+| 系统 | DSSDL（回填检查点） | 无符号项 | 源结构 SINDy |
+|---|---:|---:|---:|
+| FHN | 0.008703 | 0.009424 | 0.007420 |
+| Lorenz | 0.502997 | 0.523199 | 0.385173 |
+
+这些均值仅描述所展示的在线测试，不表示 DSSDL 在每种预测指标上都优于 SINDy。

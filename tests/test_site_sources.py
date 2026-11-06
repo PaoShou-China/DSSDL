@@ -45,6 +45,21 @@ def test_root_pages_entry_points_to_the_published_site():
     assert (DOCS / "index.html").is_file()
 
 
+def test_project_documentation_contains_both_language_sections():
+    documents = [
+        *ROOT.glob("*.md"),
+        *DOCS.rglob("*.md"),
+        *(ROOT / "ci").rglob("*.md"),
+        *(ROOT / "revision_2026_11").rglob("*.md"),
+    ]
+    assert len(documents) == 18
+    for path in documents:
+        text = path.read_text(encoding="utf-8")
+        assert text.startswith("[English](#english) | [中文](#chinese)"), path
+        assert '<a id="english"></a>' in text, path
+        assert '<a id="chinese"></a>' in text, path
+
+
 def test_website_numbers_match_the_saved_metric_table():
     text = (DOCS / "assets/results.js").read_text(encoding="utf-8")
     data = json.loads(text.removeprefix("window.DSSDL_RESULTS = ").removesuffix(";\n"))

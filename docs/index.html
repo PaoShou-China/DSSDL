@@ -5,44 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="DSSDL: disentangled shared-specific dynamics learning. 算法、实验与可复现代码。"
+      content="DSSDL：跨系统动力学辨识。算法、实验与可复现研究代码。"
     />
     <meta name="theme-color" content="#01519a" />
-    <meta
-      property="og:title"
-      content="DSSDL | Shared structure. Specific dynamics."
-    />
+    <meta property="og:title" content="DSSDL · 跨系统动力学辨识" />
     <meta
       property="og:description"
-      content="跨系统动力学辨识：从共享规律到少样本适配。算法与可复现研究代码。"
+      content="DSSDL：跨系统动力学辨识。算法、实验与可复现研究代码。"
     />
     <meta
       property="og:image"
       content="https://paoshou-china.github.io/DSSDL/docs/assets/hero.png"
     />
-    <title>DSSDL · 跨系统动力学辨识</title>
+    <title data-i18n="pageTitle">DSSDL · 跨系统动力学辨识</title>
     <link rel="icon" href="assets/mark.png" type="image/png" />
     <link rel="stylesheet" href="style.css" />
     <script src="assets/lucide.min.js" defer></script>
     <script src="assets/results.js" defer></script>
+    <script src="i18n.js" defer></script>
     <script src="app.js" defer></script>
   </head>
   <body>
-    <a class="skip-link" href="#main">跳到正文</a>
+    <a class="skip-link" href="#main" data-i18n="skip">跳到正文</a>
     <header class="site-header">
-      <a class="brand" href="#" aria-label="DSSDL 首页"
-        ><img src="assets/mark.png" width="44" height="44" alt="" /><span
-          >DSSDL<small>DYNAMICS LEARNING</small></span
-        ></a
+      <a
+        class="brand"
+        href="#"
+        aria-label="DSSDL 首页"
+        data-i18n-aria-label="home"
       >
-      <nav aria-label="主导航">
-        <a href="#method">算法</a><a href="#experiments">实验</a
-        ><a href="#start">快速开始</a><a href="#resources">文档</a>
+        <img src="assets/mark.png" width="44" height="44" alt="" />
+        <span>DSSDL<small data-i18n="brand">动力学学习</small></span></a
+      >
+      <nav aria-label="主导航" data-i18n-aria-label="navigation">
+        <a data-i18n="methodNav" href="#method">算法</a>
+        <a data-i18n="experimentsNav" href="#experiments">实验</a>
+        <a data-i18n="startNav" href="#start">快速开始</a>
+        <a data-i18n="docsNav" href="#resources">文档</a>
       </nav>
-      <a class="repo-link" href="https://github.com/PaoShou-China/DSSDL"
-        ><i data-lucide="github" aria-hidden="true"></i><span>GitHub</span
-        ><i data-lucide="arrow-up-right" aria-hidden="true"></i
-      ></a>
+      <div class="header-actions">
+        <div
+          class="language-switch"
+          role="group"
+          aria-label="页面语言 / Page language"
+          data-i18n-aria-label="language"
+        >
+          <button
+            type="button"
+            data-language="zh"
+            aria-pressed="true"
+            lang="zh-CN"
+          >
+            中文
+          </button>
+          <button
+            type="button"
+            data-language="en"
+            aria-pressed="false"
+            lang="en"
+          >
+            EN
+          </button>
+        </div>
+        <a
+          class="repo-link"
+          href="https://github.com/PaoShou-China/DSSDL"
+          aria-label="GitHub"
+          ><i data-lucide="github" aria-hidden="true"></i><span>GitHub</span
+          ><i data-lucide="arrow-up-right" aria-hidden="true"></i
+        ></a>
+      </div>
     </header>
     <main id="main">
       <section class="hero" aria-labelledby="hero-title">
@@ -52,63 +84,74 @@
           width="1672"
           height="941"
           alt="由蓝色流线构成的动力学吸引子与航空翼型，项目概念视觉"
+          data-i18n-alt="heroAlt"
         />
         <div class="hero-content wrap">
           <p class="eyebrow">
-            <span></span> BEIHANG-INSPIRED RESEARCH SOFTWARE
+            <span></span><b data-i18n="heroEyebrow">北航风格 · 科研软件</b>
           </p>
-          <h1 id="hero-title">DSSDL<span>跨系统动力学辨识</span></h1>
-          <p class="hero-english">
-            Disentangled Shared-Specific<br />Dynamics Learning
+          <h1 id="hero-title">
+            DSSDL<span data-i18n="heroSubtitle">跨系统动力学辨识</span>
+          </h1>
+          <p data-i18n="fullName" class="hero-english">
+            共享与特性解耦的动力学学习
           </p>
-          <p class="hero-summary">
-            从不同系统中学习共享规律，<br />用少量观测适配新的动力学。
+          <p data-i18n="heroSummary" class="hero-summary">
+            从不同系统中学习共享规律，用少量观测适配新的动力学。
           </p>
           <div class="hero-actions">
             <a class="button primary" href="#start"
-              >开始复现<i data-lucide="arrow-right" aria-hidden="true"></i></a
-            ><a class="text-link" href="#method"
-              >探索算法<i data-lucide="arrow-down" aria-hidden="true"></i
+              ><span data-i18n="startAction">开始复现</span
+              ><i data-lucide="arrow-right" aria-hidden="true"></i
+            ></a>
+            <a class="text-link" href="#method"
+              ><span data-i18n="methodAction">探索算法</span
+              ><i data-lucide="arrow-down" aria-hidden="true"></i
             ></a>
           </div>
         </div>
-        <div class="hero-caption">Shared structure. Specific dynamics.</div>
+        <div data-i18n="tagline" class="hero-caption">
+          共享结构，特定动力学。
+        </div>
       </section>
       <div class="evidence-strip">
         <div class="wrap evidence-inner">
-          <span><b>01</b> 共享与特性解耦</span
-          ><span><b>02</b> 少样本任务适配</span
-          ><span><b>03</b> 符号发现与回填</span
-          ><a
+          <span><b>01</b><span data-i18n="feature1">共享与特性解耦</span></span>
+          <span><b>02</b><span data-i18n="feature2">少样本任务适配</span></span>
+          <span><b>03</b><span data-i18n="feature3">符号发现与回填</span></span>
+          <a
             href="https://github.com/PaoShou-China/DSSDL/blob/main/revision_2026_11/EXPERIMENTS.md"
-            >可核验的实验记录<i
-              data-lucide="arrow-up-right"
-              aria-hidden="true"
-            ></i
+            ><span data-i18n="evidenceLink">可核验的实验记录</span
+            ><i data-lucide="arrow-up-right" aria-hidden="true"></i
           ></a>
         </div>
       </div>
-
       <section id="method" class="section wrap">
         <div class="section-heading">
           <div>
-            <p class="eyebrow">THE METHOD / 01</p>
-            <h2>相同规律，不同系统。</h2>
+            <p data-i18n="methodEyebrow" class="eyebrow">算法 / 01</p>
+            <h2 data-i18n="methodTitle">相同规律，不同系统。</h2>
           </div>
-          <p>
+          <p data-i18n="methodIntro">
             共享网络刻画跨任务共性，低维特性向量表示任务差异。符号模型为学到的动力学提供可解释结构。
           </p>
         </div>
         <div class="equation-band">
-          <span class="equation-label">DYNAMICS MODEL</span>
+          <span data-i18n="equationLabel" class="equation-label"
+            >动力学模型</span
+          >
           <p>
             ẋ = <span class="shared">f<sub>θ</sub>(x, q)</span> +
             <span class="symbolic">f<sub>s</sub>(x, q)</span>
           </p>
           <div>
-            <span><b class="dot blue"></b>神经分量</span
-            ><span><b class="dot red"></b>符号分量</span
-            ><span>q · 任务特性</span>
+            <span
+              ><b class="dot blue"></b
+              ><span data-i18n="neural">神经分量</span></span
+            ><span
+              ><b class="dot red"></b
+              ><span data-i18n="symbolic">符号分量</span></span
+            ><span data-i18n="coordinate">q · 任务特性</span>
           </div>
         </div>
         <ol class="pipeline">
@@ -116,60 +159,74 @@
             <div class="step-top">
               <span>01</span><i data-lucide="layers-3" aria-hidden="true"></i>
             </div>
-            <h3>多任务学习</h3>
-            <p>从源任务观测中训练共享网络与任务表示，分离共性和个性。</p>
-            <code>source observations → θ, q</code>
+            <h3 data-i18n="learnTitle">多任务学习</h3>
+            <p data-i18n="learnText">
+              从源任务观测中训练共享网络与任务表示，分离共性和个性。
+            </p>
+            <code data-i18n="learnCode">源任务观测 → θ, q</code>
           </li>
           <li>
             <div class="step-top">
               <span>02</span><i data-lucide="git-branch" aria-hidden="true"></i>
             </div>
-            <h3>符号搜索</h3>
-            <p>PySR 拟合网络响应，以源任务验证误差与复杂度筛选候选表达式。</p>
-            <code>frozen network → expressions</code>
+            <h3 data-i18n="searchTitle">符号搜索</h3>
+            <p data-i18n="searchText">
+              PySR 拟合网络响应，以源任务验证误差与复杂度筛选候选表达式。
+            </p>
+            <code data-i18n="searchCode">冻结网络 → 表达式</code>
           </li>
           <li>
             <div class="step-top">
               <span>03</span><i data-lucide="sigma" aria-hidden="true"></i>
             </div>
-            <h3>结构整理与回填</h3>
-            <p>
+            <h3 data-i18n="feedbackTitle">结构整理与回填</h3>
+            <p data-i18n="feedbackText">
               整理系数函数，记录近似删项。LLM 辅助、作者确认后固定结构再训练。
             </p>
-            <code>expressions → f<sub>s</sub> → feedback</code>
+            <code data-i18n="feedbackCode">表达式 → fₛ → 回填</code>
           </li>
           <li>
             <div class="step-top">
               <span>04</span><i data-lucide="activity" aria-hidden="true"></i>
             </div>
-            <h3>新任务适配</h3>
-            <p>冻结离线共享模型，以支持集更新特性向量，再评估未见观测。</p>
-            <code>support observations → q<sub>new</sub></code>
+            <h3 data-i18n="adaptTitle">新任务适配</h3>
+            <p data-i18n="adaptText">
+              冻结离线共享模型，以支持集更新特性向量，再评估未见观测。
+            </p>
+            <code data-i18n="adaptCode">支持集观测 → q_new</code>
           </li>
         </ol>
         <div class="method-foot">
-          <p>
+          <p data-i18n="methodNote">
             首轮搜索不拟合真实物理参数标签；结构整理中的精确重参数化与近似化简分别记录。
           </p>
           <a
             class="text-link"
             href="https://github.com/PaoShou-China/DSSDL/blob/main/revision_2026_11/SYMBOLIC_WORKFLOW.md"
-            >完整符号流程<i data-lucide="arrow-up-right" aria-hidden="true"></i
+            ><span data-i18n="workflowLink">完整符号流程</span
+            ><i data-lucide="arrow-up-right" aria-hidden="true"></i
           ></a>
         </div>
       </section>
-
       <section id="experiments" class="experiment-band">
         <div class="wrap section">
           <div class="section-heading">
             <div>
-              <p class="eyebrow">RECORDED EXPERIMENTS / 02</p>
-              <h2>从方程，到可检验的轨迹。</h2>
+              <p data-i18n="experimentsEyebrow" class="eyebrow">
+                已记录实验 / 02
+              </p>
+              <h2 data-i18n="experimentsTitle">从方程，到可检验的轨迹。</h2>
             </div>
-            <div class="segmented" role="group" aria-label="选择系统">
+            <div
+              class="segmented"
+              role="group"
+              aria-label="选择系统"
+              data-i18n-aria-label="selectSystem"
+            >
               <button type="button" data-system="lorenz" aria-pressed="true">
-                Lorenz</button
-              ><button type="button" data-system="fhn" aria-pressed="false">
+                Lorenz
+              </button>
+              <button type="button" data-system="fhn" aria-pressed="false">
                 FHN
               </button>
             </div>
@@ -178,18 +235,21 @@
             <div class="trajectory-panel">
               <div class="plot-head">
                 <h3 id="plot-title">Lorenz · 固定参数轨迹</h3>
-                <span>ORIGINAL TRAJECTORY EXPORT</span>
+                <span data-i18n="trajectoryExport">原始轨迹导出</span>
               </div>
               <div class="canvas-wrap">
                 <canvas
                   id="trajectory"
-                  aria-label="原始数据中的参考轨迹与DSSDL预测相图"
+                  aria-label="原始数据中的参考轨迹与 DSSDL、SINDy 预测相图"
+                  data-i18n-aria-label="canvasLabel"
                   role="img"
                 ></canvas>
               </div>
               <div class="trajectory-controls">
                 <div class="plot-legend">
-                  <span><b class="line gray"></b>Ref.</span
+                  <span
+                    ><b class="line gray"></b
+                    ><span data-i18n="reference">参考</span></span
                   ><span><b class="line blue"></b>DSSDL</span
                   ><span><b class="line teal"></b>SINDy</span>
                 </div>
@@ -201,23 +261,26 @@
                     title="播放轨迹"
                     aria-label="播放轨迹"
                   >
-                    <i data-lucide="play" aria-hidden="true"></i></button
-                  ><input
+                    <i data-lucide="play" aria-hidden="true"></i>
+                  </button>
+                  <input
                     id="time"
                     type="range"
                     min="1"
                     max="100"
                     value="100"
                     aria-label="轨迹时间进度"
+                    data-i18n-aria-label="progress"
                   /><output id="time-label">3.50 s</output>
                 </div>
               </div>
             </div>
             <div class="metric-panel">
-              <p class="eyebrow">DISTRIBUTION DISTANCE</p>
-              <h3>Sliced Wasserstein</h3>
-              <p class="metric-note">
-                原论文固定参数轨迹 · 128 个投影方向<br />数值越低，有限时段状态分布越接近。
+              <p data-i18n="distanceEyebrow" class="eyebrow">分布距离</p>
+              <h3 data-i18n="distanceTitle">切片 Wasserstein 距离</h3>
+              <p data-i18n="distanceNote" class="metric-note">
+                原论文固定参数轨迹 · 128
+                个投影方向。数值越低，有限时段状态分布越接近。
               </p>
               <div
                 id="metric-bars"
@@ -229,13 +292,14 @@
                 id="source-link"
                 class="text-link"
                 href="https://github.com/PaoShou-China/DSSDL/tree/main/revision_2026_11/code/review/experiments/wasserstein/data/lorenz"
-                >数据来源<i data-lucide="arrow-up-right" aria-hidden="true"></i
+                ><span data-i18n="sourceLink">数据来源</span
+                ><i data-lucide="arrow-up-right" aria-hidden="true"></i
               ></a>
             </div>
           </div>
           <div class="scope-note">
             <i data-lucide="info" aria-hidden="true"></i>
-            <p>
+            <p data-i18n="scope">
               这里展示原始固定参数模型的记录，不将其标为 PySR
               回填模型。时变部署、闭环发现和成对消融分别使用其已记录的模型与协议。
             </p>
@@ -243,50 +307,60 @@
           <div class="experiment-links">
             <a
               href="https://github.com/PaoShou-China/DSSDL/tree/main/revision_2026_11/results/controls"
-              ><span>20 组成对对照</span><small>门控与符号正则</small
-              ><i data-lucide="arrow-up-right" aria-hidden="true"></i></a
-            ><a
+              ><span data-i18n="controlsCount">20 组成对对照</span
+              ><small data-i18n="controlsLabel">门控与符号正则</small
+              ><i data-lucide="arrow-up-right" aria-hidden="true"></i
+            ></a>
+            <a
               href="https://github.com/PaoShou-China/DSSDL/tree/main/revision_2026_11/results/matched_budget"
-              ><span>320 条预算记录</span><small>固定更新预算对比</small
-              ><i data-lucide="arrow-up-right" aria-hidden="true"></i></a
-            ><a
+              ><span data-i18n="budgetCount">320 条预算记录</span
+              ><small data-i18n="budgetLabel">固定更新预算对比</small
+              ><i data-lucide="arrow-up-right" aria-hidden="true"></i
+            ></a>
+            <a
               href="https://github.com/PaoShou-China/DSSDL/tree/main/revision_2026_11/results/online"
-              ><span>810 个预测窗口</span><small>所选时变工况的保存结果</small
+              ><span data-i18n="onlineCount">810 个预测窗口</span
+              ><small data-i18n="onlineLabel">所选时变工况的保存结果</small
               ><i data-lucide="arrow-up-right" aria-hidden="true"></i
             ></a>
           </div>
         </div>
       </section>
-
       <section id="start" class="section wrap">
         <div class="section-heading">
           <div>
-            <p class="eyebrow">REPRODUCE / 03</p>
-            <h2>少一点准备，多一点研究。</h2>
+            <p data-i18n="startEyebrow" class="eyebrow">复现 / 03</p>
+            <h2 data-i18n="startTitle">少一点准备，多一点研究。</h2>
           </div>
-          <p>
+          <p data-i18n="startIntro">
             一个命令入口。先确认环境与数据，再运行需要的实验。检查保存结果无需
             GPU 或 Julia。
           </p>
         </div>
         <div class="start-layout">
           <div class="start-copy">
-            <span class="version-label">PYTHON 3.10+ / WINDOWS & LINUX</span>
-            <h3>从一份可信的结果开始。</h3>
-            <p>
+            <span class="version-label"
+              >PYTHON 3.10+ / WINDOWS &amp; LINUX</span
+            >
+            <h3 data-i18n="startCopyTitle">从一份可信的结果开始。</h3>
+            <p data-i18n="startCopyText">
               基础安装提供命令行工具；实验依赖单独安装，避免首次打开仓库就触发大型下载。
             </p>
             <ol class="quick-steps">
               <li>
                 <b>01</b
                 ><span
-                  >安装并检查环境<small>依赖缺失时给出明确安装提示</small></span
+                  ><span data-i18n="step1">安装并检查环境</span
+                  ><small data-i18n="step1Note"
+                    >依赖缺失时给出明确安装提示</small
+                  ></span
                 >
               </li>
               <li>
                 <b>02</b
                 ><span
-                  >核验已保存结果<small
+                  ><span data-i18n="step2">核验已保存结果</span
+                  ><small data-i18n="step2Note"
                     >校验文件、指标和记录的一致性</small
                   ></span
                 >
@@ -294,35 +368,50 @@
               <li>
                 <b>03</b
                 ><span
-                  >选择一个实验<small>先短运行，再按原协议完整复现</small></span
+                  ><span data-i18n="step3">选择一个实验</span
+                  ><small data-i18n="step3Note"
+                    >先短运行，再按原协议完整复现</small
+                  ></span
                 >
               </li>
             </ol>
             <a
               class="text-link"
               href="https://github.com/PaoShou-China/DSSDL/blob/main/GETTING_STARTED.md"
-              >完整使用指南<i
-                data-lucide="arrow-up-right"
-                aria-hidden="true"
-              ></i
+              ><span data-i18n="guideLink">完整使用指南</span
+              ><i data-lucide="arrow-up-right" aria-hidden="true"></i
             ></a>
           </div>
           <div class="terminal">
             <div class="terminal-header">
-              <div class="command-tabs" role="group" aria-label="复现命令">
+              <div
+                class="command-tabs"
+                role="group"
+                aria-label="复现命令"
+                data-i18n-aria-label="commandsLabel"
+              >
                 <button
+                  data-i18n="install"
                   type="button"
                   data-command="install"
                   aria-pressed="true"
                 >
-                  安装</button
-                ><button
+                  安装
+                </button>
+                <button
+                  data-i18n="verify"
                   type="button"
                   data-command="verify"
                   aria-pressed="false"
                 >
-                  核验</button
-                ><button type="button" data-command="run" aria-pressed="false">
+                  核验
+                </button>
+                <button
+                  data-i18n="run"
+                  type="button"
+                  data-command="run"
+                  aria-pressed="false"
+                >
                   运行
                 </button>
               </div>
@@ -332,6 +421,8 @@
                 class="icon-button"
                 title="复制命令"
                 aria-label="复制命令"
+                data-i18n-title="copy"
+                data-i18n-aria-label="copy"
               >
                 <i data-lucide="copy" aria-hidden="true"></i>
               </button>
@@ -347,37 +438,46 @@ dssdl doctor</code></pre>
           </div>
         </div>
       </section>
-
       <section id="resources" class="resources-band">
         <div class="wrap section">
           <div class="section-heading">
             <div>
-              <p class="eyebrow">OPEN RESEARCH / 04</p>
-              <h2>每个结论，都有来处。</h2>
+              <p data-i18n="resourcesEyebrow" class="eyebrow">开放研究 / 04</p>
+              <h2 data-i18n="resourcesTitle">每个结论，都有来处。</h2>
             </div>
-            <p>代码、模型、数据与实验协议放在同一个可追溯的研究仓库中。</p>
+            <p data-i18n="resourcesIntro">
+              代码、模型、数据与实验协议放在同一个可追溯的研究仓库中。
+            </p>
           </div>
           <div class="resource-list">
             <a
               href="https://github.com/PaoShou-China/DSSDL/blob/main/revision_2026_11/EXPERIMENTS.md"
               ><i data-lucide="notebook-tabs" aria-hidden="true"></i
               ><span
-                ><b>实验与证据索引</b
-                ><small>工况、指标、模型版本与解释范围</small></span
-              ><i data-lucide="arrow-up-right" aria-hidden="true"></i></a
-            ><a
+                ><b data-i18n="experimentMap">实验与证据索引</b
+                ><small data-i18n="experimentMapNote"
+                  >工况、指标、模型版本与解释范围</small
+                ></span
+              ><i data-lucide="arrow-up-right" aria-hidden="true"></i
+            ></a>
+            <a
               href="https://github.com/PaoShou-China/DSSDL/blob/main/revision_2026_11/SYMBOLIC_WORKFLOW.md"
               ><i data-lucide="workflow" aria-hidden="true"></i
               ><span
-                ><b>符号发现记录</b
-                ><small>搜索、整理、回填与 LLM 提示词</small></span
-              ><i data-lucide="arrow-up-right" aria-hidden="true"></i></a
-            ><a
+                ><b data-i18n="discoveryRecord">符号发现记录</b
+                ><small data-i18n="discoveryRecordNote"
+                  >搜索、整理、回填与 LLM 提示词</small
+                ></span
+              ><i data-lucide="arrow-up-right" aria-hidden="true"></i
+            ></a>
+            <a
               href="https://github.com/PaoShou-China/DSSDL/blob/main/CONTRIBUTING.md"
               ><i data-lucide="git-pull-request" aria-hidden="true"></i
               ><span
-                ><b>参与开发</b
-                ><small>编码规范、测试与科学结果保护</small></span
+                ><b data-i18n="contributing">参与开发</b
+                ><small data-i18n="contributingNote"
+                  >编码规范、测试与科学结果保护</small
+                ></span
               ><i data-lucide="arrow-up-right" aria-hidden="true"></i
             ></a>
           </div>
@@ -387,13 +487,15 @@ dssdl doctor</code></pre>
     <footer class="wrap footer">
       <div class="footer-brand">
         <img src="assets/mark.png" width="38" height="38" alt="" /><b>DSSDL</b
-        ><span>Disentangled Shared-Specific Dynamics Learning</span>
+        ><span data-i18n="fullName">共享与特性解耦的动力学学习</span>
       </div>
-      <p>
-        北航风格项目视觉 · 非学校官方网站<br />封面为概念视觉，实验图读取仓库中的保存数据。
+      <p data-i18n="footerNote">
+        北航风格项目视觉 ·
+        非学校官方网站。封面为概念视觉，实验图读取仓库中的保存数据。
       </p>
       <a href="https://github.com/PaoShou-China/DSSDL"
-        >Source code<i data-lucide="arrow-up-right" aria-hidden="true"></i
+        ><span data-i18n="sourceCode">源代码</span
+        ><i data-lucide="arrow-up-right" aria-hidden="true"></i
       ></a>
     </footer>
   </body>

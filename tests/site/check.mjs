@@ -61,9 +61,49 @@ try {
         await page
             .getByRole("button", { name: "暂停轨迹", exact: true })
             .click();
+        const metricValues = await page
+            .locator(".metric-value")
+            .allTextContents();
+        const command = await page.locator("#command-text").textContent();
+        await page.getByRole("button", { name: "EN", exact: true }).click();
+        assert.equal(await page.locator("html").getAttribute("lang"), "en");
+        assert.match(
+            await page.locator("#plot-title").textContent(),
+            /FHN.*Fixed-parameter/,
+        );
+        assert.deepEqual(
+            await page.locator(".metric-value").allTextContents(),
+            metricValues,
+        );
+        assert.equal(
+            await page.locator("#command-text").textContent(),
+            command,
+        );
+        assert.equal(
+            await page
+                .getByRole("button", { name: "Copy commands", exact: true })
+                .isVisible(),
+            true,
+        );
+        assert.equal(
+            await page.evaluate(
+                () => document.documentElement.scrollWidth > innerWidth + 1,
+            ),
+            false,
+        );
+        await page.screenshot({
+            path: `site-test-results/${name}-en.png`,
+            fullPage: true,
+        });
+        await page.reload({ waitUntil: "networkidle" });
+        assert.equal(await page.locator("html").getAttribute("lang"), "en");
+        await page.getByRole("button", { name: "中文", exact: true }).click();
+        assert.equal(await page.locator("html").getAttribute("lang"), "zh-CN");
         assert.deepEqual(errors, []);
         await page.close();
-        console.log(`${name}: layout, assets, plot pixels and controls passed`);
+        console.log(
+            `${name}: bilingual layout, assets, plot pixels, controls and language persistence passed`,
+        );
     }
 } finally {
     await browser.close();

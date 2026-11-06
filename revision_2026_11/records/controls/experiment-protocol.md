@@ -1,3 +1,7 @@
+[English](#english) | [中文](#chinese)
+
+<a id="chinese"></a>
+
 # 二轮补充实验协议 v1
 
 锁定日期：2026-10-27。原文件只读；所有新输出在本工作目录。该协议先于本轮结果建立。目的不是制造所有消融均变差的排序。
@@ -52,3 +56,62 @@
 反馈随机种子预设为42044–42048：第一项与第44轮原训练种子一致，其余依次增加；只改变固定teacher之后的批次顺序。每对初值、source切分和target数据相同，保存指纹及逐轮记录。目标适配仍用本轮统一的500步Adam、lr=.03、源坐标均值初值，只优化目标坐标，query不参与早停。最终指标保留符号单独与完整模型的source/target标准化导数RMSE，报告mean±样本SD。单摆和Lorenz分别汇总，不将两种source划分/选择规则混称一致。
 
 训练前数据核对：Lorenz为18个source文件，各1000行；目标support100行、query500行。目标标识10_20_2.67也在source列表内，观测行无完全重合，所以这是同参数配置下的新观测适配，不作为未见物理参数外推结果。主消融结论依据source完整/符号误差，target观测误差分列描述，不更换到一个新工况。
+
+---
+
+<a id="english"></a>
+
+# Second-round supplementary experiment protocol v1
+
+Locked on 2026-10-27, before these results. Original files remain read-only; new outputs go to the working directory. The purpose is not to force every ablation to rank worse.
+
+## D0: Data and tasks
+
+1. Gating controls reuse the audited experiment-22 real-data loaders, saved features/labels and source normalization. Measured pendulum sources are files 1–7 and the target is file 8; no synthetic pendulum or eighth training length is added. Quadrotor uses the original 27-task inertia grid and target (.02,.05,.10). No new scenario is introduced.
+2. The gating configuration follows experiment 22: 8 candidate coordinates, 128×128 SiLU, initial gate logit .5, temperature 1, model/gate lr .005, AdamW weight decay 1e-4; 512 samples/task/epoch, batch128; 100 gating epochs, 20% source holdout and the 1-SE rule; then 70 fixed-gate epochs at lr .001. The number 27 denotes quadrotor tasks, not candidate dimensions.
+3. Symbolic-reconstruction controls first use experiment-58 measured pendulum: original teacher, random 80/20 split, scaling by 20/100 and recorded consolidated PySR template. Keep the same expression; do not supply a new true equation or library head. Both arms share initialization; only lambda_reg=1/0 changes, with the gate fixed to avoid confounding.
+4. The later Lorenz control must reuse the experiment-44 teacher/template and source/target observations, auditing update targets before execution. Do not use the newly generated six-task rho-only setting.
+
+## D1: Single-factor controls
+
+- Gate-on/off: set all gates to 1 and disable the gate penalty only. Architecture, initial weights, sampling, source selection, budget and target adaptation otherwise match. fs=0 during gating, so this tests Stage-I compression, not the full PySR workflow.
+- Lambda=1/0: both retain the same symbolic expression and network and use the original Trainer's coordinate/shared update steps. This isolates the feedback reconstruction constraint, not the no-symbol ablation or term loss in a fresh PySR search.
+- Target adaptation uses exactly 500 Adam steps, lr .03, initialized at the mean source coordinate. Fit support only; score the final iterate on query. No query early stopping or selection. Gating selection uses source validation only.
+- If query includes identical input–label rows from support, exclude them from the new primary score and record original, removed and final counts. Both arms use the same remaining query. This prevents duplicate scoring; it is not a new scenario and must not be mixed with old full-query numbers.
+- No target-driven tuning, seed exclusion, forced retention of at least one dimension or added physical labels. If all gates close, retain and count the failed/degenerate case.
+
+## D2: Execution stages
+
+First run paired technical checks for gating seed0 on both systems and pendulum feedback with the fixed teacher and seed5800. Pilots do not establish five-seed statistics.
+
+The formal plan uses gating seeds0–4 and feedback seeds5800–5804. These repeat feedback after a fixed teacher, not five independent end-to-end discovery searches; table headings must say so. Budgets follow this protocol unless an implementation error requires a prior amendment and rerunning both arms.
+
+## Metrics
+
+- Normalized derivative-output RMSE on source holdout and target before/after adaptation; explicitly not state-trajectory RMSE.
+- Candidate/effective dimensions, all-gates-off counts and latent covariance participation ratio. Maximum coordinate-wise correlation does not prove recovery of every physical parameter. Approximate pendulum lengths are not precise ground truth.
+- Symbol-only NRMSE, full-output NRMSE, neural RMS and symbolic/neural inner product. The optional ratio ||fs||²/(||fs||²+||fn||²) depends on cancellation and normalization; it cannot alone prove identifiability.
+- Initial/final coefficients and equations. Under a fixed structure, do not claim term discovery/loss unless a subsequent equal-budget PySR search was actually run.
+- Record runtime, hardware and source/target update counts, but do not equate matching epochs with strictly equal compute.
+
+## Success criteria and permitted conclusions
+
+Reduced dimension with similar accuracy supports compact representation; RMSE need not improve. Report any accuracy/compression trade-off. Better symbol-only fitting without better full prediction supports the constraint's role in the interpretable component, not universal extrapolation gains. Insert numbers into the manuscript/response only after execution.
+
+Save data access, initial-weight/input hashes, split/batch fingerprints, settings, software and outputs for every run. Do not modify original programs or overwrite original results.
+
+## Execution audit note (not a retrospective adjustment)
+
+The seven measured-pendulum source files contain 6230, 5545, 4849, 4313, 3714, 3390 and 2731 rows. Target support has 50 rows; the original query has 2168, including 50 exact support duplicates. The prespecified exclusion leaves 2118 query rows, consistently for gating and regularizer controls.
+
+Each of the 27 quadrotor source tasks has 2500 rows. Target support has 500 and query 2500, with no exact support duplicates removed. Each system still has its original single target configuration; multiple seeds do not add target systems with different physical parameters.
+
+## Lorenz execution protocol (locked before training, 2026-10-27)
+
+Reuse experiment44's first consolidated PySR template, shared coefficient initialization and coordinate initialization, and the experiment42 no-symbol teacher. Do not regenerate data, add missing terms or use physical parameters/decoders. The template is `Q1*(y-x)`, `Q2*x+c1*x*z+c2*y`, `c3*x*y+Q3*z`. Centers/scales come from source statistics of discovered coefficients, not ground-truth fitting.
+
+Follow experiment44 feedback: original64×64 network, three task coordinates; first80% of each source file for training, last20% for validation; 100epochs, batch512; mapper Adam lr .001 followed by all-parameter Adam lr .001, weight decay .0001. Both arms retain the same template and trainable shared coefficients, changing only reconstruction weight1/0. Complete all100epochs in both arms, then select by the same source full-model validation error, never target error. This differs from the pendulum Trainer's final-epoch rule and is reported per system.
+
+Feedback seeds are42044–42048. The first matches experiment44; the rest increment it, changing only batching after the fixed teacher. Each pair shares initial weights, source split and target data; save fingerprints and epoch logs. Target adaptation uses500Adam steps, lr .03 and mean source-coordinate initialization, optimizing only the target coordinates without query early stopping. Report source/target normalized derivative RMSE for symbol-only/full outputs as mean±sample SD. Summarize pendulum and Lorenz separately; do not call their source splitting/selection identical.
+
+Before training, the Lorenz audit found18source files,1000rows each; target support100rows and query500rows. Target ID10_20_2.67 is also a source configuration, but observations do not exactly overlap. This is adaptation to new observations at the same physical configuration, not unseen-parameter extrapolation. Base the primary ablation conclusions on source full/symbol errors, list target errors separately, and do not replace the scenario.

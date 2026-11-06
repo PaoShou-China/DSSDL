@@ -3,9 +3,10 @@
   "private": true,
   "version": "0.2.0",
   "scripts": {
-    "format": "prettier --write index.html docs/index.html docs/style.css docs/app.js tests/site/*.mjs",
-    "format:check": "prettier --check index.html docs/index.html docs/style.css docs/app.js tests/site/*.mjs",
-    "test:site": "node tests/site/check.mjs"
+    "format": "prettier --write index.html docs/index.html docs/style.css docs/app.js docs/i18n.js tests/site/*.mjs",
+    "format:check": "prettier --check index.html docs/index.html docs/style.css docs/app.js docs/i18n.js tests/site/*.mjs",
+    "test:site": "node tests/site/check.mjs",
+    "test:i18n": "node --test tests/site/localization.test.mjs"
   },
   "devDependencies": {
     "@playwright/test": "1.56.1",

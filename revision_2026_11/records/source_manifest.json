@@ -177,7 +177,7 @@
     "path": "code/baseline_reference/README.md",
     "origin": "lecture_delivery_2026-10-29/DSSDL_lecture_reference/02_code/baseline_reference/README.md",
     "source_sha256": "de2ad2bad7ba4b5cf2b0734c53f95422c2ee7aba3ce3c8264e90acaae3ecaffb",
-    "published_sha256": "de2ad2bad7ba4b5cf2b0734c53f95422c2ee7aba3ce3c8264e90acaae3ecaffb"
+    "published_sha256": "2e6af0a28065f8f864199bf5fe45358282e638273daad42b7fb3b09e3db6ab63"
   },
   {
     "path": "code/baseline_reference/Reptile/Reptile.py",
@@ -249,7 +249,7 @@
     "path": "code/compare2/DSSDL/README.md",
     "origin": "lecture_delivery_2026-10-29/DSSDL_lecture_reference/02_code/compare2/DSSDL/README.md",
     "source_sha256": "f5b1d0322ef98d8518e69dae071844e70c8e31d031073a77fa0ec3a718fdc23f",
-    "published_sha256": "f5b1d0322ef98d8518e69dae071844e70c8e31d031073a77fa0ec3a718fdc23f"
+    "published_sha256": "2a2208983add7c7f43ec167a37491c57f2bfa84a4e23b1ee21dde950bef57300"
   },
   {
     "path": "code/compare2/DSSDL/datasets/FHN/__init__.py",
@@ -1953,7 +1953,7 @@
     "path": "code/review/experiments/label_free_discovery/plan/experiment-protocol.md",
     "origin": "lecture_delivery_2026-10-29/DSSDL_lecture_reference/02_code/review/experiments/label_free_discovery/plan/experiment-protocol.md",
     "source_sha256": "6eeed93e182e7f4ddeb9bedca6bb03e23747ea68b3d6743f408bde1b6d37be6e",
-    "published_sha256": "6eeed93e182e7f4ddeb9bedca6bb03e23747ea68b3d6743f408bde1b6d37be6e"
+    "published_sha256": "7a04823effbd06c95f403bd7325a7420e14e8801a8da757cef08a9ab179e7472"
   },
   {
     "path": "code/review/experiments/label_free_discovery/runs/fhn/round_01/discovery/equations.json",
@@ -2883,13 +2883,13 @@
     "path": "code/review/experiments/measured_pendulum_closure/plan/experiment-protocol.md",
     "origin": "lecture_delivery_2026-10-29/DSSDL_lecture_reference/02_code/review/experiments/measured_pendulum_closure/plan/experiment-protocol.md",
     "source_sha256": "2f18d2da5b357b5fe276c87db513a4083ebf4805c76b5e909528d44f99c1458f",
-    "published_sha256": "2f18d2da5b357b5fe276c87db513a4083ebf4805c76b5e909528d44f99c1458f"
+    "published_sha256": "4c83615b55b6b7b23d70d73ca4f97c45344c3bff9d66007022c025cedd3b9c3d"
   },
   {
     "path": "code/review/experiments/measured_pendulum_closure/round_01/intermediate_observed_candidate_PROVENANCE.md",
     "origin": "lecture_delivery_2026-10-29/DSSDL_lecture_reference/02_code/review/experiments/measured_pendulum_closure/round_01/intermediate_observed_candidate_PROVENANCE.md",
     "source_sha256": "5cd1d75ca1f4a5fa042da223670215ce996ed922a9858533a6d0b32b70f2100f",
-    "published_sha256": "5cd1d75ca1f4a5fa042da223670215ce996ed922a9858533a6d0b32b70f2100f"
+    "published_sha256": "4a35bd01274788075928c1d9f9b19bcd2bd9e9e6222047f3aa66b06d9aa5446b"
   },
   {
     "path": "code/review/experiments/measured_pendulum_closure/round_01/selected_equations.json",
@@ -3051,7 +3051,7 @@
     "path": "code/review/experiments/symbolic_feedback/plan/experiment-protocol.md",
     "origin": "lecture_delivery_2026-10-29/DSSDL_lecture_reference/02_code/review/experiments/symbolic_feedback/plan/experiment-protocol.md",
     "source_sha256": "46aa1cf75ed3edb06d6e9832f8ad982b3dfdaf9d4d4bc999407ad78ee256dede",
-    "published_sha256": "46aa1cf75ed3edb06d6e9832f8ad982b3dfdaf9d4d4bc999407ad78ee256dede"
+    "published_sha256": "e1df4dfe07e2224564688c1b4a2c15dc243b6c85fbf7928385980323ac477ef1"
   },
   {
     "path": "code/review/experiments/symbolic_feedback/runs/pysr/fhn/compact_after_feedback.json",
@@ -3267,7 +3267,7 @@
     "path": "records/controls/experiment-protocol.md",
     "origin": "lecture_delivery_2026-10-29/DSSDL_lecture_reference/03_guide_and_results/protocols/experiment-protocol.md",
     "source_sha256": "6705188c218dec89062ab72826f254c611025c9bd7fb778145e05baf4021c2fa",
-    "published_sha256": "6705188c218dec89062ab72826f254c611025c9bd7fb778145e05baf4021c2fa"
+    "published_sha256": "e0d1008412000b120cf174e5f45696ea9defe1fc789b52dff96962d81111c3c8"
   },
   {
     "path": "records/published_tables/first_round_expressions.tex",

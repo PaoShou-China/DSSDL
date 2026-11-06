@@ -18,6 +18,7 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run format:check
+      - run: npm run test:i18n
       - run: npx playwright install --with-deps chromium
       - name: Serve only public page files in the isolated CI runner
         run: python3 -m http.server 8765 --bind 127.0.0.1 --directory docs > /tmp/dssdl-site.log 2>&1 &
