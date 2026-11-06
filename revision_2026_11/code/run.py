@@ -1,4 +1,5 @@
 """Small launch/verification interface; learning algorithms remain in their source modules."""
+
 from __future__ import annotations
 
 import argparse
@@ -46,11 +47,12 @@ def checksum():
 
 def verify_results():
     import numpy as np
+
     folder = PACKAGE / "results/controls/pairs"
     pairs = sorted(folder.glob("*/*/seed_*/summary.json"))
     assert len(pairs) == 20
     n = 0
-    maximum_error = 0.
+    maximum_error = 0.0
     for path in pairs:
         data = read(path)
         assert data["status"] == "completed" and data["protected_inputs_unchanged"]
@@ -58,7 +60,9 @@ def verify_results():
         reference = None
         for variant, row in data["results"].items():
             with np.load(path.parent / f"{variant}_predictions.npz") as p:
-                actual = float(np.sqrt(np.mean((p["prediction"].astype(float) - p["reference"]) ** 2)))
+                actual = float(
+                    np.sqrt(np.mean((p["prediction"].astype(float) - p["reference"]) ** 2))
+                )
                 error = abs(actual - row["query_nrmse_after"])
                 assert error < 2e-7, (path, variant, actual)
                 maximum_error = max(maximum_error, error)
@@ -67,13 +71,16 @@ def verify_results():
                 reference = p["reference"].copy()
             assert row["steps"] == 500 and not row["query_used_for_stopping"]
             n += 1
-    print(f"RESULTS OK: {len(pairs)} pairs, {n} variants, max target-RMSE difference {maximum_error:.3g}")
+    print(
+        f"RESULTS OK: {len(pairs)} pairs, {n} variants, max target-RMSE difference {maximum_error:.3g}"
+    )
 
 
 def check():
     import numpy as np
     import sympy as sp
     import torch
+
     torch.set_num_threads(2)
     paths = list(ROOT.rglob("*.py"))
     for path in paths:
@@ -83,21 +90,46 @@ def check():
         _, dataset, module, _, _ = base.old.shared.multisystem.import_dssdl_for_system(dataset_name)
         folder = base.ROOT / "runs/pysr" / system
         spec = read(folder / "first_round_simplification.json")
-        prior = base.CompactPrior(system, [sp.sympify(e) for e in spec["new_templates"]],
-            spec["shared_coefficient_initial_values"], spec["coefficient_center"], spec["coefficient_scale"], dataset)
-        checkpoint = ROOT / read(base.P42 / "runs" / system / "run_manifest.json")["packaged_source_checkpoint"]
-        model = base.old.model_for(module, dataset, dict(device="cpu", hidden_widths=[64, 64], specific_param_dim=3),
-                                   checkpoint, base.old.runner.ZeroPrior(len(base.old.NAMES[system])))
+        prior = base.CompactPrior(
+            system,
+            [sp.sympify(e) for e in spec["new_templates"]],
+            spec["shared_coefficient_initial_values"],
+            spec["coefficient_center"],
+            spec["coefficient_scale"],
+            dataset,
+        )
+        checkpoint = (
+            ROOT
+            / read(base.P42 / "runs" / system / "run_manifest.json")["packaged_source_checkpoint"]
+        )
+        model = base.old.model_for(
+            module,
+            dataset,
+            dict(device="cpu", hidden_widths=[64, 64], specific_param_dim=3),
+            checkpoint,
+            base.old.runner.ZeroPrior(len(base.old.NAMES[system])),
+        )
         model.f_hat_func = prior
-        model.load_state_dict(torch.load(folder / "compact_model.pt", map_location="cpu", weights_only=True), strict=True)
+        model.load_state_dict(
+            torch.load(folder / "compact_model.pt", map_location="cpu", weights_only=True),
+            strict=True,
+        )
         raw_x = np.asarray(dataset["raw"]["train"][0][0][:16])
         q = model.one_hot_to_specific_param.weight[:, 0].detach().numpy()
-        x = torch.tensor(np.column_stack([raw_x, np.tile(q, (len(raw_x), 1))]), dtype=torch.float32, requires_grad=True)
+        x = torch.tensor(
+            np.column_stack([raw_x, np.tile(q, (len(raw_x), 1))]),
+            dtype=torch.float32,
+            requires_grad=True,
+        )
         prediction = prior(x, use_raw_data=True)
-        np.testing.assert_allclose(prediction.detach().numpy(), prior.numpy(x.detach().numpy()), rtol=3e-5, atol=3e-5)
+        np.testing.assert_allclose(
+            prediction.detach().numpy(), prior.numpy(x.detach().numpy()), rtol=3e-5, atol=3e-5
+        )
         prediction.sum().backward()
         assert x.grad is not None and torch.isfinite(x.grad).all()
-        print(f"MODEL OK: {system}; {dataset['info']['file_counts']['train']} source tasks; prior gradients finite")
+        print(
+            f"MODEL OK: {system}; {dataset['info']['file_counts']['train']} source tasks; prior gradients finite"
+        )
     assert not base.old.TRIPWIRE_CALLS
     pend = load("lecture_pendulum", EXP / "measured_pendulum_closure/scripts/run_closure.py")
     env = pend.original_module()
@@ -114,17 +146,23 @@ def check():
         print(f"DATA OK: {name}")
     gate = load("lecture_gate_preflight", EXP / "scripts/dimension_discovery_claim_runner.py")
     for system in ("pendulum", "quadrotor"):
-        bundle = gate.load_data(system, seed=0, val_fraction=.2, device=torch.device("cpu"))
+        bundle = gate.load_data(system, seed=0, val_fraction=0.2, device=torch.device("cpu"))
         assert len(bundle.train_x) > 0 and len(bundle.target_support_x) > 0
         print(f"GATE INPUT OK: {system}; {len(bundle.train_x)} source tasks")
     lor = load("lecture_lorenz_preflight", CONTROL / "scripts/run_lorenz_regularizer.py")
     lor.prepare("cpu")
-    print(f"CHECK OK: {len(paths)} Python files parsed; closure models, all packaged datasets and Lorenz control preflight passed")
+    print(
+        f"CHECK OK: {len(paths)} Python files parsed; closure models, all packaged datasets and Lorenz control preflight passed"
+    )
 
 
 def execute(script, args):
-    subprocess.run([sys.executable, "-B", str(script), *args], cwd=ROOT,
-                   env=dict(os.environ, PYTHONIOENCODING="utf-8", PYTHONDONTWRITEBYTECODE="1"), check=True)
+    subprocess.run(
+        [sys.executable, "-B", str(script), *args],
+        cwd=ROOT,
+        env=dict(os.environ, PYTHONIOENCODING="utf-8", PYTHONDONTWRITEBYTECODE="1"),
+        check=True,
+    )
 
 
 def fresh_output(name):
@@ -137,26 +175,35 @@ def fresh_output(name):
 
 def discovery(args):
     import torch
+
     base = load("lecture_search", EXP / "label_free_discovery/scripts/run_closure.py")
     base.seed_all(0)
     torch.set_num_threads(2)
     system = args.system
     dataset_name = "FHN" if system == "fhn" else "lorenz"
     _, dataset, module, pretrain, _ = base.shared.multisystem.import_dssdl_for_system(dataset_name)
-    pretrain.CONFIG_OVERRIDES["reg_rate"] = 0.
+    pretrain.CONFIG_OVERRIDES["reg_rate"] = 0.0
     provenance = read(base.ROOT / "runs" / system / "run_manifest.json")
     checkpoint = ROOT / provenance["packaged_source_checkpoint"]
-    model = base.model_for(module, dataset, dict(device=args.device, hidden_widths=[64, 64], specific_param_dim=3),
-                           checkpoint, base.runner.ZeroPrior(len(base.NAMES[system])))
+    model = base.model_for(
+        module,
+        dataset,
+        dict(device=args.device, hidden_widths=[64, 64], specific_param_dim=3),
+        checkpoint,
+        base.runner.ZeroPrior(len(base.NAMES[system])),
+    )
     out = fresh_output(args.name or f"first_search_{system}")
     # Same search and selection functions/budget as the recorded first round.
     base.discover(model, dataset, system, out / "round_01/discovery", 1, 45)
     assert not base.TRIPWIRE_CALLS
-    print(f"First search written to {out}; compare its equations with the recorded simplification before feedback")
+    print(
+        f"First search written to {out}; compare its equations with the recorded simplification before feedback"
+    )
 
 
 def feedback(args):
     import shutil
+
     base = load("lecture_feedback_run", EXP / "symbolic_feedback/scripts/run_feedback.py")
     saved_root = base.ROOT
     out = fresh_output(args.name or f"feedback_{args.system}")
@@ -207,13 +254,27 @@ def main():
     elif args.command == "check":
         check()
     elif args.command == "gate":
-        execute(CONTROL / "scripts/run_paired_ablation.py", ["gate", "--system", args.system, "--seed", str(args.seed), "--device", args.device])
+        execute(
+            CONTROL / "scripts/run_paired_ablation.py",
+            ["gate", "--system", args.system, "--seed", str(args.seed), "--device", args.device],
+        )
     elif args.command == "regularizer-pendulum":
-        execute(CONTROL / "scripts/run_paired_ablation.py", ["separation", "--seed", str(args.seed), "--device", args.device])
+        execute(
+            CONTROL / "scripts/run_paired_ablation.py",
+            ["separation", "--seed", str(args.seed), "--device", args.device],
+        )
     elif args.command == "regularizer-lorenz":
-        execute(CONTROL / "scripts/run_lorenz_regularizer.py", ["--seed", str(args.seed), "--device", args.device])
+        execute(
+            CONTROL / "scripts/run_lorenz_regularizer.py",
+            ["--seed", str(args.seed), "--device", args.device],
+        )
     elif args.command == "all-controls":
-        for name in ("run_gate_repeats.py", "run_pendulum_regularizer_repeats.py", "run_lorenz_regularizer_repeats.py", "summarize_ablation.py"):
+        for name in (
+            "run_gate_repeats.py",
+            "run_pendulum_regularizer_repeats.py",
+            "run_lorenz_regularizer_repeats.py",
+            "summarize_ablation.py",
+        ):
             execute(CONTROL / "scripts" / name, [])
     elif args.command == "summarize-new":
         execute(CONTROL / "scripts/summarize_ablation.py", [])

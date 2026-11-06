@@ -112,10 +112,16 @@ def predict_trajectory_cavia(
     model.context_params = context
 
     if not use_raw_data:
-        input_mean = torch.tensor(normalization["input"]["mean"], dtype=torch.float32, device=device)
+        input_mean = torch.tensor(
+            normalization["input"]["mean"], dtype=torch.float32, device=device
+        )
         input_std = torch.tensor(normalization["input"]["std"], dtype=torch.float32, device=device)
-        output_mean = torch.tensor(normalization["output"]["mean"], dtype=torch.float32, device=device)
-        output_std = torch.tensor(normalization["output"]["std"], dtype=torch.float32, device=device)
+        output_mean = torch.tensor(
+            normalization["output"]["mean"], dtype=torch.float32, device=device
+        )
+        output_std = torch.tensor(
+            normalization["output"]["std"], dtype=torch.float32, device=device
+        )
     else:
         input_mean = None
         input_std = None
@@ -211,11 +217,20 @@ def predict_trajectory_cavia(
                 theta_dot = q * torch.cos(phi) - r * torch.sin(phi)
                 psi_dot = (q * torch.sin(phi) + r * torch.cos(phi)) / torch.cos(theta)
                 full_dx_attitude = torch.stack(
-                    [phi_dot, theta_dot, psi_dot, angular_accel[0, 0], angular_accel[0, 1], angular_accel[0, 2]]
+                    [
+                        phi_dot,
+                        theta_dot,
+                        psi_dot,
+                        angular_accel[0, 0],
+                        angular_accel[0, 1],
+                        angular_accel[0, 2],
+                    ]
                 ).unsqueeze(0)
                 dx = torch.cat([full_dx_attitude, torch.zeros((1, 4), device=device)], dim=1)
             else:
-                raise RuntimeError(f"Output dim {out_dim} not compatible with state dim {state_dim}")
+                raise RuntimeError(
+                    f"Output dim {out_dim} not compatible with state dim {state_dim}"
+                )
 
             x = x + dx * dt_value
 
@@ -370,7 +385,9 @@ def main():
         print(f"  No-adaptation MAE: {mae_noft:.6f}")
         print(f"  No-adaptation MSE: {mse_noft:.6f}")
 
-    dssdl_eval.export_trajectory_data(traj_true, traj_pred, dt, CURRENT_SYSTEM, tag=f"{slow_params_eval}", x0=x0_arr)
+    dssdl_eval.export_trajectory_data(
+        traj_true, traj_pred, dt, CURRENT_SYSTEM, tag=f"{slow_params_eval}", x0=x0_arr
+    )
     if traj_pred_noft is not None:
         dssdl_eval.export_trajectory_data(
             traj_true,
@@ -383,7 +400,9 @@ def main():
 
     save_dir = f"pictures/{CURRENT_SYSTEM}"
     print(f"Saving figures to: {save_dir}")
-    dssdl_eval.plot_trajectory_adaptive(traj_true, traj_pred, dt, CURRENT_SYSTEM, save_dir, traj_pred_noft=traj_pred_noft)
+    dssdl_eval.plot_trajectory_adaptive(
+        traj_true, traj_pred, dt, CURRENT_SYSTEM, save_dir, traj_pred_noft=traj_pred_noft
+    )
     dssdl_eval.plot_phase_diagram(traj_true, traj_pred, dt, CURRENT_SYSTEM, save_dir)
 
 

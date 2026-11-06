@@ -407,9 +407,7 @@ def balanced_epoch_data(
         indices = torch.randperm(len(task_x), generator=generator)[:count].to(device)
         xs.append(task_x[indices])
         ys.append(task_y[indices])
-        task_ids.append(
-            torch.full((count,), task_idx, dtype=torch.long, device=device)
-        )
+        task_ids.append(torch.full((count,), task_idx, dtype=torch.long, device=device))
     x_all = torch.cat(xs)
     y_all = torch.cat(ys)
     ids_all = torch.cat(task_ids)
@@ -439,9 +437,7 @@ def validate_gated(
     model.eval()
     per_task: list[float] = []
     hard_mask = (
-        model.hard_mask(straight_through=False)
-        if mask is None
-        else mask.to(bundle.val_x[0].device)
+        model.hard_mask(straight_through=False) if mask is None else mask.to(bundle.val_x[0].device)
     )
     for task_idx, (x_val, y_val) in enumerate(zip(bundle.val_x, bundle.val_y)):
         ids = torch.full((len(x_val),), task_idx, dtype=torch.long, device=x_val.device)
@@ -519,9 +515,7 @@ def train_gated(
         model.train()
         in_warmup = epoch < args.warmup_epochs
         prune_progress = (
-            0.0
-            if in_warmup
-            else min(1.0, (epoch - args.warmup_epochs + 1) / total_prune_epochs)
+            0.0 if in_warmup else min(1.0, (epoch - args.warmup_epochs + 1) / total_prune_epochs)
         )
         temperature = args.temperature_start + prune_progress * (
             args.temperature_end - args.temperature_start
@@ -603,11 +597,7 @@ def train_gated(
         best_prediction["row"]["source_val_mean_rmse"]
         + args.one_se_multiplier * best_prediction["row"]["source_val_se_rmse"]
     )
-    eligible = [
-        item
-        for item in snapshots
-        if item["row"]["source_val_mean_rmse"] <= cutoff
-    ]
+    eligible = [item for item in snapshots if item["row"]["source_val_mean_rmse"] <= cutoff]
     selected = min(
         eligible,
         key=lambda item: (
@@ -896,9 +886,7 @@ def linear_decoder_metrics(
         "latent_shape": list(latent.shape),
         "centered_rank": rank,
         "singular_values": singular_values.tolist(),
-        "in_sample_r2": {
-            name: float(value) for name, value in zip(parameter_names, in_sample_r2)
-        },
+        "in_sample_r2": {name: float(value) for name, value in zip(parameter_names, in_sample_r2)},
         "in_sample_r2_mean": float(np.mean(in_sample_r2)),
         "loo_r2": {name: float(value) for name, value in zip(parameter_names, loo_r2)},
         "loo_r2_mean": float(np.mean(loo_r2)),
@@ -914,8 +902,7 @@ def gate_diagnostics(model: GatedDSSDL, thresholds: Sequence[float]) -> dict[str
         "gate_logits": logits.tolist(),
         "active_dim_at_logit_zero": int(np.sum(logits >= 0)),
         "active_dim_by_probability_threshold": {
-            f"{threshold:.3f}": int(np.sum(probabilities >= threshold))
-            for threshold in thresholds
+            f"{threshold:.3f}": int(np.sum(probabilities >= threshold)) for threshold in thresholds
         },
         "minimum_probability_margin_from_0p5": float(np.min(np.abs(probabilities - 0.5))),
         "mean_probability_margin_from_0p5": float(np.mean(np.abs(probabilities - 0.5))),
@@ -937,9 +924,7 @@ def write_history(path: Path, rows: Sequence[dict[str, Any]]) -> None:
     if not rows:
         return
     scalar_keys = [
-        key
-        for key, value in rows[0].items()
-        if not isinstance(value, (list, tuple, dict))
+        key for key, value in rows[0].items() if not isinstance(value, (list, tuple, dict))
     ]
     with path.open("w", encoding="utf-8", newline="") as handle:
         writer = csv.DictWriter(handle, fieldnames=scalar_keys)
@@ -1251,8 +1236,7 @@ def suite_commands(args: argparse.Namespace) -> list[list[str]]:
             for dim in parse_int_list(args.fixed_dims):
                 for seed in seeds:
                     commands.append(
-                        base(system, seed)
-                        + ["--kind", "fixed", "--fixed-dim", str(dim)]
+                        base(system, seed) + ["--kind", "fixed", "--fixed-dim", str(dim)]
                     )
     unique: list[list[str]] = []
     seen: set[tuple[str, ...]] = set()

@@ -9,6 +9,4 @@ reptile = Reptile(dataset_dict)
 # Train the model
 reptile.train(n_epochs=200)
 
-torch.save(reptile.network.state_dict(), 'pretrain.pt')
-
- 
+torch.save(reptile.network.state_dict(), "pretrain.pt")

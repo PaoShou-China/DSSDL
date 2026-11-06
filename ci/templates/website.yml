@@ -1,0 +1,31 @@
+# Inactive template: copy into .github/workflows after workflow authorization.
+name: Website checks
+on:
+  push:
+    branches: [main]
+    paths: ["docs/**", "package*.json", "tests/site/**", ".github/workflows/website.yml"]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  static:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+      - run: npm ci
+      - run: npm run format:check
+      - run: npx playwright install --with-deps chromium
+      - name: Serve only public page files in the isolated CI runner
+        run: python3 -m http.server 8765 --bind 127.0.0.1 --directory docs > /tmp/dssdl-site.log 2>&1 &
+      - run: npm run test:site
+        env:
+          DSSDL_SITE_URL: http://127.0.0.1:8765
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: website-screenshots
+          path: site-test-results/

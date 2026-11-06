@@ -20,7 +20,7 @@ dt = 0.02  # 时间步长
 # --- 物理参数 ---
 k_T = 1e-6  # 推力系数
 k_M = 1e-7  # 力矩系数
-l = 0.2   # 电机到中心的距离
+l = 0.2  # 电机到中心的距离
 
 
 def attitude_dynamics(t, state, motor_speeds_sq, slow_param):
@@ -36,7 +36,9 @@ def attitude_dynamics(t, state, motor_speeds_sq, slow_param):
     # 计算控制力矩
     tau_phi = l * k_T * (motor_speeds_sq[3] - motor_speeds_sq[1])  # roll
     tau_theta = l * k_T * (motor_speeds_sq[2] - motor_speeds_sq[0])  # pitch
-    tau_psi = k_M * (motor_speeds_sq[0] - motor_speeds_sq[1] + motor_speeds_sq[2] - motor_speeds_sq[3])  # yaw
+    tau_psi = k_M * (
+        motor_speeds_sq[0] - motor_speeds_sq[1] + motor_speeds_sq[2] - motor_speeds_sq[3]
+    )  # yaw
 
     # 角加速度 (欧拉方程)
     p_dot = (Iy - Iz) / Ix * q * r + tau_phi / Ix
@@ -68,7 +70,7 @@ def create_dataset(
     生成四旋翼系统轨迹数据集
     features: [φ, θ, ψ, p, q, r, Ω1², Ω2², Ω3², Ω4²]
     labels:   [p_dot, q_dot, r_dot]
-    
+
     Args:
         f_handle: 动力学函数 (未使用, 逻辑内联)
         slow_param: [Ix, Iy, Iz] - 四旋翼惯性参数
@@ -82,9 +84,9 @@ def create_dataset(
     dt_actual = dt_override if dt_override is not None else dt
     rng = np.random.RandomState(seed)
 
-    t_eval = np.arange(t_span[0], t_span[1]+dt_actual, dt_actual)
+    t_eval = np.arange(t_span[0], t_span[1] + dt_actual, dt_actual)
     n_steps = len(t_eval)
-    
+
     all_features = []
     all_labels = []
 
@@ -97,7 +99,7 @@ def create_dataset(
     for _ in range(num_trajectories):
         # 随机初始条件
         initial_state = np.array([rng.uniform(r[0], r[1]) for r in ranges])
-        
+
         states = np.zeros((n_steps, 6))
         controls = np.zeros((n_steps, 4))
         derivatives = np.zeros((n_steps, 6))
@@ -112,37 +114,60 @@ def create_dataset(
             angle_error = np.array([0 - phi, 0 - theta, 0 - psi])
             angle_rate_error = np.array([0 - p, 0 - q, 0 - r])
             tau_pd = Kp * angle_error + Kd * angle_rate_error
-            
+
             # 随机电机输入
             random_motor_speeds_sq = rng.uniform(MIN_OMEGA_SQ, MAX_OMEGA_SQ, size=4)
             tau_rand_phi = l * k_T * (random_motor_speeds_sq[3] - random_motor_speeds_sq[1])
             tau_rand_theta = l * k_T * (random_motor_speeds_sq[2] - random_motor_speeds_sq[0])
-            tau_rand_psi = k_M * (random_motor_speeds_sq[0] - random_motor_speeds_sq[1] + random_motor_speeds_sq[2] - random_motor_speeds_sq[3])
+            tau_rand_psi = k_M * (
+                random_motor_speeds_sq[0]
+                - random_motor_speeds_sq[1]
+                + random_motor_speeds_sq[2]
+                - random_motor_speeds_sq[3]
+            )
             tau_total = np.array([tau_rand_phi, tau_rand_theta, tau_rand_psi]) + tau_pd
 
             # 控制分配
-            total_thrust_base = 0.5 # 基础推力
-            omega1_sq = total_thrust_base / (4 * k_T) + tau_total[1] / (2 * l * k_T) - tau_total[2] / (4 * k_M)
-            omega2_sq = total_thrust_base / (4 * k_T) - tau_total[0] / (2 * l * k_T) + tau_total[2] / (4 * k_M)
-            omega3_sq = total_thrust_base / (4 * k_T) - tau_total[1] / (2 * l * k_T) - tau_total[2] / (4 * k_M)
-            omega4_sq = total_thrust_base / (4 * k_T) + tau_total[0] / (2 * l * k_T) + tau_total[2] / (4 * k_M)
+            total_thrust_base = 0.5  # 基础推力
+            omega1_sq = (
+                total_thrust_base / (4 * k_T)
+                + tau_total[1] / (2 * l * k_T)
+                - tau_total[2] / (4 * k_M)
+            )
+            omega2_sq = (
+                total_thrust_base / (4 * k_T)
+                - tau_total[0] / (2 * l * k_T)
+                + tau_total[2] / (4 * k_M)
+            )
+            omega3_sq = (
+                total_thrust_base / (4 * k_T)
+                - tau_total[1] / (2 * l * k_T)
+                - tau_total[2] / (4 * k_M)
+            )
+            omega4_sq = (
+                total_thrust_base / (4 * k_T)
+                + tau_total[0] / (2 * l * k_T)
+                + tau_total[2] / (4 * k_M)
+            )
             motor_speeds_sq = np.maximum([omega1_sq, omega2_sq, omega3_sq, omega4_sq], MIN_OMEGA_SQ)
 
             # 动力学演化 (RK4)
-            def dydt(t, y, u): return attitude_dynamics(t, y, u, slow_param)
+            def dydt(t, y, u):
+                return attitude_dynamics(t, y, u, slow_param)
+
             k1 = dydt(t, state, motor_speeds_sq)
             k2 = dydt(t + dt_actual / 2, state + dt_actual / 2 * k1, motor_speeds_sq)
             k3 = dydt(t + dt_actual / 2, state + dt_actual / 2 * k2, motor_speeds_sq)
             k4 = dydt(t + dt_actual, state + dt_actual * k3, motor_speeds_sq)
             next_state = state + dt_actual / 6 * (k1 + 2 * k2 + 2 * k3 + k4)
-            
-            states[i+1] = next_state
+
+            states[i + 1] = next_state
             controls[i] = motor_speeds_sq
-            derivatives[i] = k1 # 使用k1作为当前时刻的导数
+            derivatives[i] = k1  # 使用k1作为当前时刻的导数
 
         # 组装特征和标签
         features_traj = np.concatenate([states[:-1], controls[:-1]], axis=1)
-        labels_traj = derivatives[:-1, 3:6] # [p_dot, q_dot, r_dot]
+        labels_traj = derivatives[:-1, 3:6]  # [p_dot, q_dot, r_dot]
         all_features.append(features_traj)
         all_labels.append(labels_traj)
 
@@ -150,7 +175,7 @@ def create_dataset(
     labels = np.vstack(all_labels)
 
     # 保存
-    param_str = "_".join(map(lambda x: f"{x:.3f}".replace('.', '_'), slow_param))
+    param_str = "_".join(map(lambda x: f"{x:.3f}".replace(".", "_"), slow_param))
     features_dir = os.path.join(save_dir, "features")
     labels_dir = os.path.join(save_dir, "labels")
     os.makedirs(features_dir, exist_ok=True)
@@ -174,6 +199,7 @@ slow_params_eval = unseen_params[0]
 
 if __name__ == "__main__":
     import sys
+
     current_dir = os.path.dirname(os.path.abspath(__file__))
     parent_dir = os.path.dirname(current_dir)
     if parent_dir not in sys.path:
@@ -197,11 +223,11 @@ if __name__ == "__main__":
     os.makedirs(train_dir, exist_ok=True)
     for i, sp in enumerate(train_params):
         create_dataset(
-            f_handle=None, # not used
+            f_handle=None,  # not used
             slow_param=list(sp),
             ranges=ranges,
             save_dir=train_dir,
-            num_trajectories=100, # 减少轨迹数量以加快生成
+            num_trajectories=100,  # 减少轨迹数量以加快生成
             t_span=(0.0, 0.5),
             seed=i,
         )

@@ -23,7 +23,7 @@ def f(t, y, slow_param):
     """FitzHugh-Nagumo dynamics for solve_ivp."""
     v, w = y
     a, b, i_ext = slow_param
-    v_dot = v - (v ** 3) / 3.0 - w + i_ext
+    v_dot = v - (v**3) / 3.0 - w + i_ext
     w_dot = EPSILON * (v + a - b * w)
     return [v_dot, w_dot]
 
@@ -132,21 +132,17 @@ train_params = [
     # for a in [0.6, 0.7, 0.8]
     # for b in [0.8, 0.9, 1.0]
     # for i_ext in [0.6, 0.7, 0.8]    # FHN的slowparam解释性实验训练
-
     [a, b, i_ext]
     for a in [0.6, 0.7, 0.8]
     for b in [0.8, 0.9, 1.0]
-    for i_ext in [0.0, 0.1, 0.2] # FHN的时序误差实验/seed-support实验 不同I_ext实验训练数据 
-
-
-
+    for i_ext in [0.0, 0.1, 0.2]  # FHN的时序误差实验/seed-support实验 不同I_ext实验训练数据
 ]
 
 unseen_params = [
     # [0.9, 1.1, 0.9],
     # [0.9, 1.1, 1.1],
     # [0.9, 1.1, 0], # FHN的不同I_ext实验fintune数据
-    [0.85, 1.05, 0.85] # FHN的时序误差实验/seed-support实验
+    [0.85, 1.05, 0.85]  # FHN的时序误差实验/seed-support实验
 ]
 slow_params_eval = unseen_params[0]
 

@@ -11,29 +11,29 @@ import os
 def clear_dataset_files(system_name):
     """
     清除指定系统的所有数据集文件
-    
+
     Args:
         system_name (str): 系统名称 (e.g., 'lorenz', 'double_pendulum', 'bistable_oscillator')
     """
     base_dir = f"datasets/{system_name}"
     dataset_types = ["train", "support", "query"]
     data_types = ["features", "labels"]
-    
+
     print(f"清除 {system_name} 系统的现有数据集文件...")
     deleted_count = 0
-    
+
     for dataset_type in dataset_types:
         for data_type in data_types:
             dir_path = os.path.join(base_dir, dataset_type, data_type)
             if os.path.exists(dir_path):
                 # 删除目录中的所有.txt文件
                 for file in os.listdir(dir_path):
-                    if file.endswith('.txt'):
+                    if file.endswith(".txt"):
                         file_path = os.path.join(dir_path, file)
                         os.remove(file_path)
                         print(f"已删除: {file_path}")
                         deleted_count += 1
-    
+
     if deleted_count == 0:
         print(f"没有找到需要删除的 {system_name} 数据集文件")
     else:
@@ -44,10 +44,7 @@ def get_file_list(directory):
     """获取目录下的所有.txt文件列表"""
     if not os.path.exists(directory):
         raise FileNotFoundError(f"Directory does not exist: {directory}")
-    return sorted([
-        os.path.join(directory, f) for f in os.listdir(directory)
-        if f.endswith(".txt")
-    ])
+    return sorted([os.path.join(directory, f) for f in os.listdir(directory) if f.endswith(".txt")])
 
 
 def load_file_list(file_paths):
@@ -78,11 +75,11 @@ def inverse_normalize_data(data, mean, std):
 def get_datasets_generic(system_path, use_normalization=True):
     """
     通用数据集加载函数
-    
+
     Args:
         system_path (str): 系统数据集路径 (e.g., 'datasets/pendulum')
         use_normalization (bool): 是否使用标准化
-    
+
     Returns:
         dataset_dict: 标准格式的数据集字典
     """
@@ -91,8 +88,8 @@ def get_datasets_generic(system_path, use_normalization=True):
     try:
         # 动态导入系统模块的dt参数
         system_name = os.path.basename(system_path)
-        module = __import__(f'datasets.{system_name}', fromlist=['dt'])
-        system_dt = getattr(module, 'dt', system_dt)
+        module = __import__(f"datasets.{system_name}", fromlist=["dt"])
+        system_dt = getattr(module, "dt", system_dt)
     except (ImportError, AttributeError):
         pass  # 使用默认值
     # 构建数据路径
@@ -108,9 +105,9 @@ def get_datasets_generic(system_path, use_normalization=True):
         "query": {
             "features": get_file_list(os.path.join(system_path, "query", "features")),
             "labels": get_file_list(os.path.join(system_path, "query", "labels")),
-        }
+        },
     }
-    
+
     raw_datasets = {}
     normalized_datasets = {}
     sample_counts = {}
@@ -121,30 +118,32 @@ def get_datasets_generic(system_path, use_normalization=True):
     input_mean, input_std = None, None
     output_mean, output_std = None, None
 
-    for split in ['train', 'support', 'query']:
-        feat_paths = data_paths[split]['features']
-        label_paths = data_paths[split]['labels']
+    for split in ["train", "support", "query"]:
+        feat_paths = data_paths[split]["features"]
+        label_paths = data_paths[split]["labels"]
 
         # 加载原始数据
         X_list = load_file_list(feat_paths)
         y_list = load_file_list(label_paths)
 
         # 从训练集计算标准化参数
-        if split == 'train':
+        if split == "train":
             input_mean, input_std = calculate_normalization_params(X_list)
             output_mean, output_std = calculate_normalization_params(y_list)
             calculated_normalization = {
                 "input": {"mean": input_mean.tolist(), "std": input_std.tolist()},
-                "output": {"mean": output_mean.tolist(), "std": output_std.tolist()}
+                "output": {"mean": output_mean.tolist(), "std": output_std.tolist()},
             }
 
         # 确保标准化参数可用
         if input_mean is None or output_mean is None:
-            raise RuntimeError("Normalization parameters not calculated. 'train' split must be processed first.")
+            raise RuntimeError(
+                "Normalization parameters not calculated. 'train' split must be processed first."
+            )
 
         # 存储原始数据
         raw_datasets[split] = (X_list, y_list)
-        
+
         # 创建标准化数据（如果需要）
         if use_normalization:
             X_norm_list = [standardize(X, input_mean, input_std) for X in X_list]
@@ -163,20 +162,17 @@ def get_datasets_generic(system_path, use_normalization=True):
 
     # 构建结果字典
     info = {
-        'input_dim': input_dim,
-        'output_dim': output_dim,
-        'dt': system_dt,
-        'normalization': calculated_normalization,
-        'file_counts': file_counts,
-        'sample_counts': sample_counts
+        "input_dim": input_dim,
+        "output_dim": output_dim,
+        "dt": system_dt,
+        "normalization": calculated_normalization,
+        "file_counts": file_counts,
+        "sample_counts": sample_counts,
     }
 
-    result = {
-        'raw': raw_datasets,
-        'info': info
-    }
-    
+    result = {"raw": raw_datasets, "info": info}
+
     if use_normalization:
-        result['normalized'] = normalized_datasets
-        
+        result["normalized"] = normalized_datasets
+
     return result

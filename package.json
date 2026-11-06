@@ -1,0 +1,14 @@
+{
+  "name": "dssdl-project-page",
+  "private": true,
+  "version": "0.2.0",
+  "scripts": {
+    "format": "prettier --write docs/index.html docs/style.css docs/app.js tests/site/*.mjs",
+    "format:check": "prettier --check docs/index.html docs/style.css docs/app.js tests/site/*.mjs",
+    "test:site": "node tests/site/check.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.56.1",
+    "prettier": "3.6.2"
+  }
+}

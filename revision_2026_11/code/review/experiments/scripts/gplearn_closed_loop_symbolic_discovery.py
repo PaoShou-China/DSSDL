@@ -1,7 +1,9 @@
 """Expression-evaluation utilities only; this is not a GPLearn experiment entry."""
+
 from __future__ import annotations
 from typing import Any, Sequence
 import multisystem_closed_loop_symbolic_discovery as multisystem
+
 
 def sympy_context(variable_names: Sequence[str]):
     import sympy as sp
@@ -19,7 +21,6 @@ def sympy_context(variable_names: Sequence[str]):
         "neg": lambda value: -value,
     }
     return tuple(symbols), symbol_map, local_map
-
 
 
 def additive_factors(expression) -> list[Any]:
@@ -42,7 +43,6 @@ def additive_factors(expression) -> list[Any]:
     return factors
 
 
-
 def evaluate_sympy_numpy(expression, variable_names: Sequence[str], features):
     import numpy as np
     import sympy as sp
@@ -54,7 +54,6 @@ def evaluate_sympy_numpy(expression, variable_names: Sequence[str], features):
     if values.ndim == 0:
         values = np.full(features.shape[0], float(values), dtype=float)
     return values.reshape(-1)
-
 
 
 def evaluate_sympy_torch(expression, environment: dict[str, Any], reference):
@@ -83,4 +82,3 @@ def evaluate_sympy_torch(expression, environment: dict[str, Any], reference):
     if expression.func is sp.cos:
         return torch.cos(evaluate_sympy_torch(expression.args[0], environment, reference))
     raise TypeError(f"Unsupported SymPy node in injected prior: {expression.func} ({expression})")
-

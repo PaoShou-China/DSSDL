@@ -11,25 +11,26 @@ from sklearn.metrics import mean_squared_error
 # ---------------------------
 
 CONFIG = {
-    'population_size': 500,
-    'generations': 200,
-    'stopping_criteria': 0.01,
-    'p_crossover': 0.7,
-    'p_subtree_mutation': 0.1,
-    'p_hoist_mutation': 0.05,
-    'p_point_mutation': 0.1,
-    'max_samples': 0.9,
-    'verbose': 1,
-    'parsimony_coefficient': 0.005,
-    'random_state': 0,
-    'feature_names': ['x0', 'x1', 'x2'], # Will be updated based on data
-    'save_path': 'gplearn_model.pkl'
+    "population_size": 500,
+    "generations": 200,
+    "stopping_criteria": 0.01,
+    "p_crossover": 0.7,
+    "p_subtree_mutation": 0.1,
+    "p_hoist_mutation": 0.05,
+    "p_point_mutation": 0.1,
+    "max_samples": 0.9,
+    "verbose": 1,
+    "parsimony_coefficient": 0.005,
+    "random_state": 0,
+    "feature_names": ["x0", "x1", "x2"],  # Will be updated based on data
+    "save_path": "gplearn_model.pkl",
 }
 
 
 # ---------------------------
 # GPlearn Regressor Class
 # ---------------------------
+
 
 class GPlearnRegressor:
     """
@@ -52,13 +53,13 @@ class GPlearnRegressor:
         self.dataset_dict = dataset_dict
 
         # Update dimensions and feature names from dataset info
-        self.config['input_dim'] = self.dataset_dict['info']['input_dim']
-        self.config['output_dim'] = self.dataset_dict['info']['output_dim']
-        self.config['feature_names'] = [f'x{i}' for i in range(self.config['input_dim'])]
-        
+        self.config["input_dim"] = self.dataset_dict["info"]["input_dim"]
+        self.config["output_dim"] = self.dataset_dict["info"]["output_dim"]
+        self.config["feature_names"] = [f"x{i}" for i in range(self.config["input_dim"])]
+
         self.models = []
 
-    def prepare_data(self, split='train'):
+    def prepare_data(self, split="train"):
         """
         Load and concatenate state variables and their derivatives.
 
@@ -69,7 +70,7 @@ class GPlearnRegressor:
             X (np.ndarray): State variables (n_samples, n_features)
             y (np.ndarray): Derivatives (n_samples, n_targets)
         """
-        data_key = 'raw' # Using raw data as gplearn doesn't require pre-normalization like SINDy
+        data_key = "raw"  # Using raw data as gplearn doesn't require pre-normalization like SINDy
         X_list, y_list = self.dataset_dict[data_key][split]
 
         X = np.vstack(X_list)
@@ -81,6 +82,7 @@ class GPlearnRegressor:
         """
         Fine-tune the model using the support dataset and evaluate on the query dataset.
         """
+
         def _is_valid_number(value):
             try:
                 return value is not None and not np.isnan(value)
@@ -99,6 +101,7 @@ class GPlearnRegressor:
         def _get_system_name():
             try:
                 from datasets import CURRENT_SYSTEM
+
                 return str(CURRENT_SYSTEM).lower()
             except Exception:
                 return "system"
@@ -109,33 +112,33 @@ class GPlearnRegressor:
         start_time = time.time()
 
         # 1. Train on the support set
-        X_support, y_support = self.prepare_data(split='support')
+        X_support, y_support = self.prepare_data(split="support")
         print(f"=== Training GPlearn on the support data ({X_support.shape[0]} samples) ===")
 
         if X_support.shape[0] == 0:
             raise ValueError("Support set is empty. Check dataset generation and support t_span.")
 
-        max_samples = self.config['max_samples']
+        max_samples = self.config["max_samples"]
         if int(max_samples * X_support.shape[0]) < 1:
             # Ensure at least one sample is used to avoid zero-weight issues.
             max_samples = 1.0
 
         self.models = []
-        for i in range(self.config['output_dim']):
-            print(f"\n--- Training model for dimension {i+1}/{self.config['output_dim']} ---")
+        for i in range(self.config["output_dim"]):
+            print(f"\n--- Training model for dimension {i + 1}/{self.config['output_dim']} ---")
             regressor = SymbolicRegressor(
-                population_size=self.config['population_size'],
-                generations=self.config['generations'],
-                stopping_criteria=self.config['stopping_criteria'],
-                p_crossover=self.config['p_crossover'],
-                p_subtree_mutation=self.config['p_subtree_mutation'],
-                p_hoist_mutation=self.config['p_hoist_mutation'],
-                p_point_mutation=self.config['p_point_mutation'],
+                population_size=self.config["population_size"],
+                generations=self.config["generations"],
+                stopping_criteria=self.config["stopping_criteria"],
+                p_crossover=self.config["p_crossover"],
+                p_subtree_mutation=self.config["p_subtree_mutation"],
+                p_hoist_mutation=self.config["p_hoist_mutation"],
+                p_point_mutation=self.config["p_point_mutation"],
                 max_samples=max_samples,
-                verbose=self.config['verbose'],
-                parsimony_coefficient=self.config['parsimony_coefficient'],
-                random_state=self.config['random_state'],
-                feature_names=self.config['feature_names']
+                verbose=self.config["verbose"],
+                parsimony_coefficient=self.config["parsimony_coefficient"],
+                random_state=self.config["random_state"],
+                feature_names=self.config["feature_names"],
             )
             reg_start_time = time.time()
             regressor.fit(X_support, y_support[:, i])
@@ -145,7 +148,10 @@ class GPlearnRegressor:
             if run_details:
                 if isinstance(run_details, dict):
                     keys = list(run_details.keys())
-                    total_gens = max((len(run_details[k]) for k in keys if hasattr(run_details[k], "__len__")), default=0)
+                    total_gens = max(
+                        (len(run_details[k]) for k in keys if hasattr(run_details[k], "__len__")),
+                        default=0,
+                    )
                     normalized = []
                     for idx in range(total_gens):
                         detail = {}
@@ -171,7 +177,9 @@ class GPlearnRegressor:
                         elapsed_seconds = elapsed_offset + cumulative
                     else:
                         if total_gens > 0:
-                            elapsed_seconds = elapsed_offset + reg_total_time * ((gen_index + 1) / total_gens)
+                            elapsed_seconds = elapsed_offset + reg_total_time * (
+                                (gen_index + 1) / total_gens
+                            )
                         else:
                             elapsed_seconds = time.time() - start_time
                     epoch_rows.append((epoch_counter, loss_value, elapsed_seconds))
@@ -179,7 +187,7 @@ class GPlearnRegressor:
                 epoch_counter += 1
                 epoch_rows.append((epoch_counter, None, time.time() - start_time))
             self.models.append(regressor)
-            print(f"Discovered equation for dim {i+1}: {regressor._program}")
+            print(f"Discovered equation for dim {i + 1}: {regressor._program}")
 
         if epoch_rows:
             os.makedirs("final_data", exist_ok=True)
@@ -194,17 +202,17 @@ class GPlearnRegressor:
 
         # 2. Evaluate on the query (test) set
         print("\n=== Evaluating on the query data ===")
-        X_query, y_query = self.prepare_data(split='query')
-        
+        X_query, y_query = self.prepare_data(split="query")
+
         y_pred = self.predict(X_query)
-        
+
         # 3. Calculate RMSE as final_loss
         mse = mean_squared_error(y_query, y_pred)
         final_loss = np.sqrt(mse)
         print(f"Final RMSE on query data: {final_loss:.6f}")
 
         # 4. Return metrics
-        return {'final_loss': final_loss}
+        return {"final_loss": final_loss}
 
     def predict(self, X):
         """
@@ -217,8 +225,8 @@ class GPlearnRegressor:
 
     def save(self):
         """Save the list of trained models to file using pickle."""
-        path = self.config['save_path']
-        with open(path, 'wb') as f:
+        path = self.config["save_path"]
+        with open(path, "wb") as f:
             pickle.dump(self.models, f)
         print(f"Models saved to {path}")
 
@@ -226,8 +234,8 @@ class GPlearnRegressor:
         """
         Load a list of pre-trained models from file.
         """
-        path = path or self.config['save_path']
-        with open(path, 'rb') as f:
+        path = path or self.config["save_path"]
+        with open(path, "rb") as f:
             self.models = pickle.load(f)
         print(f"Models loaded from {path}")
 
@@ -239,4 +247,3 @@ class GPlearnRegressor:
         print("\n=== GPlearn Discovered Equations ===")
         for i, model in enumerate(self.models):
             print(f"  x{i}' = {model._program}")
-

@@ -17,9 +17,10 @@ from .create_dataset import dt
 
 # 慢参数对应于数据文件的索引
 all_slow_params = [[i] for i in range(1, 8)]  # train
-all_slow_params.append([8]) # support/query
+all_slow_params.append([8])  # support/query
 
 slow_params_eval = [8]
+
 
 def f(features, slow_params):
     """
@@ -30,17 +31,19 @@ def f(features, slow_params):
     # print("Warning: The underlying dynamic function for 'pendulum_real' is unknown. Returning zeros.")
     return np.zeros_like(features)
 
+
 def get_datasets(use_normalization=True):
     """
     获取真实单摆系统数据集
-    
+
     Args:
         use_normalization (bool): 是否使用标准化
-    
+
     Returns:
         dataset_dict: 标准格式的数据集字典
     """
     return get_datasets_generic(current_dir, use_normalization)
+
 
 def get_raw_dataset_dict():
     """获取真实单摆系统的原始数据集"""
@@ -49,4 +52,3 @@ def get_raw_dataset_dict():
 
 # 默认数据集（向后兼容）
 dataset_dict = get_datasets(use_normalization=True)
-

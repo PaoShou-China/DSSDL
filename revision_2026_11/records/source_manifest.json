@@ -3,7 +3,7 @@
     "path": "code/NC实验/pendulum/DSSDL_mask.py",
     "origin": "lecture_delivery_2026-10-29/DSSDL_lecture_reference/02_code/NC实验/pendulum/DSSDL_mask.py",
     "source_sha256": "aa11f643d0f7d4df9be2844571fd91575abf6406c58e5672aa12d03f8312b2f6",
-    "published_sha256": "aa11f643d0f7d4df9be2844571fd91575abf6406c58e5672aa12d03f8312b2f6"
+    "published_sha256": "a38f196fec6dd8d37c410075661a6ac31c49c0e51f3ecb70d52695e13310d9e3"
   },
   {
     "path": "code/NC实验/pendulum/datasets/pendulum_real/query/features/8.00.txt",
@@ -135,7 +135,7 @@
     "path": "code/baseline_reference/CAVIA/cavia_evaluate.py",
     "origin": "lecture_delivery_2026-10-29/DSSDL_lecture_reference/02_code/baseline_reference/CAVIA/cavia_evaluate.py",
     "source_sha256": "8e8dfdf4afb0c9dd9ebdd3d29964fcabbfef9aa1db34efd0af1b0c29897b7974",
-    "published_sha256": "8e8dfdf4afb0c9dd9ebdd3d29964fcabbfef9aa1db34efd0af1b0c29897b7974"
+    "published_sha256": "474ff4502a9f33a5f7e459c8c58122c0040e2dc3e5f757c841821566cedbeec5"
   },
   {
     "path": "code/baseline_reference/CAVIA/cavia_finetune.py",
@@ -153,25 +153,25 @@
     "path": "code/baseline_reference/CAVIA/cavia_workflow.py",
     "origin": "lecture_delivery_2026-10-29/DSSDL_lecture_reference/02_code/baseline_reference/CAVIA/cavia_workflow.py",
     "source_sha256": "c327e807f0c3fd86dbedc352038dbb38c3d17380b2455f62d78905c038be6b62",
-    "published_sha256": "c327e807f0c3fd86dbedc352038dbb38c3d17380b2455f62d78905c038be6b62"
+    "published_sha256": "a2b6ee19da0902127afe0dbb7c0e7dada2d57d77d9938bcea4823ef9a8b549ad"
   },
   {
     "path": "code/baseline_reference/GPlearn/evaluate.py",
     "origin": "lecture_delivery_2026-10-29/DSSDL_lecture_reference/02_code/baseline_reference/GPlearn/evaluate.py",
     "source_sha256": "344d65844e00f8e6db2d99b247ff5ad60650f5a2ef29476b64b9deb3e1b8b410",
-    "published_sha256": "344d65844e00f8e6db2d99b247ff5ad60650f5a2ef29476b64b9deb3e1b8b410"
+    "published_sha256": "8e6534e27f73eed76e45373cc7a0a413a630fd791069559f33935d70d75aabd3"
   },
   {
     "path": "code/baseline_reference/GPlearn/finetune.py",
     "origin": "lecture_delivery_2026-10-29/DSSDL_lecture_reference/02_code/baseline_reference/GPlearn/finetune.py",
     "source_sha256": "f72a15cbb038fe3096b200279dc6bbe66fcc6056330cdae8fdaf088b3f131037",
-    "published_sha256": "f72a15cbb038fe3096b200279dc6bbe66fcc6056330cdae8fdaf088b3f131037"
+    "published_sha256": "d33c02e06806a02ee7752ee105b2a0b160ec915821e58d94ab9890a7f47fdd71"
   },
   {
     "path": "code/baseline_reference/GPlearn/gplearn_compare.py",
     "origin": "lecture_delivery_2026-10-29/DSSDL_lecture_reference/02_code/baseline_reference/GPlearn/gplearn_compare.py",
     "source_sha256": "3c73e8ce9184ea7462f895336e9deffa859febc98e935d0ab29641e80a2a16ff",
-    "published_sha256": "3c73e8ce9184ea7462f895336e9deffa859febc98e935d0ab29641e80a2a16ff"
+    "published_sha256": "6814c4f6fce9c3db0555743148ded02fe7215787e6df0d26318cfb2c510cce6d"
   },
   {
     "path": "code/baseline_reference/README.md",
@@ -183,49 +183,49 @@
     "path": "code/baseline_reference/Reptile/Reptile.py",
     "origin": "lecture_delivery_2026-10-29/DSSDL_lecture_reference/02_code/baseline_reference/Reptile/Reptile.py",
     "source_sha256": "8e515f29e0c7782dc689d192312253a2da27792e52108e49588a41a39ce5b36a",
-    "published_sha256": "8e515f29e0c7782dc689d192312253a2da27792e52108e49588a41a39ce5b36a"
+    "published_sha256": "c7ebb88aeb3f33bc04e17f7ade6e64d5cc98dcc5ab64e6741d397aa7a7281e91"
   },
   {
     "path": "code/baseline_reference/Reptile/evaluate.py",
     "origin": "lecture_delivery_2026-10-29/DSSDL_lecture_reference/02_code/baseline_reference/Reptile/evaluate.py",
     "source_sha256": "5f4c00f123363f66dca78331edb5850a6f8adc84460b54b22fce1df271ff9812",
-    "published_sha256": "5f4c00f123363f66dca78331edb5850a6f8adc84460b54b22fce1df271ff9812"
+    "published_sha256": "2008fe5a6274966536b16acfc87d30f837ba8d8746ad3e276faf40aa4666ac13"
   },
   {
     "path": "code/baseline_reference/Reptile/finetune.py",
     "origin": "lecture_delivery_2026-10-29/DSSDL_lecture_reference/02_code/baseline_reference/Reptile/finetune.py",
     "source_sha256": "b5841d35962930962370a8678b44e1cfe2f6a9c8670062c2ee65e2fec09df92d",
-    "published_sha256": "b5841d35962930962370a8678b44e1cfe2f6a9c8670062c2ee65e2fec09df92d"
+    "published_sha256": "51a1927a3094242084028119377ef72f3139682f46bf5286aadd922212e7ad73"
   },
   {
     "path": "code/baseline_reference/Reptile/pretrain.py",
     "origin": "lecture_delivery_2026-10-29/DSSDL_lecture_reference/02_code/baseline_reference/Reptile/pretrain.py",
     "source_sha256": "25beeca8aafd672d8bd332130b36dfcc30f64f2e462e141bc5a8553b10a65ba0",
-    "published_sha256": "25beeca8aafd672d8bd332130b36dfcc30f64f2e462e141bc5a8553b10a65ba0"
+    "published_sha256": "3459f9a8c9f815c3d80ead23ad32c5a3c2a2db123a359e5d951582cfe6b08a33"
   },
   {
     "path": "code/baseline_reference/SINDy/SINDy.py",
     "origin": "lecture_delivery_2026-10-29/DSSDL_lecture_reference/02_code/baseline_reference/SINDy/SINDy.py",
     "source_sha256": "de8ad856af32359a5add5847088b502a6e33db5421a15a273e53834d6ec09197",
-    "published_sha256": "de8ad856af32359a5add5847088b502a6e33db5421a15a273e53834d6ec09197"
+    "published_sha256": "d60bac8421c46db33131bd040b14900d8b161abe9ff127497200b0e7600aa81e"
   },
   {
     "path": "code/baseline_reference/SINDy/evaluate.py",
     "origin": "lecture_delivery_2026-10-29/DSSDL_lecture_reference/02_code/baseline_reference/SINDy/evaluate.py",
     "source_sha256": "f5953c4afcd2a3779cca84c98a2c14cc88f44df696c80b85a1d12ecebf92aba5",
-    "published_sha256": "f5953c4afcd2a3779cca84c98a2c14cc88f44df696c80b85a1d12ecebf92aba5"
+    "published_sha256": "72abbc96d4e842f9fcd146e5696d73856405965ad980fe12765b161f55318181"
   },
   {
     "path": "code/baseline_reference/SINDy/finetune.py",
     "origin": "lecture_delivery_2026-10-29/DSSDL_lecture_reference/02_code/baseline_reference/SINDy/finetune.py",
     "source_sha256": "94e963f1cea04d86096862dee21e70fe3cd7457186d045ecdeef547a6726149a",
-    "published_sha256": "94e963f1cea04d86096862dee21e70fe3cd7457186d045ecdeef547a6726149a"
+    "published_sha256": "57b0d63325ad8d36ba98de40701eb3dde360f2333dc33392d2f96864ff597114"
   },
   {
     "path": "code/baseline_reference/SINDy/pretrain.py",
     "origin": "lecture_delivery_2026-10-29/DSSDL_lecture_reference/02_code/baseline_reference/SINDy/pretrain.py",
     "source_sha256": "24f38256b5c4d63898cfa2912e1717c82902009c2d151f52cee0f608a0ffdbc1",
-    "published_sha256": "24f38256b5c4d63898cfa2912e1717c82902009c2d151f52cee0f608a0ffdbc1"
+    "published_sha256": "f0aba7133451b7027aef77a56d0519f52804eea47086b3b83eddc38d14744b5f"
   },
   {
     "path": "code/baseline_reference/SINDy/requirements.txt",
@@ -237,13 +237,13 @@
     "path": "code/compare2/DSSDL/DSSDL_.py",
     "origin": "lecture_delivery_2026-10-29/DSSDL_lecture_reference/02_code/compare2/DSSDL/DSSDL_.py",
     "source_sha256": "32dbbc502aea4d3fa3e673d42786a8ed1f4528ace26254cafad1f589ec23edea",
-    "published_sha256": "32dbbc502aea4d3fa3e673d42786a8ed1f4528ace26254cafad1f589ec23edea"
+    "published_sha256": "0723180a0b8270dd52b45d1f8f5ea64186a9dd7936f8828a366e9bf3a2bc4f42"
   },
   {
     "path": "code/compare2/DSSDL/DSSDL_mask.py",
     "origin": "lecture_delivery_2026-10-29/DSSDL_lecture_reference/02_code/compare2/DSSDL/DSSDL_mask.py",
     "source_sha256": "12dfa6a8c4dd7b97e0502883b9537fc109067242523e42271c994d20761d7d11",
-    "published_sha256": "12dfa6a8c4dd7b97e0502883b9537fc109067242523e42271c994d20761d7d11"
+    "published_sha256": "f11367ec3c8769d287ac905d5e55f4df74d38fdc36a12ead0cc25405a581a62f"
   },
   {
     "path": "code/compare2/DSSDL/README.md",
@@ -255,13 +255,13 @@
     "path": "code/compare2/DSSDL/datasets/FHN/__init__.py",
     "origin": "lecture_delivery_2026-10-29/DSSDL_lecture_reference/02_code/compare2/DSSDL/datasets/FHN/__init__.py",
     "source_sha256": "47def9383026f29e80683f1d8c009f3215c3463f181af6c97ec8fff5090683b3",
-    "published_sha256": "47def9383026f29e80683f1d8c009f3215c3463f181af6c97ec8fff5090683b3"
+    "published_sha256": "40c2e3f06afaf42b3d948a4a2bb682d843845d45a8bc7bca9067af39a57742b0"
   },
   {
     "path": "code/compare2/DSSDL/datasets/FHN/create_dataset.py",
     "origin": "lecture_delivery_2026-10-29/DSSDL_lecture_reference/02_code/compare2/DSSDL/datasets/FHN/create_dataset.py",
     "source_sha256": "b80d0e90dbe4a7b0b5fe50f45b1b707f885eaea92d322f991ef963f40adeb36f",
-    "published_sha256": "b80d0e90dbe4a7b0b5fe50f45b1b707f885eaea92d322f991ef963f40adeb36f"
+    "published_sha256": "90003a24dbe395a9027b4080979e0687306077da97f46c264f29874d417d1e28"
   },
   {
     "path": "code/compare2/DSSDL/datasets/FHN/query/features/0.90_1.10_0.90.txt",
@@ -615,19 +615,19 @@
     "path": "code/compare2/DSSDL/datasets/__init__.py",
     "origin": "lecture_delivery_2026-10-29/DSSDL_lecture_reference/02_code/compare2/DSSDL/datasets/__init__.py",
     "source_sha256": "aea5a7020862209c035e56c79f77f5f03b43b60543576231396b72bd0cca2ed4",
-    "published_sha256": "aea5a7020862209c035e56c79f77f5f03b43b60543576231396b72bd0cca2ed4"
+    "published_sha256": "dab88c336c4507bc3a64986065d463d4c00de23b72dddf118ec970dc6b7e7660"
   },
   {
     "path": "code/compare2/DSSDL/datasets/flow-19-v/__init__.py",
     "origin": "lecture_delivery_2026-10-29/DSSDL_lecture_reference/02_code/compare2/DSSDL/datasets/flow-19-v/__init__.py",
     "source_sha256": "ffee484599f077736ef0af0d8f61098a7606809011c6bb21e30312b7b51257dd",
-    "published_sha256": "ffee484599f077736ef0af0d8f61098a7606809011c6bb21e30312b7b51257dd"
+    "published_sha256": "8a016b1ec344efd06e14766384c7cdb923302a3b0d5e52f17980301220cd0bda"
   },
   {
     "path": "code/compare2/DSSDL/datasets/flow-19-v/create_dataset.py",
     "origin": "lecture_delivery_2026-10-29/DSSDL_lecture_reference/02_code/compare2/DSSDL/datasets/flow-19-v/create_dataset.py",
     "source_sha256": "c954e6a919aa68696a992631d96296ef447247482e065bc0094cfe42df76eb18",
-    "published_sha256": "c954e6a919aa68696a992631d96296ef447247482e065bc0094cfe42df76eb18"
+    "published_sha256": "0b76329ddfafb9220fb2f4e1444fc2041ea59d8a65d7dcf5c4313fcea73da0d6"
   },
   {
     "path": "code/compare2/DSSDL/datasets/flow-19-v/query/features/375.txt",
@@ -789,13 +789,13 @@
     "path": "code/compare2/DSSDL/datasets/flow-19/__init__.py",
     "origin": "lecture_delivery_2026-10-29/DSSDL_lecture_reference/02_code/compare2/DSSDL/datasets/flow-19/__init__.py",
     "source_sha256": "ffee484599f077736ef0af0d8f61098a7606809011c6bb21e30312b7b51257dd",
-    "published_sha256": "ffee484599f077736ef0af0d8f61098a7606809011c6bb21e30312b7b51257dd"
+    "published_sha256": "8a016b1ec344efd06e14766384c7cdb923302a3b0d5e52f17980301220cd0bda"
   },
   {
     "path": "code/compare2/DSSDL/datasets/flow-19/create_dataset.py",
     "origin": "lecture_delivery_2026-10-29/DSSDL_lecture_reference/02_code/compare2/DSSDL/datasets/flow-19/create_dataset.py",
     "source_sha256": "278a16d92e8d0c5f3b5172355f6c81b861ffdac56999e1d13ea93dbef68f6c1b",
-    "published_sha256": "278a16d92e8d0c5f3b5172355f6c81b861ffdac56999e1d13ea93dbef68f6c1b"
+    "published_sha256": "5ef7bce06a3cfee55927a842165b87c83d6b1b07d66df90a1612a8431bfb4d4b"
   },
   {
     "path": "code/compare2/DSSDL/datasets/flow-19/query/features/375.txt",
@@ -957,13 +957,13 @@
     "path": "code/compare2/DSSDL/datasets/flow-29-v/__init__.py",
     "origin": "lecture_delivery_2026-10-29/DSSDL_lecture_reference/02_code/compare2/DSSDL/datasets/flow-29-v/__init__.py",
     "source_sha256": "ffee484599f077736ef0af0d8f61098a7606809011c6bb21e30312b7b51257dd",
-    "published_sha256": "ffee484599f077736ef0af0d8f61098a7606809011c6bb21e30312b7b51257dd"
+    "published_sha256": "8a016b1ec344efd06e14766384c7cdb923302a3b0d5e52f17980301220cd0bda"
   },
   {
     "path": "code/compare2/DSSDL/datasets/flow-29-v/create_dataset.py",
     "origin": "lecture_delivery_2026-10-29/DSSDL_lecture_reference/02_code/compare2/DSSDL/datasets/flow-29-v/create_dataset.py",
     "source_sha256": "be8683502b22b8d28d51009b29dd1124eb4b5f41b0744180f4168dcc4cf631f5",
-    "published_sha256": "be8683502b22b8d28d51009b29dd1124eb4b5f41b0744180f4168dcc4cf631f5"
+    "published_sha256": "fa47046584de9d3af5b9db55c4cfda7dfc0572450c99e792e2c36668e519fa55"
   },
   {
     "path": "code/compare2/DSSDL/datasets/flow-29-v/query/features/375.txt",
@@ -1125,13 +1125,13 @@
     "path": "code/compare2/DSSDL/datasets/lorenz/__init__.py",
     "origin": "lecture_delivery_2026-10-29/DSSDL_lecture_reference/02_code/compare2/DSSDL/datasets/lorenz/__init__.py",
     "source_sha256": "306802620d02063e44cf73e11dc477794ee2a110cb8a71473e78a2cddbe82663",
-    "published_sha256": "306802620d02063e44cf73e11dc477794ee2a110cb8a71473e78a2cddbe82663"
+    "published_sha256": "7b9c64076bed12d8726d70ff4165aed91aef8af234ca6a3dcaffb104dc12c010"
   },
   {
     "path": "code/compare2/DSSDL/datasets/lorenz/create_dataset.py",
     "origin": "lecture_delivery_2026-10-29/DSSDL_lecture_reference/02_code/compare2/DSSDL/datasets/lorenz/create_dataset.py",
     "source_sha256": "85986333caf4d4a127df8943bfb881a141f7dc4ef09c35587da1dfc58c8a109c",
-    "published_sha256": "85986333caf4d4a127df8943bfb881a141f7dc4ef09c35587da1dfc58c8a109c"
+    "published_sha256": "bb67d69e6115f028c62f414c70dc290ebef18304261a5ad9bc72840da7e9fac7"
   },
   {
     "path": "code/compare2/DSSDL/datasets/lorenz/query/features/10_20_2.67.txt",
@@ -1377,13 +1377,13 @@
     "path": "code/compare2/DSSDL/datasets/pendulum_real/__init__.py",
     "origin": "lecture_delivery_2026-10-29/DSSDL_lecture_reference/02_code/compare2/DSSDL/datasets/pendulum_real/__init__.py",
     "source_sha256": "32e4306311f7f887295befa7a06276527d1e694e506bb0d597c10535a185f8a2",
-    "published_sha256": "32e4306311f7f887295befa7a06276527d1e694e506bb0d597c10535a185f8a2"
+    "published_sha256": "f8f6c5ff4c70f59c503bb5a86edd4c927113b1a2e2089e952d8285a54229243b"
   },
   {
     "path": "code/compare2/DSSDL/datasets/pendulum_real/create_dataset.py",
     "origin": "lecture_delivery_2026-10-29/DSSDL_lecture_reference/02_code/compare2/DSSDL/datasets/pendulum_real/create_dataset.py",
     "source_sha256": "89b86f2eadc7c7df94ddb8df36a10eef05b8eb5c0180faaf41497872d540b0f9",
-    "published_sha256": "89b86f2eadc7c7df94ddb8df36a10eef05b8eb5c0180faaf41497872d540b0f9"
+    "published_sha256": "e78b95565870e691cda2649de1c04a7501d534be9afa69e07f7bc69dd8c0a701"
   },
   {
     "path": "code/compare2/DSSDL/datasets/pendulum_real/query/features/8.00.txt",
@@ -1497,13 +1497,13 @@
     "path": "code/compare2/DSSDL/datasets/quadrotor/__init__.py",
     "origin": "lecture_delivery_2026-10-29/DSSDL_lecture_reference/02_code/compare2/DSSDL/datasets/quadrotor/__init__.py",
     "source_sha256": "920e0aa7d5f93c08a6e527c8084be3f66b7aad419d78713f4cd3697b24fa24c0",
-    "published_sha256": "920e0aa7d5f93c08a6e527c8084be3f66b7aad419d78713f4cd3697b24fa24c0"
+    "published_sha256": "437b977340ad82c3e8d2e88c5b01736c712e3becf6002675ff139e3b9d1000e6"
   },
   {
     "path": "code/compare2/DSSDL/datasets/quadrotor/create_dataset.py",
     "origin": "lecture_delivery_2026-10-29/DSSDL_lecture_reference/02_code/compare2/DSSDL/datasets/quadrotor/create_dataset.py",
     "source_sha256": "4c7f1a2c8ada5474275279a954a5029820046b46014d00a124677a07f668c02e",
-    "published_sha256": "4c7f1a2c8ada5474275279a954a5029820046b46014d00a124677a07f668c02e"
+    "published_sha256": "92ed8b3fbbc7ced873c49725955b2c9ad6709f4b11d38faee02204e68c124a17"
   },
   {
     "path": "code/compare2/DSSDL/datasets/quadrotor/query/features/0_019_0_024_0_029.txt",
@@ -1857,19 +1857,19 @@
     "path": "code/compare2/DSSDL/datasets/utils.py",
     "origin": "lecture_delivery_2026-10-29/DSSDL_lecture_reference/02_code/compare2/DSSDL/datasets/utils.py",
     "source_sha256": "5b11d1e8542fb9a231fd542c0267b441c0dc03762059cf7b3fd420a4af19297c",
-    "published_sha256": "5b11d1e8542fb9a231fd542c0267b441c0dc03762059cf7b3fd420a4af19297c"
+    "published_sha256": "2c6525d93097cd0bf9b603a79f1096bb25952dd89dc0cd0a0c23d2495c661cc8"
   },
   {
     "path": "code/compare2/DSSDL/evaluate.py",
     "origin": "lecture_delivery_2026-10-29/DSSDL_lecture_reference/02_code/compare2/DSSDL/evaluate.py",
     "source_sha256": "e52e2e3651a134bc1135d1c187d3edec8768323fb90ab14cfd58ca818b1d5233",
-    "published_sha256": "e52e2e3651a134bc1135d1c187d3edec8768323fb90ab14cfd58ca818b1d5233"
+    "published_sha256": "e5215d7bf6241be6362bd332cae43af8104b8f5a9608fb8ff54c909dc211a526"
   },
   {
     "path": "code/compare2/DSSDL/finetune.py",
     "origin": "lecture_delivery_2026-10-29/DSSDL_lecture_reference/02_code/compare2/DSSDL/finetune.py",
     "source_sha256": "40b7266d44c7273af1d972af92e37e34b416aa8e1ec93a0b101ac5a718853f85",
-    "published_sha256": "40b7266d44c7273af1d972af92e37e34b416aa8e1ec93a0b101ac5a718853f85"
+    "published_sha256": "d5e183df11b52ca119189550b2262cf12fdbd03f6d8aadbecd28cfea2be9447d"
   },
   {
     "path": "code/compare2/DSSDL/model/pretrain.pt",
@@ -1881,13 +1881,13 @@
     "path": "code/compare2/DSSDL/pretrain.py",
     "origin": "lecture_delivery_2026-10-29/DSSDL_lecture_reference/02_code/compare2/DSSDL/pretrain.py",
     "source_sha256": "f1039bd7c1dc254b8848c8f8ec301b02be3c40f3de679f5bb740382abf8d2b46",
-    "published_sha256": "f1039bd7c1dc254b8848c8f8ec301b02be3c40f3de679f5bb740382abf8d2b46"
+    "published_sha256": "0ac05c9c87e18191cb8683eea1a0d5ae0b4d00dae847da1975c3b67ff82f111f"
   },
   {
     "path": "code/compare2/DSSDL/pretrain_analytic_reference.py",
     "origin": "lecture_delivery_2026-10-29/DSSDL_lecture_reference/02_code/compare2/DSSDL/pretrain_analytic_reference.py",
     "source_sha256": "9777fa2265012f8c5f88f6359dbc0edfebdb2293f936f6bbe50e453aeeb0e88e",
-    "published_sha256": "9777fa2265012f8c5f88f6359dbc0edfebdb2293f936f6bbe50e453aeeb0e88e"
+    "published_sha256": "889c9e098bed93d5f6b34d6e93a5533cf31c5bbb309705b852d9b552be34d74a"
   },
   {
     "path": "code/environment_tested.json",
@@ -1911,43 +1911,43 @@
     "path": "code/review/controls/scripts/export_latex_tables.py",
     "origin": "lecture_delivery_2026-10-29/DSSDL_lecture_reference/02_code/review/controls/scripts/export_latex_tables.py",
     "source_sha256": "b2f53e8fa274c62b81be1086b1bc183ac8ecf8d449226bf068b0caa8b1222489",
-    "published_sha256": "b2f53e8fa274c62b81be1086b1bc183ac8ecf8d449226bf068b0caa8b1222489"
+    "published_sha256": "3e77fa46e6dcef73f38db6d38aec6c903cb8dc62c59ab5710fab2857629d323a"
   },
   {
     "path": "code/review/controls/scripts/run_gate_repeats.py",
     "origin": "lecture_delivery_2026-10-29/DSSDL_lecture_reference/02_code/review/controls/scripts/run_gate_repeats.py",
     "source_sha256": "bce8c53c9d46b5b084422398eee76c1fc630781f20b5e1611b709680f7105acd",
-    "published_sha256": "bce8c53c9d46b5b084422398eee76c1fc630781f20b5e1611b709680f7105acd"
+    "published_sha256": "0de618e7a6fc731804f78a4263ab6e6d133af01938d548fa5663d6237b499bbb"
   },
   {
     "path": "code/review/controls/scripts/run_lorenz_regularizer.py",
     "origin": "lecture_delivery_2026-10-29/DSSDL_lecture_reference/02_code/review/controls/scripts/run_lorenz_regularizer.py",
     "source_sha256": "b6aad51e0c8f9fd7aa485d5c2b330596275131a1e635fed86265445b742d20a8",
-    "published_sha256": "b6aad51e0c8f9fd7aa485d5c2b330596275131a1e635fed86265445b742d20a8"
+    "published_sha256": "59152e874bc80bd019db0fc706dd36387d21d7b50325f62948071e2087a89971"
   },
   {
     "path": "code/review/controls/scripts/run_lorenz_regularizer_repeats.py",
     "origin": "lecture_delivery_2026-10-29/DSSDL_lecture_reference/02_code/review/controls/scripts/run_lorenz_regularizer_repeats.py",
     "source_sha256": "cf5943874382d76afacede5e5b5ed463359fa61bf0b4f9fa588555da6ba81d6e",
-    "published_sha256": "cf5943874382d76afacede5e5b5ed463359fa61bf0b4f9fa588555da6ba81d6e"
+    "published_sha256": "e3077f19ba3e90838e21c3e2c23fef46025d831e168d118e17e080eef5080e21"
   },
   {
     "path": "code/review/controls/scripts/run_paired_ablation.py",
     "origin": "lecture_delivery_2026-10-29/DSSDL_lecture_reference/02_code/review/controls/scripts/run_paired_ablation.py",
     "source_sha256": "dc0cd61b506a923394d2002da4eea68ad148159fa3ec2baa9339fa15045a3e67",
-    "published_sha256": "dc0cd61b506a923394d2002da4eea68ad148159fa3ec2baa9339fa15045a3e67"
+    "published_sha256": "1f4366e3b68495a2e28fb7b02b48e8d9701afbde5141e4b20c3c8945537ece5d"
   },
   {
     "path": "code/review/controls/scripts/run_pendulum_regularizer_repeats.py",
     "origin": "lecture_delivery_2026-10-29/DSSDL_lecture_reference/02_code/review/controls/scripts/run_pendulum_regularizer_repeats.py",
     "source_sha256": "9292afb24eab2867d212d2fe3310f86ca684509ca3ab3bec7e2d82f0756cdb21",
-    "published_sha256": "9292afb24eab2867d212d2fe3310f86ca684509ca3ab3bec7e2d82f0756cdb21"
+    "published_sha256": "73be945f492bc84c1d30c3299ff1236998187878681f5cc1d3380be58960157b"
   },
   {
     "path": "code/review/controls/scripts/summarize_ablation.py",
     "origin": "lecture_delivery_2026-10-29/DSSDL_lecture_reference/02_code/review/controls/scripts/summarize_ablation.py",
     "source_sha256": "ec8ef5f28e458af7d1e250bd13cddb02e2edc2cfe83791adb3a6d1fa64ebc333",
-    "published_sha256": "ec8ef5f28e458af7d1e250bd13cddb02e2edc2cfe83791adb3a6d1fa64ebc333"
+    "published_sha256": "e6998145c413898dcbb9bffeebfe575d4636d8f35479f2351cc35ed6bc05bb74"
   },
   {
     "path": "code/review/experiments/label_free_discovery/plan/experiment-protocol.md",
@@ -2007,7 +2007,7 @@
     "path": "code/review/experiments/label_free_discovery/scripts/run_closure.py",
     "origin": "lecture_delivery_2026-10-29/DSSDL_lecture_reference/02_code/review/experiments/label_free_discovery/scripts/run_closure.py",
     "source_sha256": "61edc78f68bc27d5f08d9b2da6f89c5041bb2107e94822129d292e8fced613e1",
-    "published_sha256": "61edc78f68bc27d5f08d9b2da6f89c5041bb2107e94822129d292e8fced613e1"
+    "published_sha256": "429b8d8024a254085cf8924066c7f60a05512c5d486397b967da1550c6d897e4"
   },
   {
     "path": "code/review/experiments/matched_budget/checkpoints/fhn/CAVIA/seed_1/metadata.json",
@@ -2799,37 +2799,37 @@
     "path": "code/review/experiments/matched_budget/native/compare2/CAVIA/cavia_workflow.py",
     "origin": "compare2/CAVIA/cavia_workflow.py",
     "source_sha256": "c327e807f0c3fd86dbedc352038dbb38c3d17380b2455f62d78905c038be6b62",
-    "published_sha256": "c327e807f0c3fd86dbedc352038dbb38c3d17380b2455f62d78905c038be6b62"
+    "published_sha256": "a2b6ee19da0902127afe0dbb7c0e7dada2d57d77d9938bcea4823ef9a8b549ad"
   },
   {
     "path": "code/review/experiments/matched_budget/native/compare2/DSSDL-symbol/DSSDL_.py",
     "origin": "compare2/DSSDL-symbol/DSSDL_.py",
     "source_sha256": "32dbbc502aea4d3fa3e673d42786a8ed1f4528ace26254cafad1f589ec23edea",
-    "published_sha256": "32dbbc502aea4d3fa3e673d42786a8ed1f4528ace26254cafad1f589ec23edea"
+    "published_sha256": "0723180a0b8270dd52b45d1f8f5ea64186a9dd7936f8828a366e9bf3a2bc4f42"
   },
   {
     "path": "code/review/experiments/matched_budget/native/compare2/DSSDL-symbol/pretrain.py",
     "origin": "compare2/DSSDL-symbol/pretrain.py",
     "source_sha256": "9777fa2265012f8c5f88f6359dbc0edfebdb2293f936f6bbe50e453aeeb0e88e",
-    "published_sha256": "9777fa2265012f8c5f88f6359dbc0edfebdb2293f936f6bbe50e453aeeb0e88e"
+    "published_sha256": "889c9e098bed93d5f6b34d6e93a5533cf31c5bbb309705b852d9b552be34d74a"
   },
   {
     "path": "code/review/experiments/matched_budget/native/compare2/DSSDL/DSSDL_.py",
     "origin": "compare2/DSSDL/DSSDL_.py",
     "source_sha256": "32dbbc502aea4d3fa3e673d42786a8ed1f4528ace26254cafad1f589ec23edea",
-    "published_sha256": "32dbbc502aea4d3fa3e673d42786a8ed1f4528ace26254cafad1f589ec23edea"
+    "published_sha256": "0723180a0b8270dd52b45d1f8f5ea64186a9dd7936f8828a366e9bf3a2bc4f42"
   },
   {
     "path": "code/review/experiments/matched_budget/native/compare2/DSSDL/pretrain.py",
     "origin": "compare2/DSSDL/pretrain.py",
     "source_sha256": "f1039bd7c1dc254b8848c8f8ec301b02be3c40f3de679f5bb740382abf8d2b46",
-    "published_sha256": "f1039bd7c1dc254b8848c8f8ec301b02be3c40f3de679f5bb740382abf8d2b46"
+    "published_sha256": "0ac05c9c87e18191cb8683eea1a0d5ae0b4d00dae847da1975c3b67ff82f111f"
   },
   {
     "path": "code/review/experiments/matched_budget/native/compare2/Reptile/Reptile.py",
     "origin": "compare2/Reptile/Reptile.py",
     "source_sha256": "8e515f29e0c7782dc689d192312253a2da27792e52108e49588a41a39ce5b36a",
-    "published_sha256": "8e515f29e0c7782dc689d192312253a2da27792e52108e49588a41a39ce5b36a"
+    "published_sha256": "c7ebb88aeb3f33bc04e17f7ade6e64d5cc98dcc5ab64e6741d397aa7a7281e91"
   },
   {
     "path": "code/review/experiments/matched_budget/original_protocol.json",
@@ -2841,7 +2841,7 @@
     "path": "code/review/experiments/matched_budget/scripts/native_run.py",
     "origin": "codex_runs/2026-07-07_review_response_experiments/62_original_protocol_no_early_stop/scripts/run.py",
     "source_sha256": "6954dd79e4b17dcf8b683e9f6e1314590ea60401205a0f084893eedb28a74bce",
-    "published_sha256": "6954dd79e4b17dcf8b683e9f6e1314590ea60401205a0f084893eedb28a74bce"
+    "published_sha256": "bbcffcd8445e092804a5da9239af977c535a80d1d984121491a1bdcd3d2eb26a"
   },
   {
     "path": "code/review/experiments/matched_budget/selection_manifest.json",
@@ -2907,7 +2907,7 @@
     "path": "code/review/experiments/measured_pendulum_closure/scripts/run_closure.py",
     "origin": "lecture_delivery_2026-10-29/DSSDL_lecture_reference/02_code/review/experiments/measured_pendulum_closure/scripts/run_closure.py",
     "source_sha256": "8878ffaeef27deed738fc47e1e34a1ac173b98c1ab55ef74d9a6a49a56c42adc",
-    "published_sha256": "8878ffaeef27deed738fc47e1e34a1ac173b98c1ab55ef74d9a6a49a56c42adc"
+    "published_sha256": "e7c8c44597f2803708be9a435c8c0ede102de1fa443c61f6564bcaa3a7d12b5a"
   },
   {
     "path": "code/review/experiments/measured_pendulum_closure/simplification.json",
@@ -2967,13 +2967,13 @@
     "path": "code/review/experiments/online/scripts/native_protocol.py",
     "origin": "codex_runs/2026-07-07_review_response_experiments/41_time_varying_state_prediction_protocols/scripts/run_protocol.py",
     "source_sha256": "4c70e228b24864859fb2b4c04796567bd1e553089d763336b1641683a1bc5a77",
-    "published_sha256": "4c70e228b24864859fb2b4c04796567bd1e553089d763336b1641683a1bc5a77"
+    "published_sha256": "4a693874fc68f372a9423b7552230cc26ff7db83b2c268d0cb29291a2bac48d3"
   },
   {
     "path": "code/review/experiments/online/scripts/source_sindy.py",
     "origin": "codex_runs/2026-07-07_review_response_experiments/47_source_structured_sindy_wide_fhn/scripts/source_sindy.py",
     "source_sha256": "d3dd3ddbd713910837084fb747c409767d45d1d4fc8f0b9f548636d8d648e152",
-    "published_sha256": "c457e040adbd3ec8371298ec7840d9fd742b223ab09b6275faa66bf721549f91"
+    "published_sha256": "eddee0063683b4438ccec1d2de81bbd064fb4d6f08bbb802373f61007d73cde0"
   },
   {
     "path": "code/review/experiments/online/source/fhn/artifact.npz",
@@ -3027,25 +3027,25 @@
     "path": "code/review/experiments/scripts/closed_loop_symbolic_discovery_runner.py",
     "origin": "lecture_delivery_2026-10-29/DSSDL_lecture_reference/02_code/review/experiments/scripts/closed_loop_symbolic_discovery_runner.py",
     "source_sha256": "c208a2209244d6a672d0f661431dd766e2d38d987420be535d6d5da024773a86",
-    "published_sha256": "c208a2209244d6a672d0f661431dd766e2d38d987420be535d6d5da024773a86"
+    "published_sha256": "b8f7e1bfcbb74a907ca9b34f2a8fc27461b625bc31f7348f7da8e07e7272ef87"
   },
   {
     "path": "code/review/experiments/scripts/dimension_discovery_claim_runner.py",
     "origin": "lecture_delivery_2026-10-29/DSSDL_lecture_reference/02_code/review/experiments/scripts/dimension_discovery_claim_runner.py",
     "source_sha256": "f6853a934794235b8893dff53d924550fc3076c21445d23932a6469873e5ad46",
-    "published_sha256": "f6853a934794235b8893dff53d924550fc3076c21445d23932a6469873e5ad46"
+    "published_sha256": "fef5da0254b1d89b6e70a085e14ce5c50130cf6f5b55b41c03be589160ca9904"
   },
   {
     "path": "code/review/experiments/scripts/gplearn_closed_loop_symbolic_discovery.py",
     "origin": "lecture_delivery_2026-10-29/DSSDL_lecture_reference/02_code/review/experiments/scripts/gplearn_closed_loop_symbolic_discovery.py",
     "source_sha256": "b5ea125b798e93270a3012a7c55b333bfbd2f6b35921f488cac15d099023f4b6",
-    "published_sha256": "b5ea125b798e93270a3012a7c55b333bfbd2f6b35921f488cac15d099023f4b6"
+    "published_sha256": "99e8788f56032ecca1371ffeba277b95b90fe78bc1fd9924e17201cb6babdd1c"
   },
   {
     "path": "code/review/experiments/scripts/multisystem_closed_loop_symbolic_discovery.py",
     "origin": "lecture_delivery_2026-10-29/DSSDL_lecture_reference/02_code/review/experiments/scripts/multisystem_closed_loop_symbolic_discovery.py",
     "source_sha256": "24aede10ac3b362604e5ccd2ef5f11603c3a0aa25e276161b891165db3250f0a",
-    "published_sha256": "24aede10ac3b362604e5ccd2ef5f11603c3a0aa25e276161b891165db3250f0a"
+    "published_sha256": "4ec3c5ea2ab5931a2dc45c6c90d5e712b07f2d3181c289afc4f4e055594b85dc"
   },
   {
     "path": "code/review/experiments/symbolic_feedback/plan/experiment-protocol.md",
@@ -3165,7 +3165,7 @@
     "path": "code/review/experiments/symbolic_feedback/scripts/run_feedback.py",
     "origin": "lecture_delivery_2026-10-29/DSSDL_lecture_reference/02_code/review/experiments/symbolic_feedback/scripts/run_feedback.py",
     "source_sha256": "88850fabaec3642c05d614ddfd436102873be0326dad24d3eb073b2699127029",
-    "published_sha256": "88850fabaec3642c05d614ddfd436102873be0326dad24d3eb073b2699127029"
+    "published_sha256": "5cc84905e972acc2cfce6679cd69766386151f2e6f496eeeb6c4fe31cb86c5e3"
   },
   {
     "path": "code/review/experiments/teachers/lorenz.pt",
@@ -3255,13 +3255,13 @@
     "path": "code/review/experiments/wasserstein/scripts/original_wasserstein.py",
     "origin": "codex_runs/2026-07-07_review_response_experiments/52_original_trajectory_wasserstein/scripts/plot_original_wasserstein.py",
     "source_sha256": "2897ee82b6227179a2d41ad4bde25c6f3d62896858cbe9818cbd66ea40709f47",
-    "published_sha256": "2897ee82b6227179a2d41ad4bde25c6f3d62896858cbe9818cbd66ea40709f47"
+    "published_sha256": "20e48170ee6f957452b3521b59c83f0df7f3c251f484f38adaf0969aeaface1a"
   },
   {
     "path": "code/run.py",
     "origin": "lecture_delivery_2026-10-29/DSSDL_lecture_reference/02_code/run.py",
     "source_sha256": "0a870aa62cf1bc2054bb23aeb8a81f52934ca0e810beb1a00c942a502215f3a3",
-    "published_sha256": "0b7f1fcceb8213866b99a287e1261bd75463e4511269dc8313837b134655aea7"
+    "published_sha256": "81f472789f33b453b9c9b75d0813637e64fdd2864ebc1c34f02a1de77d407204"
   },
   {
     "path": "records/controls/experiment-protocol.md",

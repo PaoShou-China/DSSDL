@@ -1,6 +1,8 @@
 """Only the unchanged model-construction helpers used by the current closure."""
+
 from __future__ import annotations
 from typing import Any, Dict
+
 
 class ZeroPrior:
     def __init__(self, output_dim: int):
@@ -15,7 +17,6 @@ class ZeroPrior:
         import numpy as np
 
         return np.zeros((features.shape[0], self.output_dim), dtype=np.float64)
-
 
 
 def build_model(dssdl_module, dataset_dict, cfg: Dict[str, Any], prior) -> Any:
@@ -34,4 +35,3 @@ def build_model(dssdl_module, dataset_dict, cfg: Dict[str, Any], prior) -> Any:
     )
     model.f_hat_func = prior
     return model
-

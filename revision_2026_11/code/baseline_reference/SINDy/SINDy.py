@@ -19,22 +19,41 @@ import pysindy as ps
 # ---------------------------
 
 CONFIG = {
-    'poly_degree': 3,             # Degree of polynomial features
-    'include_intercepts': True,   # Whether to include bias/intercept terms
-    'library_type': 'polynomial', # Type of feature library
-    'optimizer': 'STLSQ',         # Sparse optimizer (e.g., STLSQ)
-    'threshold': 0.1,             # Threshold for sparsity constraint
+    "poly_degree": 3,  # Degree of polynomial features
+    "include_intercepts": True,  # Whether to include bias/intercept terms
+    "library_type": "polynomial",  # Type of feature library
+    "optimizer": "STLSQ",  # Sparse optimizer (e.g., STLSQ)
+    "threshold": 0.1,  # Threshold for sparsity constraint
     # 'feature_names': ['x0', 'x1', 'x2'],# Feature names for model output
-    'feature_names': ['x0', 'x1', 'x2', 'x3', 'x4', 'x5', 'x6'
-    , 'x7', 'x8', 'x9', 'x10', 'x11', 'x12', 'x13', 'x14', 'x15', 'x16', 'x17', 'x18'
+    "feature_names": [
+        "x0",
+        "x1",
+        "x2",
+        "x3",
+        "x4",
+        "x5",
+        "x6",
+        "x7",
+        "x8",
+        "x9",
+        "x10",
+        "x11",
+        "x12",
+        "x13",
+        "x14",
+        "x15",
+        "x16",
+        "x17",
+        "x18",
     ],
-    'save_path': 'sindy_model.pkl' # File path for saving the model
+    "save_path": "sindy_model.pkl",  # File path for saving the model
 }
 
 
 # ---------------------------
 # SINDy Regressor Class
 # ---------------------------
+
 
 class SINDyRegressor:
     """
@@ -65,22 +84,21 @@ class SINDyRegressor:
         self.system_name = system_name or "sindy"
 
         # Update input/output dimensions based on dataset info
-        self.config['input_dim'] = self.dataset_dict['info']['input_dim']
-        self.config['output_dim'] = self.dataset_dict['info']['output_dim']
-        self.config['dt'] = self.dataset_dict['info'].get('dt', 0.01)
+        self.config["input_dim"] = self.dataset_dict["info"]["input_dim"]
+        self.config["output_dim"] = self.dataset_dict["info"]["output_dim"]
+        self.config["dt"] = self.dataset_dict["info"].get("dt", 0.01)
 
         # Build feature library
-        if self.config['library_type'] == 'polynomial':
+        if self.config["library_type"] == "polynomial":
             self.library = ps.PolynomialLibrary(
-                degree=self.config['poly_degree'],
-                include_bias=self.config['include_intercepts']
+                degree=self.config["poly_degree"], include_bias=self.config["include_intercepts"]
             )
         else:
             raise ValueError("Only polynomial library is currently supported.")
 
         # Set up optimizer
-        self.optimizer = getattr(ps.optimizers, self.config['optimizer'])(
-            threshold=self.config['threshold']
+        self.optimizer = getattr(ps.optimizers, self.config["optimizer"])(
+            threshold=self.config["threshold"]
         )
 
         # Initialize SINDy model (feature_names not supported in some versions)
@@ -88,18 +106,15 @@ class SINDyRegressor:
             self.model = ps.SINDy(
                 feature_library=self.library,
                 optimizer=self.optimizer,
-                feature_names=self.config['feature_names']
+                feature_names=self.config["feature_names"],
             )
         except TypeError as exc:
             if "feature_names" in str(exc):
-                self.model = ps.SINDy(
-                    feature_library=self.library,
-                    optimizer=self.optimizer
-                )
+                self.model = ps.SINDy(feature_library=self.library, optimizer=self.optimizer)
             else:
                 raise
 
-    def prepare_data(self, split='train'):
+    def prepare_data(self, split="train"):
         """
         Load and concatenate state variables and their derivatives using normalized data.
 
@@ -111,7 +126,7 @@ class SINDyRegressor:
             y (np.ndarray): Derivatives (n_samples, n_targets)
         """
         # Always use normalized data, remove the use_normalized parameter
-        data_key = 'raw'
+        data_key = "raw"
         X_list, y_list = self.dataset_dict[data_key][split]
 
         X = np.vstack(X_list)  # Combine all samples into one array
@@ -125,9 +140,9 @@ class SINDyRegressor:
         """
         start_time = time.time()
         # Removed use_normalized parameter, as it's always True
-        X, y = self.prepare_data(split='train') # Call without use_normalized
+        X, y = self.prepare_data(split="train")  # Call without use_normalized
         try:
-            self.model.fit(X, t=self.config['dt'], x_dot=y)
+            self.model.fit(X, t=self.config["dt"], x_dot=y)
         except TypeError as exc:
             if "t" in str(exc):
                 self.model.fit(X, x_dot=y)
@@ -162,12 +177,12 @@ class SINDyRegressor:
         """
         start_time = time.time()
         # 1. Finetune on the support set
-        X_support, y_support = self.prepare_data(split='support')
+        X_support, y_support = self.prepare_data(split="support")
 
         print("=== Fine-tuning with the support data ===")
         try:
             try:
-                self.model.fit(X_support, t=self.config['dt'], x_dot=y_support)
+                self.model.fit(X_support, t=self.config["dt"], x_dot=y_support)
             except TypeError as exc:
                 if "t" in str(exc):
                     self.model.fit(X_support, x_dot=y_support)
@@ -194,7 +209,7 @@ class SINDyRegressor:
             ],
         )
 
-        return {'final_loss': final_loss}
+        return {"final_loss": final_loss}
 
     def evaluate_on_query(self):
         """
@@ -204,7 +219,7 @@ class SINDyRegressor:
             float: RMSE on the query split.
         """
         print("\n=== Evaluating on the query data ===")
-        X_query, y_query = self.prepare_data(split='query')
+        X_query, y_query = self.prepare_data(split="query")
 
         # Predict derivatives on the query set
         y_pred = self.model.predict(X_query)
@@ -218,8 +233,8 @@ class SINDyRegressor:
 
     def save(self):
         """Save the trained model to file using pickle."""
-        path = self.config['save_path']
-        with open(path, 'wb') as f:
+        path = self.config["save_path"]
+        with open(path, "wb") as f:
             pickle.dump(self.model, f)
         print(f"Model saved to {path}")
 
@@ -238,7 +253,7 @@ class SINDyRegressor:
         Args:
             path (str): Optional custom model path; defaults to config['save_path']
         """
-        path = path or self.config['save_path']
-        with open(path, 'rb') as f:
+        path = path or self.config["save_path"]
+        with open(path, "rb") as f:
             self.model = pickle.load(f)
         print(f"Model loaded from {path}")

@@ -24,7 +24,7 @@ def f(features, slow_params):
     v = features[:, [0]]
     w = features[:, [1]]
     a, b, i_ext = slow_params
-    v_dot = v - (v ** 3) / 3.0 - w + i_ext
+    v_dot = v - (v**3) / 3.0 - w + i_ext
     w_dot = EPSILON * (v + a - b * w)
     return np.concatenate([v_dot, w_dot], axis=1)
 

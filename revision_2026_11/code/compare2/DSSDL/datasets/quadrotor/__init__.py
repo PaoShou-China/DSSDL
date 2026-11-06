@@ -24,6 +24,7 @@ except ImportError:
 # Quadrotor系统参数
 from .create_dataset import slow_params_eval
 
+
 def f(features, slow_params):
     """
     Quadrotor系统动力学函数 (仅姿态动力学)
@@ -42,12 +43,12 @@ def f(features, slow_params):
     omega2_sq = features[:, [7]]
     omega3_sq = features[:, [8]]
     omega4_sq = features[:, [9]]
-    
+
     # 提取慢变参数
     Ix, Iy, Iz = slow_params
 
     # 计算控制力矩
-    tau_phi = l * k_T * (omega4_sq - omega2_sq)      # roll
+    tau_phi = l * k_T * (omega4_sq - omega2_sq)  # roll
     tau_theta = l * k_T * (omega3_sq - omega1_sq)  # pitch
     tau_psi = k_M * (omega1_sq - omega2_sq + omega3_sq - omega4_sq)  # yaw
 
@@ -55,17 +56,17 @@ def f(features, slow_params):
     p_dot = (Iy - Iz) / Ix * q * r + tau_phi / Ix
     q_dot = (Iz - Ix) / Iy * p * r + tau_theta / Iy
     r_dot = (Ix - Iy) / Iz * p * q + tau_psi / Iz
-    
+
     return np.concatenate([p_dot, q_dot, r_dot], axis=1)
 
 
 def get_datasets(use_normalization=True):
     """
     获取Quadrotor系统数据集
-    
+
     Args:
         use_normalization (bool): 是否使用标准化
-    
+
     Returns:
         dataset_dict: 标准格式的数据集字典
     """
@@ -79,4 +80,3 @@ def get_raw_dataset_dict():
 
 # 默认数据集（向后兼容）
 dataset_dict = get_datasets(use_normalization=True)
-

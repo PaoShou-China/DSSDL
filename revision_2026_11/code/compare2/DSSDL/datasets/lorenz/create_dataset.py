@@ -16,9 +16,10 @@ dt = 0.01  # 时间步长
 # =========================
 #   Lorenz System
 #   dx/dt = σ(y-x)
-#   dy/dt = x(ρ-z)-y  
+#   dy/dt = x(ρ-z)-y
 #   dz/dt = xy-βz
 # =========================
+
 
 def f(t, y, slow_param):
     """
@@ -32,12 +33,12 @@ def f(t, y, slow_param):
     """
     x, y, z = y
     sigma, rho, beta = slow_param
-    
+
     # Lorenz方程
     dxdt = sigma * (y - x)
     dydt = x * (rho - z) - y
     dzdt = x * y - beta * z
-    
+
     return [dxdt, dydt, dzdt]
 
 
@@ -55,7 +56,7 @@ def create_dataset(
     生成Lorenz系统轨迹数据集
     features: [x, y, z]
     labels:   [dx/dt, dy/dt, dz/dt]
-    
+
     Args:
         f_handle: 动力学函数
         slow_param: [σ, ρ, β] - Lorenz系统参数
@@ -78,14 +79,14 @@ def create_dataset(
     total_samples = num_trajectories * n_steps_out
 
     features = np.zeros((total_samples, 3), dtype=np.float64)  # [x, y, z]
-    labels = np.zeros((total_samples, 3), dtype=np.float64)    # numerical derivatives
+    labels = np.zeros((total_samples, 3), dtype=np.float64)  # numerical derivatives
 
     idx = 0
 
     for _ in range(num_trajectories):
         # 随机初始条件
         x0 = rng.uniform(ranges[0][0], ranges[0][1])  # 初始 x
-        y0 = rng.uniform(ranges[1][0], ranges[1][1])  # 初始 y  
+        y0 = rng.uniform(ranges[1][0], ranges[1][1])  # 初始 y
         z0 = rng.uniform(ranges[2][0], ranges[2][1])  # 初始 z
 
         def dydt(t, y):
@@ -156,30 +157,46 @@ def create_dataset(
 
     np.savetxt(os.path.join(features_dir, f"{slow_str}.txt"), features)
     np.savetxt(os.path.join(labels_dir, f"{slow_str}.txt"), labels)
-    print(f"Saved {idx} samples ({t_span[1]-t_span[0]:.2f}s trajectory) for slow_param {slow_param} to {save_dir}")
+    print(
+        f"Saved {idx} samples ({t_span[1] - t_span[0]:.2f}s trajectory) for slow_param {slow_param} to {save_dir}"
+    )
 
 
 # 参数设置（基于GS-SINDy设置）
 # 训练参数：[σ, ρ, β]
 all_slow_params = [
-                    # [10, 28, 2.67], [9, 30, 2], [8.5, 28, 2.67], [10, 27, 2.67], [10, 27, 3], [10, 29, 2],
-                    [10, 28, 2.67], [10, 30, 2.5], [8.5, 28, 2.67], [10, 27, 2.67], [11, 27, 3], [10, 29, 2.5],
-                    [9, 9, 2.67], [10, 11, 3], [11, 10.5, 2.5], [10, 12, 3], [9, 11.5, 2.5], [8.5, 12.5, 3],
-                    [10, 20, 2.67], [9, 20.5, 2.5], [8.5, 21, 3], [9.5, 21.5, 2.5], [10, 22, 2.67], [11, 22.5, 3], # 不同极限环实验
-                    # [1, 1, 1], [1, 1, 2], [1, 1, 3], [1, 2, 1], [1, 2, 2], [1, 2, 3], [1, 3, 1], [1, 3, 2], [1, 3, 3], 
-                    # [2, 1, 1], [2, 1, 2], [2, 1, 3], [2, 2, 1], [2, 2, 2], [2, 2, 3], [2, 3, 1], [2, 3, 2], [2, 3, 3],
-                    # [3, 1, 1], [3, 1, 2], [3, 1, 3], [3, 2, 1], [3, 2, 2], [3, 2, 3], [3, 3, 1], [3, 3, 2], [3, 3, 3], # 可解释性实验
-                #    [10.5, 25, 2.5], [9.5, 26, 2.8], [11, 24, 3.2], [8, 31, 1.8], [12, 23, 3.5], [7.5, 32, 1.5],
-                #    [11.5, 22, 4], [7, 33, 1.2], [13, 21, 4.5], [6.5, 34, 1], [14, 20, 5], [6, 35, 0.8],
-                #    [15, 19, 5.5], [5.5, 36, 0.6], [16, 18, 6], [5, 37, 0.5], [17, 17, 6.5], [4.5, 38, 0.4],
-                #    [18, 16, 7], [4, 39, 0.3], [19, 15, 7.5], # 时序误差实验/seed-support实验 
-                #    [10.2, 28.5, 2.8]
-
-                # [a, b, i_ext]
-                #     for a in [7, 9, 11]
-                #     for b in [24, 28, 32]
-                #     for i_ext in [1, 4, 7]
-                ]
+    # [10, 28, 2.67], [9, 30, 2], [8.5, 28, 2.67], [10, 27, 2.67], [10, 27, 3], [10, 29, 2],
+    [10, 28, 2.67],
+    [10, 30, 2.5],
+    [8.5, 28, 2.67],
+    [10, 27, 2.67],
+    [11, 27, 3],
+    [10, 29, 2.5],
+    [9, 9, 2.67],
+    [10, 11, 3],
+    [11, 10.5, 2.5],
+    [10, 12, 3],
+    [9, 11.5, 2.5],
+    [8.5, 12.5, 3],
+    [10, 20, 2.67],
+    [9, 20.5, 2.5],
+    [8.5, 21, 3],
+    [9.5, 21.5, 2.5],
+    [10, 22, 2.67],
+    [11, 22.5, 3],  # 不同极限环实验
+    # [1, 1, 1], [1, 1, 2], [1, 1, 3], [1, 2, 1], [1, 2, 2], [1, 2, 3], [1, 3, 1], [1, 3, 2], [1, 3, 3],
+    # [2, 1, 1], [2, 1, 2], [2, 1, 3], [2, 2, 1], [2, 2, 2], [2, 2, 3], [2, 3, 1], [2, 3, 2], [2, 3, 3],
+    # [3, 1, 1], [3, 1, 2], [3, 1, 3], [3, 2, 1], [3, 2, 2], [3, 2, 3], [3, 3, 1], [3, 3, 2], [3, 3, 3], # 可解释性实验
+    #    [10.5, 25, 2.5], [9.5, 26, 2.8], [11, 24, 3.2], [8, 31, 1.8], [12, 23, 3.5], [7.5, 32, 1.5],
+    #    [11.5, 22, 4], [7, 33, 1.2], [13, 21, 4.5], [6.5, 34, 1], [14, 20, 5], [6, 35, 0.8],
+    #    [15, 19, 5.5], [5.5, 36, 0.6], [16, 18, 6], [5, 37, 0.5], [17, 17, 6.5], [4.5, 38, 0.4],
+    #    [18, 16, 7], [4, 39, 0.3], [19, 15, 7.5], # 时序误差实验/seed-support实验
+    #    [10.2, 28.5, 2.8]
+    # [a, b, i_ext]
+    #     for a in [7, 9, 11]
+    #     for b in [24, 28, 32]
+    #     for i_ext in [1, 4, 7]
+]
 
 unseen_params = [
     # [10, 10, 2.67]
@@ -195,18 +212,18 @@ if __name__ == "__main__":
     # Import the clear function from utils
     import sys
     import os
-    
+
     # Add parent directory to path for utils import
     current_dir = os.path.dirname(os.path.abspath(__file__))
     parent_dir = os.path.dirname(current_dir)
     if parent_dir not in sys.path:
         sys.path.insert(0, parent_dir)
-    
+
     from utils import clear_dataset_files
-    
+
     # Clear existing dataset files
     clear_dataset_files("lorenz")
-    
+
     # ==== 参数设置 ====
     train_params = all_slow_params
 
@@ -218,9 +235,9 @@ if __name__ == "__main__":
     #     (20, 30),    # z range
     # ]
     ranges = [
-        (5, 10),   # x range
-        (-10, -5),   # y range
-        (20, 30),    # z range
+        (5, 10),  # x range
+        (-10, -5),  # y range
+        (20, 30),  # z range
     ]
     # ==== 目录 ====
     base_dir = "datasets/lorenz"
@@ -236,8 +253,8 @@ if __name__ == "__main__":
             slow_param=sp,
             ranges=ranges,
             save_dir=train_dir,
-            num_trajectories=1,     # 每个系统生成多条轨迹
-            t_span=(0.0, 10.0),      # 10s轨迹
+            num_trajectories=1,  # 每个系统生成多条轨迹
+            t_span=(0.0, 10.0),  # 10s轨迹
             seed=seed_master + i,
         )
 
@@ -250,8 +267,8 @@ if __name__ == "__main__":
             slow_param=sp,
             ranges=ranges,
             save_dir=support_dir,
-            num_trajectories=1,     # 多个初值
-            t_span=(0.0, 1),       # 5s轨迹
+            num_trajectories=1,  # 多个初值
+            t_span=(0.0, 1),  # 5s轨迹
             seed=2025 + i,
         )
 
@@ -264,8 +281,8 @@ if __name__ == "__main__":
             slow_param=sp,
             ranges=ranges,
             save_dir=query_dir,
-            num_trajectories=1,     # 多个初值
-            t_span=(0.0, 5.0),       # 5s评估
+            num_trajectories=1,  # 多个初值
+            t_span=(0.0, 5.0),  # 5s评估
             seed=4096 + i,
         )
 

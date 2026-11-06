@@ -21,6 +21,7 @@ except ImportError:
 # Lorenz系统参数
 from .create_dataset import slow_params_eval
 
+
 def f(features, slow_params):
     """
     Lorenz系统动力学函数
@@ -41,10 +42,10 @@ def f(features, slow_params):
 def get_datasets(use_normalization=True):
     """
     获取Lorenz系统数据集
-    
+
     Args:
         use_normalization (bool): 是否使用标准化
-    
+
     Returns:
         dataset_dict: 标准格式的数据集字典
     """
